@@ -9,6 +9,19 @@ html {
   overflow-x: hidden;
 }
 
+@media screen and (max-width: 1024px) {
+  html {
+    background-position-y: 5%;
+    background: url(../graphics/ilustracion_landing-800.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #b062dc;
+    background-position: center;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
 body {
   text-align: center;
   color: white;
@@ -19,55 +32,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 img {
-  max-width: 100%
+  max-width: 100%;
 }
 
 .image {
-  flex-basis: 8%
+  flex-basis: 40%
 }
 
 .social {
   padding: 10px;
   color: #5202bd;
-}
-
-.text-logo {
-  font-size: 22pt;
-  text-align: left;
-  margin: 0px;
-  padding: 0px;
-  padding-left: 20px;
-}
-
-@media screen and (max-width: 1200px) {
-  .text-logo {
-    font-size: 18pt;
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .text-logo {
-    font-size: 12pt;
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .text-logo {
-    font-size: 10pt;
-    padding: 10px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .text-logo {
-    font-size: 5pt;
-    padding: 5px;
-  }
 }
 
 .purple {
@@ -80,8 +58,32 @@ img {
   flex-direction: column;
 }
 
-.spacer {
+.box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0 4% 0 4%;
+  font-size: 20pt;
+}
+
+@media screen and (max-width: 1024px) {
+  .box {
+    font-size: 14pt;
+  }
+}
+
+.arrow {
+  cursor: pointer;
+  display: block;
+  padding-top: 10%;
+}
+
+.spacer-middle {
   min-height: 100vw;
+}
+
+.spacer-bottom {
+  min-height: 10vw;
 }
 
 h2 {
