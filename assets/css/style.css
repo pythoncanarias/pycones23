@@ -1,0 +1,92 @@
+html {
+  background-position-y: 5%;
+  background: url(../graphics/ilustracion_landing.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #b062dc;
+  background-position: center;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    background-position-y: 5%;
+    background: url(../graphics/ilustracion_landing-800.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #b062dc;
+    background-position: center;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+body {
+  text-align: center;
+  color: white;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.image {
+  flex-basis: 40%
+}
+
+.social {
+  padding: 10px;
+  color: #5202bd;
+}
+
+.purple {
+  color: #5202bd;
+}
+
+.full {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0 4% 0 4%;
+  font-size: 20pt;
+}
+
+@media screen and (max-width: 1024px) {
+  .box {
+    font-size: 14pt;
+  }
+}
+
+.arrow {
+  cursor: pointer;
+  display: block;
+  padding-top: 10%;
+}
+
+.spacer-middle {
+  min-height: 100vw;
+}
+
+.spacer-bottom {
+  min-height: 10vw;
+}
+
+h2 {
+  font-weight: 200;
+}
+
