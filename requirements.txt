@@ -72,3 +72,4 @@ wcwidth==0.2.5
 webassets==2.0
 webencodings==0.5.1
 zipp==3.6.0
+livereload==2.6.3
