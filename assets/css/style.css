@@ -90,3 +90,151 @@ h2 {
   font-weight: 200;
 }
 
+/* Rotating digits */
+
+
+@keyframes rotating-zero {
+  from { transform: rotateX(0deg); }
+  to { transform: rotateX(360deg); }
+}
+
+.rotate-zero {
+  animation-duration: 5s;
+  animation-name: rotating-zero;
+}
+
+@keyframes rotating-one {
+  from { transform: rotateX(0deg); }
+  to { transform: rotateX(324deg); }
+}
+
+.rotate-one {
+  animation-duration: 4.5s;
+  animation-name: rotating-one;
+}
+
+@keyframes rotating-two {
+  from { transform: rotateX(0deg); }
+  to { transform: rotateX(288deg); }
+}
+
+.rotate-two {
+  animation-duration: 4s;
+  animation-name: rotating-two;
+}
+
+@keyframes rotating-three {
+  from { transform: rotateX(0deg); }
+  to { transform: rotateX(252deg); }
+}
+
+.rotate-three {
+  animation-duration: 3.5s;
+  animation-name: rotating-three;
+}
+
+@keyframes rotating-four {
+  from { transform: rotateX(0deg); }
+  to { transform: rotateX(216deg); }
+}
+
+.rotate-four {
+  animation-duration: 3s;
+  animation-name: rotating-four;
+}
+
+@keyframes rotating-five {
+  from { transform: rotateX(0deg); }
+  to { transform: rotateX(180deg); }
+}
+
+.rotate-five {
+  animation-duration: 2.5s;
+  animation-name: rotating-five;
+}
+
+@keyframes rotating-six {
+  from { transform: rotateX(0deg); }
+  to { transform: rotateX(144deg); }
+}
+
+.rotate-six {
+  animation-duration: 2s;
+  animation-name: rotating-six;
+}
+
+@keyframes rotating-seven {
+  from { transform: rotateX(0deg); }
+  to { transform: rotateX(108deg); }
+}
+
+.rotate-seven {
+  animation-duration: 1.5s;
+  animation-name: rotating-seven;
+}
+
+@keyframes rotating-eight {
+  from { transform: rotateX(0deg); }
+  to { transform: rotateX(72deg); }
+}
+
+.rotate-eight {
+  animation-duration: 1s;
+  animation-name: rotating-eight;
+}
+
+@keyframes rotating-nine {
+  from { transform: rotateX(0deg); }
+  to { transform: rotateX(36deg); }
+}
+
+.rotate-nine {
+  animation-duration: 0.5s;
+  animation-name: rotating-nine;
+}
+
+.cylinder {
+  position: relative;
+  z-index: -1;
+  display: block;
+  margin-top: 0.5em;
+  animation-iteration-count: 1;
+  animation-delay: 750ms;
+  animation-timing-function: ease-out;
+  transform-style: preserve-3d;
+  animation-fill-mode: forwards;
+}
+
+.cylinder > b {
+  position: absolute;
+  top: -0.5em;
+  left: 0;
+  display: block;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  line-height: 1.0;
+  backface-visibility: hidden;
+}
+
+.digit {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 110%;
+  width: 0.9em;
+  height: 1em;
+  border: 0;
+  vertical-align: middle;
+  font-weight: bolder;
+}
+
+.cylinder > b.zero  { transform: rotateX(  0deg) translateZ(1.538em); }
+.cylinder > b.one  { transform: rotateX( 36deg) translateZ(1.538em); }
+.cylinder > b.two  { transform: rotateX( 72deg) translateZ(1.538em); }
+.cylinder > b.three  { transform: rotateX(108deg) translateZ(1.538em); }
+.cylinder > b.four  { transform: rotateX(144deg) translateZ(1.538em); }
+.cylinder > b.five  { transform: rotateX(180deg) translateZ(1.538em); }
+.cylinder > b.six  { transform: rotateX(216deg) translateZ(1.538em); }
+.cylinder > b.seven  { transform: rotateX(252deg) translateZ(1.538em); }
+.cylinder > b.eight  { transform: rotateX(288deg) translateZ(1.538em); }
+.cylinder > b.nine { transform: rotateX(324deg) translateZ(1.538em); }
