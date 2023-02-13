@@ -170,9 +170,6 @@ let app = Vue.createApp({
             return 'cylinder rotate-' + NUMERALS[index];
         },
         showDaysUntil: function() {
-            console.log('go function starts');
-            console.log("this.hundreds:", this.hundreds);
-            console.log('getHundredsClass:', this.getHundredsClass());
             this.hundreds.className = this.getHundredsClass()
             this.tens.className = this.getTensClass();
             this.units.className = this.getUnitsClass();
