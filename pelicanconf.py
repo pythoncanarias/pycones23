@@ -1,3 +1,6 @@
+
+import collections
+
 AUTHOR = 'python españa'
 SITENAME = 'pycones23'
 SITEURL = ''
@@ -29,9 +32,40 @@ DEFAULT_PAGINATION = 10
 
 THEME="theme/pycones23"
 
+
+TEMPLATE_PAGES = {
+    'patrocinios.html': 'patrocinios.html',
+    'principal.html': 'principal.html',
+}
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
 
 
 TITLE = "PyConES 2023"
+
+
+PATROCINIOS_CAT_A="CAT A"
+PATROCINIOS_CAT_B="CAT B"
+
+
+
+PATROCINADORES ={ 
+    PATROCINIOS_CAT_A:[{
+        "nombre":"PSF",
+        "logo":"https://2022.es.pycon.org/theme/images/sponsors/psf.png",
+        "enlace":"https://www.python.org/psf/",
+    },
+    {
+        "nombre":"Europython",
+        "logo":"https://2022.es.pycon.org/theme/images/sponsors/europython.png",
+        "enlace":"https://www.europython-society.org/",
+    }],
+    PATROCINIOS_CAT_B:[{  
+        "nombre":"PyconEs",
+        "logo":"https://2022.es.pycon.org/theme/images/pythonES.svg",
+        "enlace":"https://es.python.org/",
+    }],
+
+
+}
