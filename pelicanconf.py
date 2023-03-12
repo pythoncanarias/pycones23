@@ -36,6 +36,8 @@ THEME="theme/pycones23"
 TEMPLATE_PAGES = {
     'patrocinios.html': 'patrocinios.html',
     'principal.html': 'principal.html',
+    'ciudad.html': 'ciudad.html',
+    'codigo_conducta.html': 'codigo_conducta.html',
 }
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
