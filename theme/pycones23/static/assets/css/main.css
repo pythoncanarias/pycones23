@@ -209,6 +209,10 @@ body {
   }
 }
 
+
+/*
+Galeria flex para usar en mas sitios
+*/
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -227,4 +231,11 @@ body {
   height: auto;
   vertical-align: middle;
   border-radius: 5px;
+}
+
+.background_1 {
+  background-image: url(/theme/assets/images/burbuja_landing.png), url(/theme/assets/images/burbuja_landing.pn);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+
 }
