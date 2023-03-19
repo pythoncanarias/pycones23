@@ -228,32 +228,44 @@ Galeria flex para usar en mas sitios
   border-radius: 5px;
 }
 
+/*
 .background_1 {
   background-image: url(/theme/assets/images/burbuja_landing.png), url(/theme/assets/images/burbuja_landing.png);
   background-position: right bottom, left top;
   background-repeat: no-repeat, repeat;
+}*/
+
+.button {
+  background-color: var(--purple-color); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
 }
 
-.grid-container {
+
+
+
+.wrapper {
   display: grid;
-  grid-gap: 0.5em;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-gap: 150px;
+  background-color: #fff;
 }
 
+.box {
 
-.card {
-  height: max-content;
+  border-radius: 5px;
+  padding: 20px;
+  margin-left: 20px;
+  font-size: 150%;
 }
 
-.card-image {
-  display: block;
-  position: relative;
-}
-.card-footer {
-  padding: 0.5em;
-}
-.container {
-  flex-grow: 1;
-  margin: 0 auto;
-  position: relative;
-  width: auto;
+.card__image-container > a > img {
+  max-width:150px;
+  max-height:150px;
 }
