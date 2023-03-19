@@ -234,8 +234,32 @@ Galeria flex para usar en mas sitios
 }
 
 .background_1 {
-  background-image: url(/theme/assets/images/burbuja_landing.png), url(/theme/assets/images/burbuja_landing.pn);
+  background-image: url(/theme/assets/images/burbuja_landing.png), url(/theme/assets/images/burbuja_landing.png);
   background-position: right bottom, left top;
   background-repeat: no-repeat, repeat;
 
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+
+.card {
+  height: max-content;
+}
+
+.card-image {
+  display: block;
+  position: relative;
+}
+.card-footer {
+  padding: 0.5em;
+}
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
 }

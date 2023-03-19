@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<h1 class="main-title">
+    Call for Papers
+</h1>
+
+<section class="section">
+    <div class="container">
+        <h2 class="title is-2">Ediciones pasadas</h2>
+        <hr>
+        <div class="grid-container" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));">
+            {% for edition in PAST_EDITIONS %}
+            <div class="card">
+                <div class="card-image" style="text-align: center">
+                    <a href="{{ edition.url }}" target="_blank">
+                        <figure class="image is-square">
+                            <img src="{{ edition.logo }}" alt="{{ edition.name }}">
+                        </figure>
+                    </a>
+                    <footer class="card-footer">
+                        <p>{{ edition.name }}</p>
+                    </footer>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
