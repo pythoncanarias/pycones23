@@ -163,10 +163,6 @@ body {
   padding: 1rem;
 }
 
-.footer .info {
-  border-bottom: 1px solid var(--divisor-color);
-}
-
 .footer .links .link {
   display: block;
 }
@@ -190,12 +186,6 @@ body {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .footer .info {
-    flex: 0 1 27rem;
-    border-bottom: 0;
-    border-right: 1px solid var(--divisor-color);
   }
 
   .footer .links {
@@ -222,7 +212,7 @@ Galeria flex para usar en mas sitios
 
 .image-gallery > li {
   list-style-type: none;
-  flex-basis: 350px; 
+  flex-basis: 350px;
 }
 
 .image-gallery li img {
@@ -237,5 +227,4 @@ Galeria flex para usar en mas sitios
   background-image: url(/theme/assets/images/burbuja_landing.png), url(/theme/assets/images/burbuja_landing.pn);
   background-position: right bottom, left top;
   background-repeat: no-repeat, repeat;
-
 }
