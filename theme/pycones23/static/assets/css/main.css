@@ -159,16 +159,18 @@ body {
 }
 
 .footer .footer-section {
-  flex: 1;
   padding: 1rem;
 }
 
-.footer .info {
-  border-bottom: 1px solid var(--divisor-color);
+.footer .links {
+  display: flex;
+  gap: 0.5rem 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer .links .link {
-  display: block;
+  padding: 0.5rem 1rem;
 }
 
 .footer .social {
@@ -183,23 +185,16 @@ body {
 @media (min-width: 63rem) {
   .footer {
     flex-direction: row;
+    align-items: center;
   }
 
   .footer .footer-section {
-    padding-top: 1rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .footer .info {
-    flex: 0 1 27rem;
-    border-bottom: 0;
-    border-right: 1px solid var(--divisor-color);
+    padding: 1.3rem 1.5rem;
   }
 
   .footer .links {
     flex: 1;
+    justify-content: left;
   }
 
   .footer .social {
@@ -222,7 +217,7 @@ Galeria flex para usar en mas sitios
 
 .image-gallery > li {
   list-style-type: none;
-  flex-basis: 350px; 
+  flex-basis: 350px;
 }
 
 .image-gallery li img {
@@ -237,7 +232,6 @@ Galeria flex para usar en mas sitios
   background-image: url(/theme/assets/images/burbuja_landing.png), url(/theme/assets/images/burbuja_landing.png);
   background-position: right bottom, left top;
   background-repeat: no-repeat, repeat;
-
 }
 
 .grid-container {
