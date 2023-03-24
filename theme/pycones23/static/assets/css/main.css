@@ -34,6 +34,10 @@ a {
   color: inherit;
 }
 
+h2{
+  color:var(--purple-color)
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -83,6 +87,11 @@ body {
 .header .menu .menu-link:hover {
   background-color: rgb(0 0 0 / 4%);
 }
+
+
+
+
+
 
 @media (min-width: 34rem) {
   .header .menu .menu-link {
@@ -145,6 +154,34 @@ body {
   margin-bottom: 1rem;
 }
 
+.button {
+  background-color: var(--purple-color); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+.box-intro{
+  background-color: var(--purple-color);
+  color: white;
+  padding: 100px;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius:10px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  
+}
+
 
 .content-wrapper .content p {
   margin-top: 1rem;
@@ -155,6 +192,9 @@ body {
 @media (min-width: 63rem) {
   .content-wrapper .content {
     padding: 1.5rem 2rem;
+  }
+  .box-intro {
+    flex-direction: row;
   }
 }
 
@@ -216,34 +256,17 @@ body {
 
 
 
-
 /*
-BOTÓN y HEADER
+EXTRAS
 */
 
-.button {
-  background-color: var(--purple-color); 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-
-}
-
-h2{
-  color:#8800c4
-}
 
 
-.inline-index {
-  display: flex;
-  flex-direction: row;
-  padding: 5px;
 
-}
+
+/*
+MAIN BOX 
+*/
 
 
 
@@ -279,7 +302,7 @@ Ediciones Anteriores
 Gradiente para menú ticket
 */
 .menu-link-tickets:hover {
-	background: linear-gradient(-45deg, var(--purple-color), #e73c7e);
+	background: linear-gradient(-45deg, rgb(255, 238, 0), #e78f3c);
 	background-size: 100% 100%;
 	animation: gradient 15s ease infinite;
   color: white;
@@ -418,4 +441,40 @@ Sección de fotos polaroid
   right: 5%;
   box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
   transition: all 0.35s;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
