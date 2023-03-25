@@ -1,0 +1,19 @@
+name: Deploy
+
+on:
+  # Trigger the workflow on push on main branch,
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with: 
+        submodules: 'true'
+    - uses: rehanhaider/pelican-to-github-pages@v1.0.3
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        GH_PAGES_CNAME: ${{secrets.DOMAIN_CNAME}}
