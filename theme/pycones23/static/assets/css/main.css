@@ -89,8 +89,22 @@ body {
 }
 
 
+.box-intro{
+  background-color: var(--purple-color);
+  color: white;
+  padding: 100px;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius:10px;
+}
 
-
+.caption {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+}
 
 
 @media (min-width: 23rem) {
@@ -101,6 +115,11 @@ body {
     background: linear-gradient(135deg, hsla(224, 75%, 45%, 1) 0%, hsla(324, 75%, 45%, 1) 100%);
     color:white;
   }
+  .box-intro{
+    display: block;
+
+  }
+
 }
 
 @media (min-width: 63rem) {
@@ -134,6 +153,12 @@ body {
   .header .menu .menu-link-tickets {
     border-left: 1px solid var(--divisor-color);
   }
+
+  .box-intro{
+    display: flex;
+
+  }
+  
 }
 
 /* CONTENT */
@@ -165,16 +190,8 @@ body {
   font-size: 16px;
 
 }
-.box-intro{
-  background-color: var(--purple-color);
-  color: white;
-  padding: 100px;
-  margin-top: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius:10px;
-}
+
+
 
 .center {
   margin: auto;
@@ -195,6 +212,9 @@ body {
   }
   .box-intro {
     flex-direction: row;
+  }
+  .caption {
+    font-size: 0.8rem;
   }
 }
 
@@ -251,6 +271,9 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: right;
+  }
+  .caption {
+    font-size: 0.8rem;
   }
 }
 
@@ -381,11 +404,7 @@ Sección de fotos polaroid
   max-width: 100%;
   height: auto;
 }
-.caption {
-  font-size: 1.8rem;
-  text-align: center;
-  line-height: 2em;
-}
+
 .item {
   width: 49%;
   display: inline-block;
