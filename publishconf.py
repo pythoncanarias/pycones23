@@ -4,10 +4,24 @@
 import os
 import sys
 sys.path.append(os.curdir)
-from pelicanconf import *
+
+
+
+
+
+
+FLAG = os.getenv('FLAG', 'landing')
+SITEURL = os.getenv('SITEURL', 'https://2023.es.pycon.org/')
+
+if FLAG == 'landing':
+    from pelicanconf_landing import *
+elif FLAG == 'main':
+    from pelicanconf import *
+
+
+
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = 'https://2023.es.pycon.org/'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'

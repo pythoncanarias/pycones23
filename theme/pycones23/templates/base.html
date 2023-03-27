@@ -8,16 +8,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/1e6758f1b5.js" crossorigin="anonymous"></script>
   <link href="https://fonts.cdnfonts.com/css/raleway-5" rel="stylesheet">
-  <link rel="stylesheet" href="/theme/assets/css/main.css">
-  <link rel="icon" type="image/svg+xml" href="/theme/assets/logo/favicon.svg">
-  <link rel="icon" type="image/png" href="/theme/assets/logo/favicon.png">
+  <link rel="stylesheet" href="theme/assets/css/main.css">
+  <link rel="icon" type="image/svg+xml" href="theme/assets/logo/favicon.svg">
+  <link rel="icon" type="image/png" href="theme/assets/logo/favicon.png">
   <title>PyConEs Canarias 2023</title>
+  <style>
+    .content-wrapper {
+      background-image:url({{ SITEURL }}/theme/assets/images/linea_landing.png), url({{ SITEURL }}/theme/assets/images/linea7_landing.png);
+      background-position: center , center;
+      background-repeat: no-repeat, no-repeat;
+      min-height: 100px;
+      background-size: cover,cover;
+    }
+  </style>
+
 </head>
 
 <body>
   <header class="header">
-    <a href="/" class="logo-wrapper">
-      <img class="logo" src="/theme/assets/logo/logo-white.svg" alt="Logo de PyConES Canarias 2023" />
+    <a href="." class="logo-wrapper">
+      <img class="logo" src="theme/assets/logo/logo-white.svg" alt="Logo de PyConES Canarias 2023" />
     </a>
 
     {% include "navbar.html" %}
