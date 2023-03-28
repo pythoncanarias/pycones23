@@ -10,7 +10,6 @@
   --background-color: #ffffff;
   --dark-text-color: #000000;
   --text-color: #2b2b2b;
-  --divisor-color: #808080;
   --purple-color: #8800c4;
   --purple-light-color: #f991a1;
 }
@@ -65,7 +64,6 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  border-bottom: 0px solid var(--divisor-color);
 }
 
 .header .logo-wrapper {
@@ -94,7 +92,7 @@ body {
 }
 
 .header .menu .menu-link:hover {
-  background-color: rgb(0 0 0 / 4%);
+  background-color: rgb(0 0 0 / 7%);
 }
 
 
@@ -180,7 +178,6 @@ body {
     margin: 0;
     padding-left: 0.75rem;
     padding-right: 6rem;
-    border-right: 0px solid var(--divisor-color);
   }
 
   .header .logo-wrapper:hover {
@@ -199,7 +196,7 @@ body {
   }
 
   .header .menu .menu-link-tickets {
-    border-left: 1px solid var(--divisor-color);
+    border-left: 1px solid rgb(0 0 0 / 15%);
   }
 
   .box-intro{
@@ -276,7 +273,6 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid var(--divisor-color);
   flex-wrap: wrap;
 }
 
