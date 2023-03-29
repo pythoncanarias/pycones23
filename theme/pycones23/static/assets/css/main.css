@@ -647,3 +647,40 @@ Sección de fotos polaroid
   border-right: 12px solid var(--purple-light-color);
   border-left: none;
 }
+
+
+/* Patrocinios */
+:root {
+  --plans-table-border: #403f3f;
+}
+.plans-table {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border: 1px solid var(--plans-table-border);
+}
+.plans-table thead tr {
+  background-color: var(--purple-color);
+  color: #fff;
+  font-weight: bold;
+}
+.plans-table th,
+.plans-table td {
+  padding: 12px 15px;
+  border-top: 1px solid var(--plans-table-border);
+  border-bottom: 1px solid var(--plans-table-border);
+}
+
+.plans-table tbody tr td.benefit-title {
+  text-align: left;
+}
+
+.plans-table tbody tr td.discount {
+  background-color: #f991a1;
+}
+.plans-table tbody tr td.has-benefit {
+  background-color: #f8a800;
+}
+

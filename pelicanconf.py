@@ -115,6 +115,151 @@ C4P_LINK="https://pretalx.com/orga/event/pycones-2023/"
 
 
 ## PATROCINIOS
+PLANES = [
+    {
+        "key": "teide",
+        "titulo": "Teide",
+        "altura": "3.7 km",
+    },
+    {
+        "key": "tamadaba",
+        "titulo": "Tamadaba",
+        "altura": "1.4 km",
+    },
+    {
+        "key": "teneguia",
+        "titulo": "Teneguia",
+        "altura": "430 m",
+    },
+    {
+        "key": "timanfaya",
+        "titulo": "Timanfaya",
+        "altura": "370 m",
+    },
+]
+
+BENEFICIOS = [
+    {
+        "titulo": "Descuento entradas", 
+        "teide": "20%",
+        "tamadaba": "15%",
+        "teneguia": "10%",
+        "timanfaya": "5%",
+    },
+    {
+        "titulo": "Logo en la Web", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": True,
+        "timanfaya": True,
+    },
+    {
+        "titulo": "Obsequio paquete bienvenida", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": True,
+        "timanfaya": True,
+    },
+    {
+        "titulo": "Acceso Add-ons", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": True,
+        "timanfaya": True,
+    },
+    {
+        "titulo": "Publicaciones en RRSS", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": True,
+        "timanfaya": True,
+    },
+    {
+        "titulo": "Publicar ofertas de trabajo", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": True,
+        "timanfaya": True,
+    },
+    {
+        "titulo": "Folleto en paquete bienvenida", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": True,
+        "timanfaya": False,
+    },
+    {
+        "titulo": "Logo cartelería", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": True,
+        "timanfaya": False,
+    },
+    {
+        "titulo": "Anuncio en programa", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": True,
+        "timanfaya": False,
+    },
+    {
+        "titulo": "Stand", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": True,
+        "timanfaya": False,
+    },
+    {
+        "titulo": "Logo newsletter", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": True,
+        "timanfaya": False,
+    },
+    {
+        "titulo": "Logo al proyectar en pausas", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": False,
+        "timanfaya": False,
+    },
+    {
+        "titulo": "Charla Patrocinada", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": False,
+        "timanfaya": False,
+    },
+    {
+        "titulo": "Agradecimiento en vivo", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": False,
+        "timanfaya": False,
+    },
+    {
+        "titulo": "Notas de prensa", 
+        "teide": True,
+        "tamadaba": True,
+        "teneguia": False,
+        "timanfaya": False,
+    },
+    {
+        "titulo": "Miembro jurado", 
+        "teide": True,
+        "tamadaba": False,
+        "teneguia": False,
+        "timanfaya": False,
+    },
+    {
+        "titulo": "Entrega premio", 
+        "teide": True,
+        "tamadaba": False,
+        "teneguia": False,
+        "timanfaya": False,
+    }
+]
+
 
 PATROCINIOS_CAT_A="CAT A"
 PATROCINIOS_CAT_B="CAT B"
