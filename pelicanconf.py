@@ -140,3 +140,20 @@ PATROCINADORES ={
 
 
 }
+
+
+### NOTICIAS
+
+NOTICIAS = [
+    {
+        "titulo":"¡Lanzamiento del sitio web!",
+        "fecha":"2023.03.XX",
+        "contenido":"Ya hemos publicado la primera versión del sitio web de la conferencia con algunas secciones importantes para las personas interesadas en participar. Estaremos publicando más actualizaciones en las siguientes semanas",
+    },
+        {
+        "titulo":"¡Lanzamiento del sitio web!",
+        "fecha":"2023.03.XX",
+        "contenido":"Ya hemos publicado la primera versión del sitio web de la conferencia con algunas secciones importantes para las personas interesadas en participar. Estaremos publicando más actualizaciones en las siguientes semanas",
+    },
+    
+    ]
