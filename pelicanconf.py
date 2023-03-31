@@ -105,13 +105,13 @@ PAST_EDITIONS=[
 
 ## CALL FOR SPONSORS
 
-SPONSORS_DOSSIER_ES="" 
+SPONSORS_DOSSIER_ES=""
 SPONSORS_DOSSIER_EN=""
 
 
 ## CALL FOR PAPERS
 
-C4P_LINK="https://pretalx.com/orga/event/pycones-2023/"
+C4P_LINK="https://charlas.2023.es.pycon.org"
 
 
 ## PATROCINIOS
@@ -140,119 +140,119 @@ PLANES = [
 
 BENEFICIOS = [
     {
-        "titulo": "Descuento entradas", 
+        "titulo": "Descuento entradas",
         "teide": "20%",
         "tamadaba": "15%",
         "teneguia": "10%",
         "timanfaya": "5%",
     },
     {
-        "titulo": "Logo en la Web", 
+        "titulo": "Logo en la Web",
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": True,
     },
     {
-        "titulo": "Obsequio paquete bienvenida", 
+        "titulo": "Obsequio paquete bienvenida",
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": True,
     },
     {
-        "titulo": "Acceso Add-ons", 
+        "titulo": "Acceso Add-ons",
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": True,
     },
     {
-        "titulo": "Publicaciones en RRSS", 
+        "titulo": "Publicaciones en RRSS",
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": True,
     },
     {
-        "titulo": "Publicar ofertas de trabajo", 
+        "titulo": "Publicar ofertas de trabajo",
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": True,
     },
     {
-        "titulo": "Folleto en paquete bienvenida", 
+        "titulo": "Folleto en paquete bienvenida",
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": False,
     },
     {
-        "titulo": "Logo cartelería", 
+        "titulo": "Logo cartelería",
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": False,
     },
     {
-        "titulo": "Anuncio en programa", 
+        "titulo": "Anuncio en programa",
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": False,
     },
     {
-        "titulo": "Stand", 
+        "titulo": "Stand",
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": False,
     },
     {
-        "titulo": "Logo newsletter", 
+        "titulo": "Logo newsletter",
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": False,
     },
     {
-        "titulo": "Logo al proyectar en pausas", 
+        "titulo": "Logo al proyectar en pausas",
         "teide": True,
         "tamadaba": True,
         "teneguia": False,
         "timanfaya": False,
     },
     {
-        "titulo": "Charla Patrocinada", 
+        "titulo": "Charla Patrocinada",
         "teide": True,
         "tamadaba": True,
         "teneguia": False,
         "timanfaya": False,
     },
     {
-        "titulo": "Agradecimiento en vivo", 
+        "titulo": "Agradecimiento en vivo",
         "teide": True,
         "tamadaba": True,
         "teneguia": False,
         "timanfaya": False,
     },
     {
-        "titulo": "Notas de prensa", 
+        "titulo": "Notas de prensa",
         "teide": True,
         "tamadaba": True,
         "teneguia": False,
         "timanfaya": False,
     },
     {
-        "titulo": "Miembro jurado", 
+        "titulo": "Miembro jurado",
         "teide": True,
         "tamadaba": False,
         "teneguia": False,
         "timanfaya": False,
     },
     {
-        "titulo": "Entrega premio", 
+        "titulo": "Entrega premio",
         "teide": True,
         "tamadaba": False,
         "teneguia": False,
@@ -266,7 +266,7 @@ PATROCINIOS_CAT_B="CAT B"
 
 
 
-PATROCINADORES ={ 
+PATROCINADORES ={
     PATROCINIOS_CAT_A:[{
         "nombre":"PSF",
         "logo":"https://2022.es.pycon.org/theme/images/sponsors/psf.png",
@@ -277,7 +277,7 @@ PATROCINADORES ={
         "logo":"https://2022.es.pycon.org/theme/images/sponsors/europython.png",
         "enlace":"https://www.europython-society.org/",
     }],
-    PATROCINIOS_CAT_B:[{  
+    PATROCINIOS_CAT_B:[{
         "nombre":"PyconEs",
         "logo":"https://2022.es.pycon.org/theme/images/pythonES.svg",
         "enlace":"https://es.python.org/",
@@ -300,5 +300,5 @@ NOTICIAS = [
         "fecha":"2023.03.XX",
         "contenido":"Ya hemos publicado la primera versión del sitio web de la conferencia con algunas secciones importantes para las personas interesadas en participar. Estaremos publicando más actualizaciones en las siguientes semanas",
     },
-    
+
     ]
