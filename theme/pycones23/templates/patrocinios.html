@@ -34,8 +34,7 @@
       <th></th>
       {% for plan in PLANES %}
       <th>
-        <div>{{ plan.titulo }}</div>
-        <div>{{ plan.altura }}</div>
+        <img src="{{ plan.image }}" class="plan-image" alt="{{ plan.titulo }} {{ plan.altura }}" />
       </th>
       {% endfor %}
     </tr>

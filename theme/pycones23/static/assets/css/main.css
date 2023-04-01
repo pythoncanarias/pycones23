@@ -219,7 +219,7 @@ body {
 }
 
 .content-wrapper .content {
-  padding: 1.8rem 1.2rem;
+  padding: 1.8rem 1.2rem 2.6rem 1.2rem;
   max-width: 70rem;
 }
 
@@ -264,7 +264,7 @@ body {
 
 @media (min-width: 22.5rem) {
   .content-wrapper .content {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2rem 2.3rem 2rem;
   }
   .box-intro {
     flex-direction: row;
@@ -650,33 +650,35 @@ Sección de fotos polaroid
 
 
 /* Patrocinios */
-:root {
-  --plans-table-border: #403f3f;
-}
 .plans-table {
   background-color: white;
   width: 100%;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
   border-collapse: collapse;
-  border: 1px solid var(--plans-table-border);
 }
-.plans-table thead tr {
-  background-color: var(--purple-color);
-  color: #fff;
-  font-weight: bold;
-}
+
 .plans-table th,
 .plans-table td {
   padding: 12px 15px;
-  border-top: 1px solid var(--plans-table-border);
-  border-bottom: 1px solid var(--plans-table-border);
 }
 
+.plans-table thead tr {
+  background-color: var(--purple-color);
+  border: 1px solid var(--purple-color);
+  color: #fff;
+  font-weight: bold;
+}
+.plans-table thead tr th .plan-image {
+  width: 7rem;
+}
+
+.plans-table tbody tr {
+  border: 1px solid #161c3d69;
+}
 .plans-table tbody tr td.benefit-title {
   text-align: left;
 }
-
 .plans-table tbody tr td.discount {
   background-color: #f991a1;
 }
