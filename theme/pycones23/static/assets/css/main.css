@@ -93,7 +93,11 @@ body {
 }
 
 .header .menu .menu-link:hover {
-  background-color: rgb(0 0 0 / 7%);
+  background-color: rgb(8 4 38 / 7%);
+}
+
+.header .menu .menu-link.menu-link-active {
+  background-color: rgb(8 4 38 / 12%);
 }
 
 

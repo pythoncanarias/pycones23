@@ -1,10 +1,19 @@
 <nav class="menu">
-    <a class="menu-link {{active}}" href="ciudad.html">Ciudad</a>
-    <a class="menu-link {{active}}" href="patrocinios.html">Patrocinadores</a>
-    <!--<a class="menu-link" href="/pages/mapa.html">Mapa</a>-->
-    <a class="menu-link" href="c4p.html">Call for Papers</a>
-    <!--<a class="menu-link" href="/pages/conferencias.html">Conferencias</a>-->
-    <a class="menu-link" href="ediciones_anteriores.html">Ediciones anteriores</a>
-    <!--<a class="menu-link" href="/codigo_conducta.html">Código de Conducta</a>-->
-    <!--<a class="menu-link menu-link-tickets tickets" href="">Entradas</a>-->
+    <a href="ciudad.html" class="menu-link {% if output_file == 'ciudad.html' %}menu-link-active{% endif %}">
+        Ciudad
+    </a>
+    <a href="patrocinios.html" class="menu-link {% if output_file == 'patrocinios.html' %}menu-link-active{% endif %}">
+        Patrocinadores
+    </a>
+    <!--<a href="/pages/mapa.html" class="menu-link">Mapa</a>-->
+    <a href="c4p.html" class="menu-link {% if output_file == 'c4p.html' %}menu-link-active{% endif %}">
+        Call for Papers
+    </a>
+    <!--<a href="/pages/conferencias.html" class="menu-link">Conferencias</a>-->
+    <a href="ediciones_anteriores.html"
+        class="menu-link {% if output_file == 'ediciones_anteriores.html' %}menu-link-active{% endif %}">
+        Ediciones anteriores
+    </a>
+    <!--<a href="/codigo_conducta.html" class="menu-link">Código de Conducta</a>-->
+    <!--<a href="" class="menu-link menu-link-tickets tickets">Entradas</a>-->
 </nav>
