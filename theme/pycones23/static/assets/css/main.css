@@ -12,6 +12,7 @@
   --text-color: #2b2b2b;
   --purple-color: #8800c4;
   --purple-light-color: #f991a1;
+  --purple-gradient: linear-gradient(45deg, var(--purple-color), #9c06de); 
 }
 
 *,
@@ -230,7 +231,7 @@ body {
 }
 
 .button {
-  background-color: var(--purple-color); 
+  background: var(--purple-gradient);
   border: none;
   color: white;
   text-align: center;
@@ -240,7 +241,9 @@ body {
   padding: 1rem 2.7rem;
   border-radius: 2px;
 }
-
+.button:hover, .button:focus {
+  opacity: 0.9;
+}
 
 .center {
   margin: auto;
