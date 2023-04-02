@@ -12,7 +12,7 @@
   --text-color: #2b2b2b;
   --purple-color: #8800c4;
   --purple-light-color: #f991a1;
-  --purple-gradient: linear-gradient(45deg, var(--purple-color), #9c06de); 
+  --purple-gradient: linear-gradient(45deg, var(--purple-color), #9c06de);
 }
 
 *,
@@ -750,7 +750,7 @@ Sección de fotos polaroid
   color: white;
 }
 
-.is-info {
+.org-is-info {
   background-color: gray;
 }
 
