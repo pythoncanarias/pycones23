@@ -97,7 +97,7 @@ body {
 
 
 .news-box{
-  
+
   background: linear-gradient(135deg, #fa7109 0%, rgb(214, 49, 20) 100%);
   color: white;
   padding: 30px;
@@ -126,7 +126,7 @@ body {
   justify-content: center;
   border-radius:10px;
 
-  
+
   opacity: 1.2;
   background-image: url('../images/fondo_expo.png');
   background-repeat: no-repeat;
@@ -206,9 +206,9 @@ body {
 
   .box-intro > div > img {
     width:400px;
-  
+
   }
-  
+
 }
 
 /* CONTENT */
@@ -230,7 +230,7 @@ body {
 }
 
 .button {
-  background-color: var(--purple-color); 
+  background-color: var(--purple-color);
   border: none;
   color: white;
   text-align: center;
@@ -493,8 +493,8 @@ Sección de fotos polaroid
   bottom: 30px;
   right: 12px;
   box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
-  
-  
+
+
 }
 .item:nth-of-type(4n+3) {
   transform: scale(0.8, 0.8) rotate(-3deg);
@@ -512,13 +512,13 @@ Sección de fotos polaroid
   filter: none;
   transform: scale(2.8, 2.8) rotate(0deg) !important;
   transition: all 0.35s;
-  
+
 }
 .item:hover .polaroid:before {
   content: '';
   z-index: -1;
   position: absolute;
-  
+
   transform: rotate(0deg);
   height: 90%;
   width: 90%;
@@ -682,5 +682,66 @@ Sección de fotos polaroid
 }
 .plans-table tbody tr td.has-benefit {
   background-color: #f8a800;
+}
+
+.social-button {
+  background-color: var(--purple-color);
+  color: white;
+  border-color: 1px solid #2d2d2d;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  border-width: 1px;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0.5em 1em 0.5em 1em;
+  margin: 0.3rem;
+}
+
+.social-buttons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.social-buttons.is-right {
+    justify-content: flex-end;
+}
+
+.image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.image.is-64x64 {
+  height: 64px;
+  width: 64px;
+}
+
+.image img.is-rounded {
+  border-radius: 99999px;
+}
+
+.is-size-5 {
+  font-size: 0.9rem !important;
+}
+
+.list-item-content {
+  line-height: 0.8;
+}
+
+.tag {
+  background-color: #204ac8;
+  border-radius: 5px;
+  padding: 0.3rem;
+  color: white;
+}
+
+.is-info {
+  background-color: gray;
 }
 
