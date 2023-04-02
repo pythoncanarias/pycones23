@@ -554,3 +554,15 @@ ORG = [
 # Shuffle team per deployment
 import random
 random.shuffle(ORG)
+
+
+CRONOGRAMA = [
+    {"fecha": "Febrero", "desc": "¡Presentamos la PyConES en Canarias!"},
+    # TODO: Agregar la fecha cuando se lance el sitio
+    {"fecha": "Abril", "desc": "Abrimos envío de propuestas de ponencias y talleres 🗒️"},
+    {"fecha": "Abril", "desc": "Apertura para la venta de entradas 🎟️"},
+    {"fecha": "Abril", "desc": "Apertura para la postulación de becas 🧞"},
+    {"fecha": "23 de Junio", "desc": "Cierre del llamado de ponencias y talleres ✋"},
+    {"fecha": "9 de Julio", "desc": "Anuncio de propuestas de ponencias y talleres aceptadas 🏆"},
+    {"fecha": "6 de Octubre", "desc": "¡Comienza la conferencia! 🐍"},
+]

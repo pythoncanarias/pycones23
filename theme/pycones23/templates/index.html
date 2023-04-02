@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
- 
+
 <div class="box-intro">
    <div>
       <img src="theme/assets/logo/logo-white.svg" >
@@ -9,7 +9,7 @@
    <div >
       Os damos la bienvenida a la PyConES, la conferencia de Python más importante de España.
       Un evento que reunirá a cientos de entusiastas de Python, con una agenda increíble en la mejor localización posible.
-      Y si queres formar parte de nuestros patrocinadores y participar con nosotros para hacer de este un evento aún mas impresionante puedes 
+      Y si queres formar parte de nuestros patrocinadores y participar con nosotros para hacer de este un evento aún mas impresionante puedes
       tener tu espacio dentro del evento.
       <h1>
          6, 7 y 8 de octubre
@@ -21,7 +21,7 @@
 
 {% for noticia in NOTICIAS %}
 <div class="news-box">
-   <div class="news-title">{{ noticia.titulo }} <span>{{ noticia.fecha }}</span></div> 
+   <div class="news-title">{{ noticia.titulo }} <span>{{ noticia.fecha }}</span></div>
    <div class="news-content">
       {{ noticia.contenido }}
    </div>
@@ -30,40 +30,16 @@
 
 
 <h1>Cronograma del evento</h1>
-
-      <br>
-      <div class="linea-tiempo center">
-         <div class="momento">
-           <h4>Febrero</h4>
-           <div class="descripcion">
-             Presentamos la PyconES en Canarias!
-           </div>
-         </div>
-         <div class="momento">
-           <h4>Marzo</h4>
-           <div class="descripcion">
-            <b>Abrimos envío de propuesta a ponencias</b>
-           </div>
-         </div>
-         <div class="momento">
-            <h4>Abril</h4>
-            <div class="descripcion">
-               <b>Apertura para la venta de entradas</b>
-               
-            </div>
-          </div>
-      
-       </div>
-
-
-
-<br>
-<br>
-
-
- <br>
- <br>
- <br>
- <br>
-
+<p>A continuación podrás ver algunos hitos importantes de la conferencia.</p>
+<p>En caso que la fecha exacta no esté disponible, se confirmará lo antes posible.</p>
+<div class="linea-tiempo center">
+  {% for item in CRONOGRAMA %}
+  <div class="momento">
+     <h4>{{ item['fecha'] }}</h4>
+    <div class="descripcion">
+       {{ item['desc'] }}
+    </div>
+  </div>
+  {% endfor %}
+</div>
 {% endblock content %}
