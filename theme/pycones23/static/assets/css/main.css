@@ -12,6 +12,7 @@
   --text-color: #2b2b2b;
   --purple-color: #8800c4;
   --purple-light-color: #f991a1;
+  --purple-gradient: linear-gradient(45deg, var(--purple-color), #9c06de); 
 }
 
 *,
@@ -92,7 +93,11 @@ body {
 }
 
 .header .menu .menu-link:hover {
-  background-color: rgb(0 0 0 / 7%);
+  background-color: rgb(8 4 38 / 7%);
+}
+
+.header .menu .menu-link.menu-link-active {
+  background-color: rgb(8 4 38 / 12%);
 }
 
 
@@ -219,7 +224,7 @@ body {
 }
 
 .content-wrapper .content {
-  padding: 1.8rem 1.2rem;
+  padding: 1.8rem 1.2rem 2.6rem 1.2rem;
   max-width: 70rem;
 }
 
@@ -230,7 +235,7 @@ body {
 }
 
 .button {
-  background-color: var(--purple-color);
+  background: var(--purple-gradient);
   border: none;
   color: white;
   text-align: center;
@@ -240,7 +245,9 @@ body {
   padding: 1rem 2.7rem;
   border-radius: 2px;
 }
-
+.button:hover, .button:focus {
+  opacity: 0.9;
+}
 
 .center {
   margin: auto;
@@ -264,7 +271,7 @@ body {
 
 @media (min-width: 22.5rem) {
   .content-wrapper .content {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2rem 2.3rem 2rem;
   }
   .box-intro {
     flex-direction: row;
@@ -650,33 +657,35 @@ Sección de fotos polaroid
 
 
 /* Patrocinios */
-:root {
-  --plans-table-border: #403f3f;
-}
 .plans-table {
   background-color: white;
   width: 100%;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
   border-collapse: collapse;
-  border: 1px solid var(--plans-table-border);
 }
-.plans-table thead tr {
-  background-color: var(--purple-color);
-  color: #fff;
-  font-weight: bold;
-}
+
 .plans-table th,
 .plans-table td {
   padding: 12px 15px;
-  border-top: 1px solid var(--plans-table-border);
-  border-bottom: 1px solid var(--plans-table-border);
 }
 
+.plans-table thead tr {
+  background-color: var(--purple-color);
+  border: 1px solid var(--purple-color);
+  color: #fff;
+  font-weight: bold;
+}
+.plans-table thead tr th .plan-image {
+  width: 7rem;
+}
+
+.plans-table tbody tr {
+  border: 1px solid #161c3d69;
+}
 .plans-table tbody tr td.benefit-title {
   text-align: left;
 }
-
 .plans-table tbody tr td.discount {
   background-color: #f991a1;
 }

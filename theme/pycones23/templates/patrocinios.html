@@ -18,10 +18,10 @@
     <p>Para conocer todas las ventajas descarga nuestro folleto para patrocinios.</p>
     <br>
     <div class="center-buttons">
-      <a class="button button-border is-normal is-info is-light m-1" href="{{ SPONSORS_DOSSIER_ES }}" download>
+      <a class="button" href="{{ SPONSORS_DOSSIER_ES }}" download>
         Descargar dosier (ES)
       </a>
-      <a class="button button-border is-normal is-warning is-light m-1" href="{{ SPONSORS_DOSSIER_EN }}" download>
+      <a class="button" href="{{ SPONSORS_DOSSIER_EN }}" download>
         Download brochure (EN)
       </a>
     </div>
@@ -34,8 +34,7 @@
       <th></th>
       {% for plan in PLANES %}
       <th>
-        <div>{{ plan.titulo }}</div>
-        <div>{{ plan.altura }}</div>
+        <img src="{{ plan.image }}" class="plan-image" alt="{{ plan.titulo }} {{ plan.altura }}" />
       </th>
       {% endfor %}
     </tr>

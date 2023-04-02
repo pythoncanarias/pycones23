@@ -120,21 +120,25 @@ PLANES = [
         "key": "teide",
         "titulo": "Teide",
         "altura": "3.7 km",
+        "image": "theme/assets/images/patrocinios/teide_oro.png",
     },
     {
         "key": "tamadaba",
         "titulo": "Tamadaba",
         "altura": "1.4 km",
+        "image": "theme/assets/images/patrocinios/tamadaba_zafiro.png",
     },
     {
         "key": "teneguia",
         "titulo": "Teneguia",
         "altura": "430 m",
+        "image": "theme/assets/images/patrocinios/teneguia_gema.png",
     },
     {
         "key": "timanfaya",
         "titulo": "Timanfaya",
         "altura": "370 m",
+        "image": "theme/assets/images/patrocinios/timanfaya_cobre.png",
     },
 ]
 
