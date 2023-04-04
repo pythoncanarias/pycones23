@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<h1 class="main-title">
+  Patrocinios
+</h1>
+
+<section class="hero is-info">
+  <div class="hero-body">
+    <p>
+      ¿Te gustaría patrocinar la próxima versión del evento más importante sobre desarrollo software con Python?
+      No dudes en ponerte en contacto con la organización para ello.
+    </p>
+    <br>
+    <p>Para conocer todas las ventajas descarga nuestro folleto para patrocinios.</p>
+    <br>
+    <div class="center-buttons">
+      <a class="button" href="{{ SPONSORS_DOSSIER_ES }}" download>
+        Descargar dosier (ES)
+      </a>
+      <a class="button" href="{{ SPONSORS_DOSSIER_EN }}" download>
+        Download brochure (EN)
+      </a>
+    </div>
+  </div>
+</section>
+
+<table class="plans-table">
+  <thead>
+    <tr>
+      <th></th>
+      {% for plan in PLANES %}
+      <th>
+        <img src="{{ plan.image }}" class="plan-image" alt="{{ plan.titulo }} {{ plan.altura }}" />
+      </th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for beneficio in BENEFICIOS %}
+    <tr>
+      <td class="benefit-title">{{ beneficio.titulo }}</td>
+
+      {% for plan in PLANES %}
+
+      {% if beneficio[plan.key] == True %}
+      <td class="has-benefit">
+        <i class="fa-solid fa-check"></i>
+      </td>
+      {% elif beneficio[plan.key] == False %}
+      <td>
+        <i class="fa-solid fa-xmark"></i>
+      </td>
+      {% else %}
+      <td class="discount">{{ beneficio[plan.key] }}</td>
+      {% endif %}
+
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<!--
+<p>
+    Gracias a las empresas que colaboran con la PyConES podemos ofrecer el mejor evento y experiencia posible.
+    Somos una conferencia con un bajo coste de entrada capaz de ofrecer una experiencia de 3 días incluyendo regalos, almuerzos, comidas y meriendas.
+    Además contamos con servicio de guardería, becas y traducción en directo a lenguaje de signos para que nadie se quede fuera.
+    Con la ayuda de estas empresas conseguimos hacer un evento diverso e inclusivo enfocado en cuidar la comunidad de Python.
+</p>
+
+<section class="section">
+
+    {% for key, value in PATROCINADORES.items() %}
+        {% if key == PATROCINIOS_CAT_A %}
+        <h2>{{ PATROCINIOS_CAT_A }}</h2>
+        <ul class="image-gallery">      
+            
+            {% for patrocinador in value %}
+            <li>
+                <a href="{{ patrocinador.enlace }}"><img src="{{ patrocinador.logo }}" alt="" /></a>
+            </li>
+            {% endfor %}
+        </ul>  
+        {% endif %}
+        {% if key == PATROCINIOS_CAT_B %}
+        <h2>{{ PATROCINIOS_CAT_B }}</h2>
+        <ul class="image-gallery">      
+            
+            {% for patrocinador in value %}
+            <li>
+                <a href="{{ patrocinador.enlace }}"><img src="{{ patrocinador.logo }}" alt="" /></a>
+
+            </li>
+            {% endfor %}
+        </ul>  
+        {% endif %}
+
+    {% endfor %}
+-->
+</section>
+{% endblock content %}
