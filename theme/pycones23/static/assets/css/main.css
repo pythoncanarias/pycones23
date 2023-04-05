@@ -65,6 +65,8 @@ body {
 .header {
   display: flex;
   flex-direction: column;
+  background: linear-gradient(135deg, hsla(224, 75%, 45%, 1) 0%, hsla(324, 75%, 45%, 1) 100%);
+  color:white;
 }
 
 .header .logo-wrapper {
@@ -140,7 +142,7 @@ body {
 }
 
 .box-intro > div > img {
-  width:400px;
+  width: 200px;
 }
 
 
@@ -150,26 +152,17 @@ body {
   line-height: 2em;
 }
 
-
 @media (min-width: 22.5rem) {
-  .header .menu .menu-link {
-    flex: 1 1 33.333%;
-  }
-  .header {
-    background: linear-gradient(135deg, hsla(224, 75%, 45%, 1) 0%, hsla(324, 75%, 45%, 1) 100%);
-    color:white;
-  }
   .box-intro{
     display: block;
     padding: 50px;
-
   }
+}
 
-  .box-intro > div > img {
-    width:200px;
+@media (min-width: 30rem) {
+  .header .menu .menu-link {
+    flex: 1 1 33.333%;
   }
-
-
 }
 
 @media (min-width: 63rem) {
@@ -579,8 +572,7 @@ Sección de fotos polaroid
 .linea-tiempo {
   position: relative;
   width: 500px;
-  max-width: 95vw;
-
+  max-width: 100%;
   font-family: Arial;
 }
 
