@@ -516,7 +516,8 @@ Sección de fotos polaroid
   filter: none;
   transform: scale(2.8, 2.8) rotate(0deg) !important;
   transition: all 0.35s;
-
+  position: relative;
+  z-index: 1;
 }
 .item:hover .polaroid:before {
   content: '';
@@ -702,7 +703,7 @@ Sección de fotos polaroid
   }
 }
 
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 50rem) {
   .plans-table {
     font-size: 1rem;
   }
@@ -772,9 +773,11 @@ Sección de fotos polaroid
 }
 
 .tag {
+  display: inline-block;
   background-color: #204ac8;
   border-radius: 5px;
-  padding: 0.3rem;
+  padding: 0.4rem;
+  margin-bottom: 0.3rem;
   color: white;
 }
 
