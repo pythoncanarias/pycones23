@@ -225,6 +225,7 @@ body {
 
 .content-wrapper .content {
   padding: 1.8rem 1.2rem 2.6rem 1.2rem;
+  width: 100%;
   max-width: 70rem;
 }
 
@@ -270,14 +271,17 @@ body {
 }
 
 @media (min-width: 22.5rem) {
-  .content-wrapper .content {
-    padding: 1.5rem 2rem 2.3rem 2rem;
-  }
   .box-intro {
     flex-direction: row;
   }
   .caption {
     font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  .content-wrapper .content {
+    padding: 1.5rem 2rem 2.3rem 2rem;
   }
 }
 
@@ -657,17 +661,23 @@ Sección de fotos polaroid
 
 
 /* Patrocinios */
+.plans-table-scroller {
+  overflow-x: auto;
+}
+
 .plans-table {
   background-color: white;
-  width: 100%;
+  width: 100%;  
+  font-size: 0.8rem;
   text-align: center;
   margin-top: 3rem;
+  margin-bottom: 1px;
   border-collapse: collapse;
 }
 
 .plans-table th,
 .plans-table td {
-  padding: 12px 15px;
+  padding: 0.7rem 0.5rem;
 }
 
 .plans-table thead tr {
@@ -677,7 +687,7 @@ Sección de fotos polaroid
   font-weight: bold;
 }
 .plans-table thead tr th .plan-image {
-  width: 7rem;
+  display: none;
 }
 
 .plans-table tbody tr {
@@ -685,12 +695,38 @@ Sección de fotos polaroid
 }
 .plans-table tbody tr td.benefit-title {
   text-align: left;
+  min-width: 8rem;
 }
 .plans-table tbody tr td.discount {
   background-color: #f991a1;
 }
 .plans-table tbody tr td.has-benefit {
   background-color: #f8a800;
+}
+
+@media screen and (min-width: 32rem) {
+  .plans-table {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  .plans-table {
+    font-size: 1rem;
+  }
+
+  .plans-table th,
+  .plans-table td {
+    padding: 0.7rem 0.9rem;
+  }
+
+  .plans-table thead tr th .plan-image {
+    display: inline-block;
+    width: 7rem;
+  }
+  .plans-table thead tr th .plan-title {
+    display: none;
+  }
 }
 
 .social-button {
