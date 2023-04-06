@@ -107,8 +107,10 @@ PAST_EDITIONS=[
 
 ## CALL FOR SPONSORS
 
-SPONSORS_DOSSIER_ES=""
-SPONSORS_DOSSIER_EN=""
+SPONSORS_DOSSIER_ES="theme/assets/files/pycones2023_patrocinios.pdf"
+SPONSORS_DOSSIER_EN="theme/assets/files/pycones2023_sponsors.pdf"
+SPONSORS_DOSSIER_SUM_ES="theme/assets/files/pycones2023_patrocinios_brief.pdf"
+SPONSORS_DOSSIER_SUM_EN="theme/assets/files/pycones2023_sponsors_brief.pdf"
 
 
 ## CALL FOR PAPERS
