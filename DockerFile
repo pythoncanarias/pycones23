@@ -7,7 +7,7 @@ ENV PORT=8000
 EXPOSE $PORT
 
 RUN apt-get update \
-    && apt-get install --no-install-recommends -qy git curl bash
+    && apt-get install --no-install-recommends -qy git curl bash build-essential
 
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
