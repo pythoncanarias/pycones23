@@ -301,7 +301,7 @@ NOTICIAS = [
     {
         "titulo":"¡Lanzamiento del sitio web!",
         "fecha":"2023-04-06",
-        "contenido":"Ya hemos publicado la primera versión del sitio web de la conferencia con algunas secciones importantes para las personas interesadas en participar. Estaremos publicando más actualizaciones en las siguientes semanas",
+        "contenido":"Os damos la bienvenida a la PyConES, la conferencia de Python más importante de España. Un evento que reunirá a cientos de entusiastas del lenguaje de programación Python, con una agenda increíble en la mejor localización posible. Si quieres formar parte de nuestros patrocinadores para hacer esta conferencia aún mas impresionante puedes disponer de espacio propio dentro del evento.",
     },
        
 
@@ -321,8 +321,8 @@ ORG = [
     },
     {
         "name": "Andrés Orcajo",
-        "title": "...",
-        "img": "",
+        "title": "Senior Python Developer",
+        "img": "theme/assets/images/org/andres.jpeg",
         "community": "",
         "wg": ["Infraestructura", "Voluntariado"],
         "github_username": "",
@@ -400,7 +400,7 @@ ORG = [
         "name": "Jesús Torres Jorge",
         "title": "Profesor y Director Académico",
         "img": "theme/assets/images/org/jesus.jpg",
-        "community": "",
+        "community": "Python Canarias",
         "wg": ["Diversidad", "Infraestructura", "Patrocinios", "Voluntariado"],
         "github_username": "jesustorresdev",
         "twitter_username": "jesustorresdev",
@@ -474,7 +474,7 @@ ORG = [
         "linkedin_url": "",
     },
     {
-        "name": "Jose Torres Aguera",
+        "name": "Jose Alberto Torres Aguera",
         "title": "Technical Leader",
         "img": "theme/assets/images/org/pepe.jpg",
         "community": "Python Málaga",
@@ -497,9 +497,9 @@ ORG = [
     },
     {
         "name": "Sara Medrano Sánchez",
-        "title": "...",
+        "title": "Comercial Sector Energético",
         "img": "theme/assets/images/org/sara.jpeg",
-        "community": "",
+        "community": "Python Granada",
         "wg": ["Programa", "Diversidad", "Infraestructura", "Redes Sociales", "Patrocinios", "Web", "Voluntariado"],
         "github_username": "",
         "twitter_username": "SrtSanz_",
@@ -508,7 +508,7 @@ ORG = [
     },
     {
         "name": "Sergio Delgado Quintero",
-        "title": "Ingeniero Informático y Profesor",
+        "title": "Ingeniero Informático y Profesor en FP",
         "img": "theme/assets/images/org/sergio.jpg",
         "community": "Python Canarias",
         "wg": ["Infraestructura", "Redes Sociales", "Web"],
@@ -520,8 +520,8 @@ ORG = [
     {
         "name": "Silvia García Hernández",
         "title": "Estudiante",
-        "img": "",
-        "community": "",
+        "img": "theme/assets/images/org/silvia.jpg",
+        "community": "Python Canarias",
         "wg": ["Diversidad", "Redes Sociales", "Voluntariado"],
         "github_username": "",
         "twitter_username": "",
@@ -559,10 +559,10 @@ random.shuffle(ORG)
 CRONOGRAMA = [
     {"fecha": "Febrero", "desc": "¡Presentamos la PyConES en Canarias!"},
     # TODO: Agregar la fecha cuando se lance el sitio
-    {"fecha": "Abril", "desc": "Abrimos envío de propuestas de ponencias y talleres 🗒️"},
+    {"fecha": "Abril", "desc": "Apertura para el envío de ponencias y talleres 🗒️"},
     {"fecha": "Abril", "desc": "Apertura para la venta de entradas 🎟️"},
     {"fecha": "Abril", "desc": "Apertura para la postulación de becas 🧞"},
-    {"fecha": "23 de Junio", "desc": "Cierre del llamado de ponencias y talleres ✋"},
-    {"fecha": "9 de Julio", "desc": "Anuncio de propuestas de ponencias y talleres aceptadas 🏆"},
-    {"fecha": "6 de Octubre", "desc": "¡Comienza la conferencia! 🐍"},
+    {"fecha": "23 de Junio", "desc": "Cierre del llamado a ponencias y talleres ✋"},
+    {"fecha": "9 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
+    {"fecha": "6 de Octubre", "desc": "¡Empieza el espectáculo! 🐍"},
 ]
