@@ -40,8 +40,15 @@ h4{
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: inherit
 }
+
+.link {
+  text-decoration: none;
+  color: var(--purple-color);
+  font-weight: bold;
+}
+
 
 h2{
   color:var(--purple-color)
@@ -119,6 +126,7 @@ body {
   font-weight: bold;
   padding-bottom: 20px;
 }
+
 
 
 .box-intro{

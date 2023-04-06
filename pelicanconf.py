@@ -40,6 +40,8 @@ TEMPLATE_PAGES = {
     'c4p.html': 'c4p.html',
     'organizacion.html': 'organizacion.html',
     'ediciones_anteriores.html': 'ediciones_anteriores.html',
+    'viaje.html': 'viaje.html',
+    'CNAME': 'CNAME',
 }
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -296,14 +298,10 @@ PATROCINADORES ={
 NOTICIAS = [
     {
         "titulo":"¡Lanzamiento del sitio web!",
-        "fecha":"2023.03.XX",
+        "fecha":"2023-04-06",
         "contenido":"Ya hemos publicado la primera versión del sitio web de la conferencia con algunas secciones importantes para las personas interesadas en participar. Estaremos publicando más actualizaciones en las siguientes semanas",
     },
-        {
-        "titulo":"¡Lanzamiento del sitio web!",
-        "fecha":"2023.03.XX",
-        "contenido":"Ya hemos publicado la primera versión del sitio web de la conferencia con algunas secciones importantes para las personas interesadas en participar. Estaremos publicando más actualizaciones en las siguientes semanas",
-    },
+       
 
     ]
 

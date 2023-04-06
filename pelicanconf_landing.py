@@ -29,5 +29,9 @@ DEFAULT_PAGINATION = 10
 
 THEME="theme/pycones-landing"
 
+
+TEMPLATE_PAGES = {  
+    'CNAME': 'CNAME',
+}
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
