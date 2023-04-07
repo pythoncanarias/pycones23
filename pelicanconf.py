@@ -40,10 +40,10 @@ TEMPLATE_PAGES = {
     'patrocinios.html': 'patrocinios.html',
     'principal.html': 'principal.html',
     'ciudad.html': 'ciudad.html',
-    'codigo_conducta.html': 'codigo_conducta.html',
+    'coc.html': 'coc.html',
     'c4p.html': 'c4p.html',
     'organizacion.html': 'organizacion.html',
-    'ediciones_anteriores.html': 'ediciones_anteriores.html',
+    'anteriores.html': 'anteriores.html',
     'viaje.html': 'viaje.html',
     'CNAME': 'CNAME',
 }
