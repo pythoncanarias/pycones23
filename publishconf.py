@@ -13,11 +13,8 @@ sys.path.append(os.curdir)
 FLAG = os.getenv('FLAG', 'landing')
 SITEURL = os.getenv('SITEURL', 'https://2023.es.pycon.org/')
 
-#if FLAG == 'landing':
-#    from pelicanconf_landing import *
-#elif FLAG == 'main':
-from pelicanconf import *
-
+#from pelicanconf import *
+from pelicanconf_landing import *
 
 
 
