@@ -1,6 +1,5 @@
 AUTHOR = 'python españa'
 SITENAME = 'pycones23'
-SITEURL = ''
 
 PATH = 'content'
 

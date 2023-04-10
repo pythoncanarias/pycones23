@@ -6,7 +6,6 @@ import sys
 
 sys.path.append(os.curdir)
 
-SITEURL = os.getenv('SITEURL', 'https://2023.es.pycon.org/')
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://

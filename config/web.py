@@ -2,7 +2,6 @@ import random
 
 AUTHOR = 'Python España'
 SITENAME = 'PyConES23'
-SITEURL = 'http://localhost:8080'
 
 PATH = 'content'
 
