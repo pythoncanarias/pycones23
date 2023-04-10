@@ -16,19 +16,19 @@
       Para conocer todas las ventajas que te ofrecen nuestros distintos niveles de patrocinio puedes descargar el folleto informativo:</p>
     <br>
     <div class="center-buttons">
-      <a class="button brochure" href="{{ SPONSORS_DOSSIER_SUM_ES }}" download>
+      <a class="button brochure" href="{{ SITEURL }}{{ SPONSORS_DOSSIER_SUM_ES }}" download>
         Descargar dosier para patrocinadores veteranos (ES)
       </a>
-      <a class="button brochure" href="{{ SPONSORS_DOSSIER_SUM_EN }}" download>
+      <a class="button brochure" href="{{ SITEURL }}{{ SPONSORS_DOSSIER_SUM_EN }}" download>
         Download brochure for senior sponsors (EN)
       </a>
     </div>
     <br>
     <div class="center-buttons">
-      <a class="button brochure" href="{{ SPONSORS_DOSSIER_ES }}" download>
+      <a class="button brochure" href="{{ SITEURL }}{{ SPONSORS_DOSSIER_ES }}" download>
         Descargar dosier para patrocinadores nuevos (ES)  
       </a>
-      <a class="button brochure" href="{{ SPONSORS_DOSSIER_EN }}" download>
+      <a class="button brochure" href="{{ SITEURL }}{{ SPONSORS_DOSSIER_EN }}" download>
         Download brochure for new sponsors (EN)  
       </a>
     </div>
@@ -42,7 +42,7 @@
         <th></th>
         {% for plan in PLANES %}
         <th>
-          <img src="{{ plan.image }}" class="plan-image" alt="{{ plan.titulo }} {{ plan.altura }}" />
+          <img src="{{ SITEURL }}{{ plan.image }}" class="plan-image" alt="{{ plan.titulo }} {{ plan.altura }}" />
           <span class="plan-title">{{ plan.titulo }}</span>
         </th>
         {% endfor %}

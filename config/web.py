@@ -110,7 +110,7 @@ PAST_EDITIONS = [
 
 SPONSORS_DOSSIER_ES = "/theme/assets/files/pycones2023_patrocinios.pdf"
 SPONSORS_DOSSIER_EN = "/theme/assets/files/pycones2023_sponsors.pdf"
-SPONSORS_DOSSIER_SUM_ES = "/theme/assets/files/pycones2023_patrocinios_brief.pdf"
+SPONSORS_DOSSIER_SUM_ES = "/theme/assets/files/pycones2023_patrocinios_breve.pdf"
 SPONSORS_DOSSIER_SUM_EN = "/theme/assets/files/pycones2023_sponsors_brief.pdf"
 
 
