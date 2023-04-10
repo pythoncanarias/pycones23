@@ -1,7 +1,6 @@
 version: "3"
 services:
   pelican-sitebuilder:
-
     build:
       context: .
       dockerfile: Dockerfile
@@ -12,5 +11,5 @@ services:
     environment:
       - SITEURL=http://localhost:8080
       - CONFFILE=pelicanconf.py
-      - PYCONES_BUILD_TARGET=${PYCONES_BUILD_TARGET:-LANDING}
+      - PYCONES_BUILD_TARGET=${PYCONES_BUILD_TARGET:-WEB}
     command: pelican -l content -s pelicanconf.py -r --bind 0.0.0.0
