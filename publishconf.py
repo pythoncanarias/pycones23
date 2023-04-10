@@ -3,32 +3,17 @@
 
 import os
 import sys
+
 sys.path.append(os.curdir)
 
-
-
-
-
-
-FLAG = os.getenv('FLAG', 'landing')
-SITEURL = os.getenv('SITEURL', 'https://2023.es.pycon.org/')
-
-if FLAG == 'main':
-    from pelicanconf import *
-else:    
-    from pelicanconf_landing import *
-
-
+from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 RELATIVE_URLS = False
-
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+# DISQUS_SITENAME = ""
+# GOOGLE_ANALYTICS = ""
