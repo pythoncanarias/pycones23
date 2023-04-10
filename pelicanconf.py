@@ -466,7 +466,7 @@ ORG = [
     },
     {
         "name": "Pablo Benavides",
-        "title": "Modelador de transportes",
+        "title": "Python Lead",
         "img": "/theme/assets/images/org/pablo.jpeg",
         "community": "Python Granada",
         "wg": ["Programa", "Patrocinios"],

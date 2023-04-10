@@ -15,6 +15,7 @@ jobs:
         submodules: 'true'
     - uses: rehanhaider/pelican-to-github-pages@v1.0.3
       env:
+        FLAG: ${{secrets.GITHUB_TOKEN}}
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        GH_PAGES_CNAME: ${{secrets.DOMAIN_CNAME}}
+        GH_PAGES_CNAME: ${{secrets.GH_PAGES_CNAME}}
         SITEURL: ${{secrets.SITEURL}}
