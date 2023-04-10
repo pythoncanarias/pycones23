@@ -37,15 +37,14 @@ THEME = "theme/pycones23"
 
 
 TEMPLATE_PAGES = {
-    'patrocinios.html': 'patrocinios.html',
-    'principal.html': 'principal.html',
-    'ciudad.html': 'ciudad.html',
-    'codigo_conducta.html': 'codigo_conducta.html',
-    'c4p.html': 'c4p.html',
-    'organizacion.html': 'organizacion.html',
-    'ediciones_anteriores.html': 'ediciones_anteriores.html',
-    'viaje.html': 'viaje.html',
     'CNAME': 'CNAME',
+    'c4p.html': 'c4p/index.html',
+    'ciudad.html': 'ciudad/index.html',
+    'codigo_conducta.html': 'codigo_conducta/index.html',
+    'ediciones_anteriores.html': 'ediciones_anteriores/index.html',
+    'organizacion.html': 'organizacion/index.html',
+    'patrocinios.html': 'patrocinios/index.html',
+    'viaje.html': 'viaje/index.html',
 }
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
