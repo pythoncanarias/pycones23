@@ -3,3 +3,4 @@
 .DS_Store
 .python-version
 *.pid
+*.pyc
