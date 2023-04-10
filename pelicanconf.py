@@ -1,8 +1,13 @@
 import collections
+import os
 
 AUTHOR = 'Python España'
 SITENAME = 'pycones23'
-SITEURL = 'http://localhost:8080'
+
+
+SITEURL = os.getenv('SITEURL', 'https://2023.es.pycon.org/')
+
+
 
 PATH = 'content'
 
@@ -49,12 +54,12 @@ TEMPLATE_PAGES = {
 }
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
-
-
 TITLE = "PyConES 2023"
 
 
+
 ## EDICIONES PASADAS
+
 PAST_EDITIONS = [
     {
         "name": "PyConES 2013 - Madrid",
@@ -107,6 +112,9 @@ PAST_EDITIONS = [
         "url": "https://2022.es.pycon.org/",
     },
 ]
+
+
+
 
 ## CALL FOR SPONSORS
 
