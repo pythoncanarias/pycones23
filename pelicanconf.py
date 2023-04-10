@@ -1,7 +1,7 @@
-import collections
+import random
 
 AUTHOR = 'Python España'
-SITENAME = 'pycones23'
+SITENAME = 'PyConES23'
 SITEURL = 'http://localhost:8080'
 
 PATH = 'content'
@@ -53,7 +53,7 @@ TEMPLATE_PAGES = {
 TITLE = "PyConES 2023"
 
 
-## EDICIONES PASADAS
+# EDICIONES PASADAS
 PAST_EDITIONS = [
     {
         "name": "PyConES 2013 - Madrid",
@@ -107,7 +107,7 @@ PAST_EDITIONS = [
     },
 ]
 
-## CALL FOR SPONSORS
+# CALL FOR SPONSORS
 
 SPONSORS_DOSSIER_ES = "/theme/assets/files/pycones2023_patrocinios.pdf"
 SPONSORS_DOSSIER_EN = "/theme/assets/files/pycones2023_sponsors.pdf"
@@ -115,12 +115,12 @@ SPONSORS_DOSSIER_SUM_ES = "/theme/assets/files/pycones2023_patrocinios_brief.pdf
 SPONSORS_DOSSIER_SUM_EN = "/theme/assets/files/pycones2023_sponsors_brief.pdf"
 
 
-## CALL FOR PAPERS
+# CALL FOR PAPERS
 
 C4P_LINK = "https://charlas.2023.es.pycon.org"
 
 
-## PATROCINIOS
+# PATROCINIOS
 PLANES = [
     {
         "key": "teide",
@@ -298,7 +298,7 @@ PATROCINADORES = {
 }
 
 
-### NOTICIAS
+# NOTICIAS
 
 NOTICIAS = [
     {
@@ -560,9 +560,8 @@ ORG = [
         "linkedin_url": "https://www.linkedin.com/in/yodralopez",
     },
 ]
-# Shuffle team per deployment
-import random
 
+# Shuffle team per deployment
 random.shuffle(ORG)
 
 
