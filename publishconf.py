@@ -7,11 +7,12 @@ import sys
 sys.path.append(os.curdir)
 
 
-FLAG = os.getenv('FLAG', 'landing')
 SITEURL = os.getenv('SITEURL', 'https://2023.es.pycon.org/')
 
-# from pelicanconf import *
-from pelicanconf_landing import *
+if os.getenv('PYCONES_BUILD_TARGET', 'LANDING') == 'LANDING':
+    from pelicanconf_landing import *
+else:
+    from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 RELATIVE_URLS = False
