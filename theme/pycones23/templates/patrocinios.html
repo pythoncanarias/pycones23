@@ -74,47 +74,5 @@
   </table>
 </div>
 
-
-
-
-
-
-<!--
-<p>
-    Gracias a las empresas que colaboran con la PyConES podemos ofrecer el mejor evento y experiencia posible.
-    Somos una conferencia con un bajo coste de entrada capaz de ofrecer una experiencia de 3 días incluyendo regalos, almuerzos, comidas y meriendas.
-    Además contamos con servicio de guardería, becas y traducción en directo a lenguaje de signos para que nadie se quede fuera.
-    Con la ayuda de estas empresas conseguimos hacer un evento diverso e inclusivo enfocado en cuidar la comunidad de Python.
-</p>
-
-<section class="section">
-
-    {% for key, value in PATROCINADORES.items() %}
-        {% if key == PATROCINIOS_CAT_A %}
-        <h2>{{ PATROCINIOS_CAT_A }}</h2>
-        <ul class="image-gallery">      
-            
-            {% for patrocinador in value %}
-            <li>
-                <a href="{{ patrocinador.enlace }}"><img src="{{ patrocinador.logo }}" alt="" /></a>
-            </li>
-            {% endfor %}
-        </ul>  
-        {% endif %}
-        {% if key == PATROCINIOS_CAT_B %}
-        <h2>{{ PATROCINIOS_CAT_B }}</h2>
-        <ul class="image-gallery">      
-            
-            {% for patrocinador in value %}
-            <li>
-                <a href="{{ patrocinador.enlace }}"><img src="{{ patrocinador.logo }}" alt="" /></a>
-
-            </li>
-            {% endfor %}
-        </ul>  
-        {% endif %}
-
-    {% endfor %}
--->
 </section>
 {% endblock content %}
