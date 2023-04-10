@@ -1,2 +1,5 @@
 dev:
-    pelican -l
+    pelican -lrv
+
+clean:
+    rm -fr output/*
