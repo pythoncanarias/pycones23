@@ -9,16 +9,14 @@ sys.path.append(os.curdir)
 
 SITEURL = os.getenv('SITEURL', 'https://2023.es.pycon.org/')
 
-if os.getenv('PYCONES_BUILD_TARGET', 'LANDING') == 'LANDING':
-    from pelicanconf_landing import *
-else:
+if (build_target := os.getenv('PYCONES_BUILD_TARGET', 'LANDING')) == 'WEB':
     from pelicanconf import *
+else:
+    from pelicanconf_landing import *
+print(f'==> Building {build_target} <==')
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 RELATIVE_URLS = False
-
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
