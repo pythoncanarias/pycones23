@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<h1 class="main-title">
+<h1 id="patrocinios" class="main-title">
   Patrocinios
 </h1>
 
@@ -15,7 +15,7 @@
       No lo dudes y ponte ya mismo en contacto con la organización escribiendo al correo <a class="link" href="mailto:sponsor@2023.es.pycon.org">sponsor@2023.es.pycon.org</a>
       Para conocer todas las ventajas que te ofrecen nuestros distintos niveles de patrocinio puedes descargar el folleto informativo:</p>
     <br>
-    <div class="center-buttons">
+    <div  class="center-buttons">
       <a class="button brochure" href="{{ SPONSORS_DOSSIER_SUM_ES }}" download>
         Descargar dosier para patrocinadores veteranos (ES)
       </a>
@@ -50,29 +50,74 @@
     </thead>
     <tbody>
       {% for beneficio in BENEFICIOS %}
-      <tr>
+
         <td class="benefit-title">{{ beneficio.titulo }}</td>
 
         {% for plan in PLANES %}
-
-        {% if beneficio[plan.key] == True %}
-        <td class="has-benefit">
-          <i class="fa-solid fa-check"></i>
-        </td>
-        {% elif beneficio[plan.key] == False %}
-        <td>
-          <i class="fa-solid fa-xmark"></i>
-        </td>
-        {% else %}
-        <td class="discount">{{ beneficio[plan.key] }}</td>
-        {% endif %}
-
+          {% if beneficio[plan.key] == True %}
+          <td class="has-benefit">
+            <i class="fa-solid fa-check"></i>
+          </td>
+          {% elif beneficio[plan.key] == False %}
+          <td>
+            <i class="fa-solid fa-xmark"></i>
+          </td>
+          {% else %}
+          <td class="discount">{{ beneficio[plan.key] }}</td>
+          {% endif %}
         {% endfor %}
+
       </tr>
       {% endfor %}
     </tbody>
   </table>
 </div>
+<p>
+  <div class="box-addons">
+    <h2>Este año, ¡personaliza tu patrocinio añadiendo add-ons!</h2>
+
+
+
+ <div class="box-content">
+      <div class="card">
+        <div class="card_image">
+          <img src="{{ SITEURL }}/theme/assets/images/entrevistas.PNG">
+       </div>
+      
+      <div class="container">
+        <h3><b>Entrevistas</b></h3> 
+        <p>Se sabe que en la PyConES hay mucho talento. ¿Necesitas una sala para poder hacer entrevistas? ¡Nosotros te la damos! (3h por día)</p> 
+      </div>
+  </div>
+  <div class="card">
+    <div class="card_image">
+      <img src="{{ SITEURL }}/theme/assets/images/lactancia.PNG">
+   </div>
+    
+    <div class="container">
+      <h3><b>Sala de Lactancia</b></h3> 
+      <p>Roll-up en la entrada y ¡decórala por dentro, aporta botellas de agua y elementos de confort para que quienes la utilicen se sientan cómodos</p> 
+    </div>
+  </div>
+  <div class="card">
+    <div class="card_image">
+       <img src="{{ SITEURL }}/theme/assets/images/ludoteca.PNG">
+    </div>
+    <div class="container">
+      <h3><b>Sala de Lactancia</b></h3> 
+      <p> Roll-up en la entrada de la sala. ¡Puedes aportar juegos, juguetes y más! Destácate como una empresa que apuesta por la familia</p> 
+    </div>
+  </div>
+
+</div>
+
+<h2>... y muchos mas!!</h2>
+<br>
+<h3 class="center">¿Quieres saber más? Échale un vistazo a los <a class="link" href="#patrocinios">dossiers</a> y contáctanos si tienes alguna duda</h3>
+
+</div>
+</p>
+
 
 </section>
 {% endblock content %}
