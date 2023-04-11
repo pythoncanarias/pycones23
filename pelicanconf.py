@@ -8,7 +8,6 @@ if os.getenv('PYCONES_BUILD_TARGET', 'LANDING').upper() == 'WEB':
 else:
     from config.landing import *
 
-<<<<<<< HEAD
 SITEURL = os.getenv('SITEURL', 'https://2023.es.pycon.org/')
 
 
@@ -597,6 +596,4 @@ CRONOGRAMA = [
     {"fecha": "9 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
     {"fecha": "6 de Octubre", "desc": "¡Empieza el espectáculo! 🐍"},
 ]
-=======
 SITEURL = os.getenv('SITEURL', 'http://localhost:8000')
->>>>>>> d35ee2782f0a288c235c8b8ecd9dbebec65e1647
