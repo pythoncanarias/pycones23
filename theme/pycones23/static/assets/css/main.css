@@ -796,6 +796,57 @@ Sección de fotos polaroid
   }
 }
 
+/* Organización*/
+.list-item {
+  flex-wrap: nowrap !important;
+  padding: 1.5rem !important;
+}
+
+.list-item-image {
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+}
+
+.list-item-image .image {
+  margin: 0;
+  height: 4rem;
+  width: 4rem;
+}
+
+.image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.image img.is-rounded {
+  border-radius: 99999px;
+}
+
+.list-item-content {
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 0.8;
+  padding: 0;
+}
+
+.list-item-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.list-item-description {
+  font-size: 0.9rem;
+}
+
+.social-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
 .social-button {
   background-color: var(--purple-color);
   color: white;
@@ -808,42 +859,7 @@ Sección de fotos polaroid
   justify-content: center;
   text-align: center;
   white-space: nowrap;
-  padding: 0.5em 1em 0.5em 1em;
-  margin: 0.3rem;
-}
-
-.social-buttons {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.social-buttons.is-right {
-    justify-content: flex-end;
-}
-
-.image img {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
-.image.is-64x64 {
-  height: 64px;
-  width: 64px;
-}
-
-.image img.is-rounded {
-  border-radius: 99999px;
-}
-
-.is-size-5 {
-  font-size: 0.9rem !important;
-}
-
-.list-item-content {
-  line-height: 0.8;
+  padding: 0.8em 1em 0.8em 1em;
 }
 
 .tag {
@@ -859,3 +875,9 @@ Sección de fotos polaroid
   background-color: gray;
 }
 
+@media screen and (min-width: 40rem) {
+  .list-item-content {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}

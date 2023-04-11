@@ -338,17 +338,6 @@ ORG = [
         "linkedin_url": "",
     },
     {
-        "name": "Carlos Sosa",
-        "title": "Software Developer",
-        "img": "/theme/assets/images/org/sosa.jpg",
-        "community": "Python Canarias",
-        "wg": ["Web"],
-        "github_username": "",
-        "twitter_username": "",
-        "mastodon_url": "",
-        "linkedin_url": "https://www.linkedin.com/in/carlos-sosa-hdez/",
-    },
-    {
         "name": "Cristián Maureira-Fredes",
         "title": "Senior R&D Manager",
         "img": "/theme/assets/images/org/cristian.jpg",
