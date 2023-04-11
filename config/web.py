@@ -267,6 +267,13 @@ BENEFICIOS = [
         "teneguia": False,
         "timanfaya": False,
     },
+    {
+        "titulo": "PRECIO",
+        "teide": "+6000€",
+        "tamadaba": "4500€",
+        "teneguia": "3000€",
+        "timanfaya": "1000€",
+    },
 ]
 
 
