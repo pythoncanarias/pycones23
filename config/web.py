@@ -1,17 +1,7 @@
-import os
-import sys
+import random
 
-sys.path.append(os.curdir)
-
-if os.getenv('PYCONES_BUILD_TARGET', 'LANDING').upper() == 'WEB':
-    from config.web import *
-else:
-    from config.landing import *
-
-<<<<<<< HEAD
-SITEURL = os.getenv('SITEURL', 'https://2023.es.pycon.org/')
-
-
+AUTHOR = 'Python España'
+SITENAME = 'PyConES23'
 
 PATH = 'content'
 
@@ -46,24 +36,23 @@ THEME = "theme/pycones23"
 
 
 TEMPLATE_PAGES = {
-    'patrocinios.html': 'patrocinios.html',
-    'principal.html': 'principal.html',
-    'ciudad.html': 'ciudad.html',
-    'coc.html': 'coc.html',
-    'c4p.html': 'c4p.html',
-    'organizacion.html': 'organizacion.html',
-    'anteriores.html': 'anteriores.html',
-    'viaje.html': 'viaje.html',
     'CNAME': 'CNAME',
+    'c4p.html': 'c4p/index.html',
+    'ciudad.html': 'ciudad/index.html',
+    'codigo_conducta.html': 'codigo_conducta/index.html',
+    'ediciones_anteriores.html': 'ediciones_anteriores/index.html',
+    'organizacion.html': 'organizacion/index.html',
+    'patrocinios.html': 'patrocinios/index.html',
+    'viaje.html': 'viaje/index.html',
 }
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+
 TITLE = "PyConES 2023"
 
 
-
-## EDICIONES PASADAS
-
+# EDICIONES PASADAS
 PAST_EDITIONS = [
     {
         "name": "PyConES 2013 - Madrid",
@@ -117,10 +106,7 @@ PAST_EDITIONS = [
     },
 ]
 
-
-
-
-## CALL FOR SPONSORS
+# CALL FOR SPONSORS
 
 SPONSORS_DOSSIER_ES = "/theme/assets/files/pycones2023_patrocinios.pdf"
 SPONSORS_DOSSIER_EN = "/theme/assets/files/pycones2023_sponsors.pdf"
@@ -128,12 +114,12 @@ SPONSORS_DOSSIER_SUM_ES = "/theme/assets/files/pycones2023_patrocinios_breve.pdf
 SPONSORS_DOSSIER_SUM_EN = "/theme/assets/files/pycones2023_sponsors_brief.pdf"
 
 
-## CALL FOR PAPERS
+# CALL FOR PAPERS
 
 C4P_LINK = "https://charlas.2023.es.pycon.org"
 
 
-## PATROCINIOS
+# PATROCINIOS
 PLANES = [
     {
         "key": "teide",
@@ -281,14 +267,6 @@ BENEFICIOS = [
         "teneguia": False,
         "timanfaya": False,
     },
-    {
-        "titulo": "PRECIO",
-        "teide": "+6000€",
-        "tamadaba": "4500€",
-        "teneguia": "3000€",
-        "timanfaya": "1000€",
-    },
-
 ]
 
 
@@ -319,7 +297,7 @@ PATROCINADORES = {
 }
 
 
-### NOTICIAS
+# NOTICIAS
 
 NOTICIAS = [
     {
@@ -581,9 +559,8 @@ ORG = [
         "linkedin_url": "https://www.linkedin.com/in/yodralopez",
     },
 ]
-# Shuffle team per deployment
-import random
 
+# Shuffle team per deployment
 random.shuffle(ORG)
 
 
@@ -597,6 +574,3 @@ CRONOGRAMA = [
     {"fecha": "9 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
     {"fecha": "6 de Octubre", "desc": "¡Empieza el espectáculo! 🐍"},
 ]
-=======
-SITEURL = os.getenv('SITEURL', 'http://localhost:8000')
->>>>>>> d35ee2782f0a288c235c8b8ecd9dbebec65e1647

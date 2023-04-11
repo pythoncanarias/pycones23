@@ -10,12 +10,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      with: 
-        submodules: 'true'
-    - uses: rehanhaider/pelican-to-github-pages@v1.0.3
-      env:
-        FLAG: ${{secrets.GITHUB_TOKEN}}
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        GH_PAGES_CNAME: ${{secrets.GH_PAGES_CNAME}}
-        SITEURL: ${{secrets.SITEURL}}
+      - uses: actions/checkout@v2
+        with:
+          submodules: "true"
+      - uses: rehanhaider/pelican-to-github-pages@v1.0.3
+        env:
+          PYCONES_BUILD_TARGET: ${{secrets.PYCONES_BUILD_TARGET}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GH_PAGES_CNAME: ${{secrets.GH_PAGES_CNAME}}
+          SITEURL: ${{secrets.SITEURL}}
