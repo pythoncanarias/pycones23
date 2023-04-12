@@ -222,6 +222,9 @@ body {
   .header .menu .menu-link {
     flex: 1 1 33.333%;
   }
+  .card {
+    width: 100%;
+  }
 }
 
 @media (min-width: 63rem) {
@@ -274,6 +277,9 @@ body {
   .box-content > div > img {
     width:150px;
 
+  }
+	  .card {
+    width: 100%;
   }
 
 }
@@ -332,6 +338,12 @@ body {
   color: var(--text-color);
 }
 
+@media (min-width:17rem){
+		  .card {
+    width: 100%;
+  }
+}
+
 @media (min-width: 22.5rem) {
   .box-intro {
     flex-direction: row;
@@ -342,11 +354,17 @@ body {
   .caption {
     font-size: 0.8rem;
   }
+	  .card {
+    width: 100%;
+  }
 }
 
 @media (min-width: 40rem) {
   .content-wrapper .content {
     padding: 1.5rem 2rem 2.3rem 2rem;
+  }
+	  .card {
+    width: 100%;
   }
 }
 
@@ -410,6 +428,9 @@ body {
   }
   .caption {
     font-size: 0.8rem;
+  }
+	  .card {
+    width: 100%;
   }
 }
 
@@ -775,6 +796,9 @@ Sección de fotos polaroid
   .plans-table {
     font-size: 0.9rem;
   }
+  .card {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 50rem) {
@@ -793,6 +817,9 @@ Sección de fotos polaroid
   }
   .plans-table thead tr th .plan-title {
     display: none;
+  }
+  .card {
+    width: 100%;
   }
 }
 
@@ -879,5 +906,8 @@ Sección de fotos polaroid
   .list-item-content {
     flex-direction: row;
     gap: 2rem;
+  }
+.card {
+    width: 100%;
   }
 }
