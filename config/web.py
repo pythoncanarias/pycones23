@@ -309,7 +309,7 @@ PATROCINADORES = {
 NOTICIAS = [
     {
         "titulo": "¡Lanzamiento del sitio web!",
-        "fecha": "2023-04-06",
+        "fecha": "2023-04-12",
         "contenido": "Os damos la bienvenida a la PyConES, la conferencia de Python más importante de España. Un evento que reunirá a cientos de entusiastas del lenguaje de programación Python, con una agenda increíble en la mejor localización posible. Si quieres formar parte de nuestros patrocinadores para hacer esta conferencia aún mas impresionante puedes disponer de espacio propio dentro del evento.",
     },
 ]
