@@ -338,6 +338,12 @@ body {
   color: var(--text-color);
 }
 
+@media (min-width:17rem){
+		  .card {
+    width: 100%;
+  }
+}
+
 @media (min-width: 22.5rem) {
   .box-intro {
     flex-direction: row;
