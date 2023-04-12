@@ -790,6 +790,9 @@ Sección de fotos polaroid
   .plans-table {
     font-size: 0.9rem;
   }
+  .card {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 50rem) {
@@ -808,6 +811,9 @@ Sección de fotos polaroid
   }
   .plans-table thead tr th .plan-title {
     display: none;
+  }
+  .card {
+    width: 100%;
   }
 }
 
