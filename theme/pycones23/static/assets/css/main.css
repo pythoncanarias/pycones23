@@ -319,8 +319,8 @@ body {
   color: var(--text-color);
 }
 
-@media (min-width:17rem){
-		  .card {
+@media (min-width: 17rem) {
+  .card {
     width: 100%;
   }
 }
@@ -335,7 +335,7 @@ body {
   .caption {
     font-size: 0.8rem;
   }
-	  .card {
+  .card {
     width: 100%;
   }
 }
@@ -344,7 +344,7 @@ body {
   .content-wrapper .content {
     padding: 1.5rem 2rem 2.3rem 2rem;
   }
-	  .card {
+  .card {
     width: 100%;
   }
 }
@@ -410,7 +410,7 @@ body {
   .caption {
     font-size: 0.8rem;
   }
-	  .card {
+  .card {
     width: 100%;
   }
 }
@@ -870,4 +870,20 @@ Sección de fotos polaroid
     flex-direction: row;
     gap: 2rem;
   }
+}
+
+/* Viaje */
+
+img.logo-agencia-viajes {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+a.boton-reserva {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
