@@ -201,8 +201,6 @@ body {
   width: 200px;
 }
 
-
-
 .card {
   display: block;
   box-shadow: 0 4px 8px 0 var(--shadow-color);
@@ -231,77 +229,6 @@ body {
   font-size: 1.8rem;
   text-align: center;
   line-height: 2em;
-}
-
-@media (min-width: 22.5rem) {
-  .box-intro {
-    display: block;
-    padding: 50px;
-  }
-  .box-content {
-    display: block;
-    padding: 10px;
-  }
-  .card {
-    width: 100%;
-  }
-}
-
-@media (min-width: 30rem) {
-  .header .menu .menu-link {
-    flex: 1 1 33.333%;
-  }
-  .card {
-    width: 100%;
-  }
-}
-
-@media (min-width: 63rem) {
-  .header {
-    flex-direction: row;
-    background: var(--blue-pink-gradient);
-    color: var(--light-text-color);
-  }
-
-  .header .logo-wrapper {
-    margin: 0;
-    padding-left: 0.75rem;
-    padding-right: 6rem;
-  }
-
-  .header .logo-wrapper:hover {
-    background-color: var(--hover-opacity);
-  }
-
-  .header .menu {
-    justify-content: right;
-    flex-wrap: nowrap;
-  }
-
-  .header .menu .menu-link {
-    flex: none;
-    padding: 1rem 1.75rem;
-  }
-
-  .header .menu .menu-link-tickets {
-    border-left: 1px solid var(--shadow-color);
-  }
-
-  .box-intro {
-    display: flex;
-  }
-
-  .box-intro > h1 > img {
-    width: 400px;
-  }
-
-  .box-content {
-    display: flex;
-  }
-
-  .box-content > div > img {
-    width: 150px;
-  }
 }
 
 /* CONTENT */
@@ -421,6 +348,77 @@ body {
   }
   .card {
     width: 100%;
+  }
+}
+
+@media (min-width: 22.5rem) {
+  .box-intro {
+    display: block;
+    padding: 50px;
+  }
+  .box-content {
+    display: block;
+    padding: 10px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 30rem) {
+  .header .menu .menu-link {
+    flex: 1 1 33.333%;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 63rem) {
+  .header {
+    flex-direction: row;
+    background: var(--blue-pink-gradient);
+    color: var(--light-text-color);
+  }
+
+  .header .logo-wrapper {
+    margin: 0;
+    padding-left: 0.75rem;
+    padding-right: 6rem;
+  }
+
+  .header .logo-wrapper:hover {
+    background-color: var(--hover-opacity);
+  }
+
+  .header .menu {
+    justify-content: right;
+    flex-wrap: nowrap;
+  }
+
+  .header .menu .menu-link {
+    flex: none;
+    padding: 1rem 1.75rem;
+  }
+
+  .header .menu .menu-link-tickets {
+    border-left: 1px solid var(--shadow-color);
+  }
+
+  .box-intro {
+    display: flex;
+  }
+
+  .box-intro > h1 > img {
+    width: 400px;
+  }
+
+  .box-content {
+    display: flex;
+  }
+
+  .box-content > div > img {
+    width: 150px;
   }
 }
 
