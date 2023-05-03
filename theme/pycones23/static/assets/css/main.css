@@ -21,7 +21,6 @@
   --pink: #c91d84;
   --fallback-background-color: #5362ff;
 
-
   --background-color: var(--white);
   --light-text-color: var(--white);
   --dark-text-color: var(--black);
@@ -39,12 +38,31 @@
   --warning: var(--red);
   --shadow-color: var(--black-02);
   --shadow-color-dark: var(--black-04);
-  --purple-gradient: linear-gradient(45deg, var(--purple-mid), var(--purple-light));
-  --orange-gradient: linear-gradient(135deg, var(--orange-dark) 0%, var(--red) 100%);
-  --purple-orange-gradient: linear-gradient(135deg, var(--purple-mid) 0%, var(--orange-dark) 100%);
-  --yellow-orange-gradient: linear-gradient(-45deg, var(--yellow), var(--orange-mid));
-  --blue-pink-gradient: linear-gradient(135deg, var(--blue) 0%, var(--pink) 100%);
-
+  --purple-gradient: linear-gradient(
+    45deg,
+    var(--purple-mid),
+    var(--purple-light)
+  );
+  --orange-gradient: linear-gradient(
+    135deg,
+    var(--orange-dark) 0%,
+    var(--red) 100%
+  );
+  --purple-orange-gradient: linear-gradient(
+    135deg,
+    var(--purple-mid) 0%,
+    var(--orange-dark) 100%
+  );
+  --yellow-orange-gradient: linear-gradient(
+    -45deg,
+    var(--yellow),
+    var(--orange-mid)
+  );
+  --blue-pink-gradient: linear-gradient(
+    135deg,
+    var(--blue) 0%,
+    var(--pink) 100%
+  );
 }
 
 *,
@@ -99,11 +117,7 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    135deg,
-    #1d4bc9 0%,
-    #c91d84 100%
-  );
+  background: linear-gradient(135deg, #1d4bc9 0%, #c91d84 100%);
   color: var(--light-text-color);
 }
 
@@ -160,7 +174,7 @@ body {
   padding-bottom: 20px;
 }
 
-.news-box .news-content p{
+.news-box .news-content p {
   color: var(--light-text-color);
 }
 
@@ -187,30 +201,7 @@ body {
   width: 200px;
 }
 
-.box-intro {
-  color: var(--light-text-color);
-  font-weight: bold;
-  padding: 50px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 10px;
-  opacity: 1.2;
-  background-color: var(--fallback-background-color); 
-  background-image: url("../images/fondo_expo.png");
-  background-repeat: no-repeat;
-  background-position: 80% 10%;
-  background-size: cover;
-}
 
-.box-intro > h1 > img {
-  width: 200px;
-}
-.box-intro .big-text {
-  font-size: 30px
-}
 
 .card {
   display: block;
@@ -231,7 +222,6 @@ body {
 .card:hover {
   box-shadow: 0 8px 16px 0 var(--shadow-color);
 }
-
 
 .container {
   padding: 2px 16px;
@@ -373,6 +363,35 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
   /* color: var(--text-color); */
+}
+.box-intro {
+  color: var(--light-text-color);
+  font-weight: bold;
+  padding: 50px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 1.2;
+  background-color: var(--fallback-background-color);
+  background-image: url("../images/fondo_expo.png");
+  background-repeat: no-repeat;
+  background-position: 80% 10%;
+  background-size: cover;
+}
+
+.box-intro > .intro > p {
+  color: var(--light-text-color);
+}
+
+.box-intro > h1 > img {
+  width: 200px;
+}
+.box-intro > .intro > .big-text {
+  color: var(--light-text-color);
+  font-size: 30px;
 }
 
 @media (min-width: 17rem) {
