@@ -117,7 +117,7 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, #1d4bc9 0%, #c91d84 100%);
+  background: var(--blue-pink-gradient);
   color: var(--light-text-color);
 }
 
@@ -549,7 +549,7 @@ Ediciones Anteriores
 Gradiente para menú ticket
 */
 .menu-link-tickets:hover {
-  background: var(--yellow-orange-gradient);
+  background: var(--blue-pink-gradient);
   background-size: 100% 100%;
   animation: gradient 15s ease infinite;
   color: var(--light-text-color);
