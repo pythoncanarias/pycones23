@@ -362,6 +362,13 @@ body {
   gap: 1rem;
 }
 
+.important-title {
+  background-color: #f6e7ae;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
 .content-wrapper .content p {
   margin-top: 1rem;
   margin-bottom: 1rem;
