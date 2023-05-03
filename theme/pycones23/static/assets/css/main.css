@@ -5,6 +5,7 @@
   --purple-color: #8800c4;
   --purple-light-color: #f991a1;
   --purple-gradient: linear-gradient(45deg, var(--purple-color), #9c06de);
+  --blue-color: #2449c6;
 }
 
 *,
@@ -297,7 +298,7 @@ body {
 }
 .button:hover,
 .button:focus {
-  opacity: 0.9;
+  background: var(--blue-color);
 }
 
 .center {
@@ -498,6 +499,7 @@ Background image
 .brochure {
   width: 500px;
 }
+
 /*
 Sección de fotos polaroid
 */
