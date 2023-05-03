@@ -1,10 +1,50 @@
 :root {
-  --background-color: #ffffff;
-  --dark-text-color: #000000;
-  --text-color: #2b2b2b;
-  --purple-color: #8800c4;
-  --purple-light-color: #f991a1;
-  --purple-gradient: linear-gradient(45deg, var(--purple-color), #9c06de);
+  --white: #fff;
+  --black: #000;
+  --black-02: rgba(0, 0, 0, 0.2);
+  --black-04: rgba(0, 0, 0, 0.4);
+  --gray-1: #2b2b2b;
+  --gray-2: #757575;
+  --gray-3: #ccc;
+  --purple-dark: #5202c5;
+  --purple-mid: #8800c4;
+  --purple-light: #9c06de;
+  --purple-opacity-07: rgb(8 4 38 / 7%);
+  --purple-opactiy-12: rgb(8 4 38 / 12%);
+  --orange-light: #f991a1;
+  --orange-mid: #e78f3c;
+  --orange-dark: #fa7109;
+  --red: #d63114;
+  --blue: #1d4bc9;
+  --yellow: #ffd500;
+  --yellow-dark: #f8a800;
+  --pink: #c91d84;
+  --fallback-background-color: #5362ff;
+
+
+  --background-color: var(--white);
+  --light-text-color: var(--white);
+  --dark-text-color: var(--black);
+  --text-color: var(--gray-1);
+  --purple-color: var(--purple-mid);
+  --timeline: var(--purple-dark);
+  --hover-opacity: var(--purple-opacity-07);
+  --selected-opacity: var(--purple-opactiy-12);
+  --social-media-hover: var(--black);
+  --accent-color: var(--orange-light);
+  --python-tag: var(--blue);
+  --info-tag: var(--gray-2);
+  --highlight-color: var(--yellow);
+  --benefit-color: var(--yellow-dark);
+  --warning: var(--red);
+  --shadow-color: var(--black-02);
+  --shadow-color-dark: var(--black-04);
+  --purple-gradient: linear-gradient(45deg, var(--purple-mid), var(--purple-light));
+  --orange-gradient: linear-gradient(135deg, var(--orange-dark) 0%, var(--red) 100%);
+  --purple-orange-gradient: linear-gradient(135deg, var(--purple-mid) 0%, var(--orange-dark) 100%);
+  --yellow-orange-gradient: linear-gradient(-45deg, var(--yellow), var(--orange-mid));
+  --blue-pink-gradient: linear-gradient(135deg, var(--blue) 0%, var(--pink) 100%);
+
 }
 
 *,
@@ -23,7 +63,7 @@ p {
 }
 
 h4 {
-  color: #f991a1;
+  color: var(--accent-color);
 }
 
 a {
@@ -61,10 +101,10 @@ body {
   flex-direction: column;
   background: linear-gradient(
     135deg,
-    hsla(224, 75%, 45%, 1) 0%,
-    hsla(324, 75%, 45%, 1) 100%
+    #1d4bc9 0%,
+    #c91d84 100%
   );
-  color: white;
+  color: var(--light-text-color);
 }
 
 .header .logo-wrapper {
@@ -93,16 +133,20 @@ body {
 }
 
 .header .menu .menu-link:hover {
-  background-color: rgb(8 4 38 / 7%);
+  background-color: var(--hover-opacity);
 }
 
 .header .menu .menu-link.menu-link-active {
-  background-color: rgb(8 4 38 / 12%);
+  background-color: var(--selected-opacity);
 }
 
+/* MAIN */
+.subtitle {
+  color: var(--dark-text-color);
+}
 .news-box {
-  background: linear-gradient(135deg, #fa7109 0%, rgb(214, 49, 20) 100%);
-  color: white;
+  background: var(--orange-gradient);
+  color: var(--light-text-color);
   padding: 30px;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -116,9 +160,13 @@ body {
   padding-bottom: 20px;
 }
 
+.news-box .news-content p{
+  color: var(--light-text-color);
+}
+
 .box-addons {
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--background-color);
 }
 
 .box-addons > h2 {
@@ -133,14 +181,14 @@ body {
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--background-color);
 }
 .box-content > div > img {
   width: 200px;
 }
 
 .box-intro {
-  color: white;
+  color: var(--light-text-color);
   font-weight: bold;
   padding: 50px;
   margin-top: 5%;
@@ -149,20 +197,24 @@ body {
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
-
   opacity: 1.2;
+  background-color: var(--fallback-background-color); 
   background-image: url("../images/fondo_expo.png");
   background-repeat: no-repeat;
   background-position: 80% 10%;
   background-size: cover;
 }
 
-.box-intro > div > img {
+.box-intro > h1 > img {
   width: 200px;
+}
+.box-intro .big-text {
+  font-size: 30px
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  box-shadow: 0 4px 8px 0 var(--shadow-color);
   transition: 0.3s;
   width: 40%;
   padding: 10px;
@@ -177,8 +229,9 @@ body {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 var(--shadow-color);
 }
+
 
 .container {
   padding: 2px 16px;
@@ -216,12 +269,8 @@ body {
 @media (min-width: 63rem) {
   .header {
     flex-direction: row;
-    background: linear-gradient(
-      135deg,
-      hsla(224, 75%, 45%, 1) 0%,
-      hsla(324, 75%, 45%, 1) 100%
-    );
-    color: white;
+    background: var(--blue-pink-gradient);
+    color: var(--light-text-color);
   }
 
   .header .logo-wrapper {
@@ -231,7 +280,7 @@ body {
   }
 
   .header .logo-wrapper:hover {
-    background-color: rgb(0 0 0 / 3%);
+    background-color: var(--hover-opacity);
   }
 
   .header .menu {
@@ -245,14 +294,14 @@ body {
   }
 
   .header .menu .menu-link-tickets {
-    border-left: 1px solid rgb(0 0 0 / 15%);
+    border-left: 1px solid var(--shadow-color);
   }
 
   .box-intro {
     display: flex;
   }
 
-  .box-intro > div > img {
+  .box-intro > h1 > img {
     width: 400px;
   }
 
@@ -287,7 +336,7 @@ body {
 .button {
   background: var(--purple-gradient);
   border: none;
-  color: white;
+  color: var(--light-text-color);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -316,7 +365,7 @@ body {
 .content-wrapper .content p {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: var(--text-color);
+  /* color: var(--text-color); */
 }
 
 @media (min-width: 17rem) {
@@ -367,8 +416,11 @@ body {
   justify-content: center;
 }
 
-.footer .links .link {
+.footer .links .li {
   padding: 0.5rem 1rem;
+}
+.footer .links .li:hover {
+  color: var(--dark-text-color);
 }
 
 .footer .social {
@@ -381,15 +433,15 @@ body {
 }
 
 .social-link:hover {
-  color: #feefb6;
+  color: var(--social-media-hover);
 }
 
 @media (min-width: 22.5rem) {
   .footer {
     flex-direction: row;
     align-items: center;
-    background: linear-gradient(135deg, #8800c4 0%, #ff7602 100%);
-    color: white;
+    background: var(--purple-orange-gradient);
+    color: var(--light-text-color);
   }
 
   .footer .footer-section {
@@ -414,6 +466,13 @@ body {
     width: 100%;
   }
 }
+/*
+Código de conducta
+*/
+.examples {
+  font-size: 16px;
+  color: var(--warning);
+}
 
 /*
 Ediciones Anteriores
@@ -426,12 +485,12 @@ Ediciones Anteriores
 }
 
 .card {
-  border: 1px solid #ccc;
+  border: 1px solid var(--gray-3);
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
   transition: all 0.2s ease-in-out;
-  background-color: white;
+  background-color: var(--background-color);
 }
 
 .card__image-container {
@@ -466,10 +525,10 @@ Ediciones Anteriores
 Gradiente para menú ticket
 */
 .menu-link-tickets:hover {
-  background: linear-gradient(-45deg, rgb(255, 238, 0), #e78f3c);
+  background: var(--yellow-orange-gradient);
   background-size: 100% 100%;
   animation: gradient 15s ease infinite;
-  color: white;
+  color: var(--light-text-color);
 }
 
 /*
@@ -487,7 +546,7 @@ Background image
   margin-left: -3px;
   margin-right: -3px;
   position: absolute;
-  background: #ffd500;
+  background: var(--highlight-color);
   transform: rotate(3deg);
   top: -1px;
   left: -1px;
@@ -503,10 +562,10 @@ Sección de fotos polaroid
 */
 
 .polaroid {
-  background: #fff;
+  background: var(--background-color);
   padding: 1rem;
   width: 200px;
-  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2rem 1.2rem var(--shadow-color);
 }
 
 .polaroid > img {
@@ -535,7 +594,7 @@ Sección de fotos polaroid
   width: 47%;
   bottom: 30px;
   right: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2.1rem 2rem var(--shadow-color-dark);
 }
 .item:nth-of-type(4n + 2) {
   transform: scale(0.8, 0.8) rotate(-5deg);
@@ -547,7 +606,7 @@ Sección de fotos polaroid
   width: 47%;
   bottom: 30px;
   left: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2.1rem 2rem var(--shadow-color-dark);
 }
 .item:nth-of-type(4n + 4) {
   transform: scale(0.8, 0.8) rotate(3deg);
@@ -559,7 +618,7 @@ Sección de fotos polaroid
   width: 47%;
   bottom: 30px;
   right: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2.1rem 2rem var(--shadow-color);
 }
 .item:nth-of-type(4n + 3) {
   transform: scale(0.8, 0.8) rotate(-3deg);
@@ -571,7 +630,7 @@ Sección de fotos polaroid
   width: 47%;
   bottom: 30px;
   left: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2.1rem 2rem var(--shadow-color);
 }
 .item:hover {
   filter: none;
@@ -590,7 +649,7 @@ Sección de fotos polaroid
   width: 90%;
   bottom: 0%;
   right: 5%;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 3rem var(--shadow-color);
   transition: all 0.35s;
 }
 
@@ -640,7 +699,7 @@ Sección de fotos polaroid
   content: "";
   position: absolute;
   width: 3px;
-  background-color: #5202c5;
+  background-color: var(--timeline);
   left: 50%;
   height: 100%;
   border-radius: 10px;
@@ -663,7 +722,7 @@ Sección de fotos polaroid
   right: calc(-11.11% - 11.5px);
   height: 20px;
   width: 20px;
-  background-color: #5202c5;
+  background-color: var(--timeline);
   border-radius: 50%;
 }
 
@@ -672,17 +731,17 @@ Sección de fotos polaroid
 }
 
 .momento h3 {
-  margin: 10px 0px;
-  font-size: 30px;
+  font-size: 14px;
   text-align: center;
+  color: var(--dark-text-color);
 }
 
 .momento .descripcion {
-  background-color: var(--purple-light-color);
+  background-color: var(--accent-color);
   border-radius: 10px;
   padding: 10px;
   line-height: 22px;
-  color: white;
+  color: var(--dark-text-color);
   font-size: 14px;
 }
 
@@ -695,19 +754,19 @@ Sección de fotos polaroid
   width: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 12px solid var(--purple-light-color);
+  border-left: 12px solid var(--accent-color);
 }
 
 .momento:nth-child(even) .descripcion {
-  background-color: var(--purple-light-color);
-  color: white;
+  background-color: var(--accent-color);
+  color: var(--dark-text-color);
 }
 
 .momento:nth-child(even) .descripcion::after {
   left: -10px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 12px solid var(--purple-light-color);
+  border-right: 12px solid var(--accent-color);
   border-left: none;
 }
 
@@ -717,7 +776,7 @@ Sección de fotos polaroid
 }
 
 .plans-table {
-  background-color: white;
+  background-color: var(--background-color);
   width: 100%;
   font-size: 0.8rem;
   text-align: center;
@@ -734,7 +793,7 @@ Sección de fotos polaroid
 .plans-table thead tr {
   background-color: var(--purple-color);
   border: 1px solid var(--purple-color);
-  color: #fff;
+  color: var(--light-text-color);
   font-weight: bold;
 }
 .plans-table thead tr th .plan-image {
@@ -749,10 +808,10 @@ Sección de fotos polaroid
   min-width: 8rem;
 }
 .plans-table tbody tr td.discount {
-  background-color: #f991a1;
+  background-color: var(--accent-color);
 }
 .plans-table tbody tr td.has-benefit {
-  background-color: #f8a800;
+  background-color: var(--benefit-color);
 }
 
 @media screen and (min-width: 32rem) {
@@ -828,6 +887,7 @@ Sección de fotos polaroid
 
 .list-item-description {
   font-size: 0.9rem;
+  color: var(--dark-text-color);
 }
 
 .social-buttons {
@@ -839,8 +899,8 @@ Sección de fotos polaroid
 
 .social-button {
   background-color: var(--purple-color);
-  color: white;
-  border-color: 1px solid #2d2d2d;
+  color: var(--light-text-color);
+  border-color: 1px solid var(--gray-1);
   border-radius: 4px;
   box-shadow: none;
   display: inline-flex;
@@ -854,15 +914,15 @@ Sección de fotos polaroid
 
 .tag {
   display: inline-block;
-  background-color: #204ac8;
+  background-color: var(--python-tag);
   border-radius: 5px;
   padding: 0.4rem;
   margin-bottom: 0.3rem;
-  color: white;
+  color: var(--light-text-color);
 }
 
 .org-is-info {
-  background-color: gray;
+  background-color: var(--info-tag);
 }
 
 @media screen and (min-width: 40rem) {

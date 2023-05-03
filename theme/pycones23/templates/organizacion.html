@@ -19,7 +19,7 @@
     <div class="list-item">
       <div class="list-item-image">
         <figure class="image">
-          <img class="is-rounded" src="{{ SITEURL }}{{ persona["img"] }}"
+          <img class="is-rounded" alt="{{ persona["name"] }}" src="{{ SITEURL }}{{ persona["img"] }}"
           onerror="this.onerror=null;this.src='{{ SITEURL
           }}/theme/assets/images/org/default.jpg'">
         </figure>
@@ -43,6 +43,7 @@
             href="https://github.com/{{ persona['github_username'] }}"
             target="_blank"
             class="social-button"
+            aria-label="GitHub account"
           >
             <span class="icon is-small"><i class="fab fa-github"></i></span>
           </a>
@@ -51,6 +52,7 @@
             href="{{ persona['mastodon_url'] }}"
             target="_blank"
             class="social-button"
+            aria-label="Mastodon account"
           >
             <span class="icon is-small"><i class="fab fa-mastodon"></i></span>
           </a>
@@ -59,6 +61,7 @@
             href="https://twitter.com/{{ persona['twitter_username'] }}"
             target="_blank"
             class="social-button"
+            aria-label="Twitter account"
           >
             <span class="icon is-small"><i class="fab fa-twitter"></i></span>
           </a>
@@ -67,6 +70,7 @@
             href="{{ persona['linkedin_url'] }}"
             target="_blank"
             class="social-button"
+            aria-label="LinkedIn account"
           >
             <span class="icon is-small"><i class="fab fa-linkedin"></i></span>
           </a>
