@@ -308,6 +308,11 @@ PATROCINADORES = {
 
 NOTICIAS = [
     {
+        "titulo": "¡Ya puedes comprar tu entradas!",
+        "fecha": "2023-05-05",
+        "contenido": "¡Porfín ha llegado el día, ya están aquí las entradas del evento mas esperado del año de la comunidad de Python en España",
+    },
+    {
         "titulo": "¡Lanzamiento del sitio web!",
         "fecha": "2023-04-12",
         "contenido": "Os damos la bienvenida a la PyConES, la conferencia de Python más importante de España. Un evento que reunirá a cientos de entusiastas del lenguaje de programación Python, con una agenda increíble en la mejor localización posible. Si quieres formar parte de nuestros patrocinadores para hacer esta conferencia aún mas impresionante puedes disponer de espacio propio dentro del evento.",
@@ -564,8 +569,8 @@ CRONOGRAMA = [
     {"fecha": "Febrero", "desc": "¡Presentamos la PyConES en Canarias!"},
     # TODO: Agregar la fecha cuando se lance el sitio
     {"fecha": "Abril", "desc": "Apertura para el envío de ponencias y talleres 🗒️"},
-    {"fecha": "Abril", "desc": "Apertura para la venta de entradas 🎟️"},
-    {"fecha": "Abril", "desc": "Apertura para la postulación de becas 🧞"},
+    {"fecha": "Mayo", "desc": "Apertura para la venta de entradas 🎟️"},
+    {"fecha": "Mayo", "desc": "Apertura para la postulación de becas 🧞"},
     {"fecha": "23 de Junio", "desc": "Cierre del llamado a ponencias y talleres ✋"},
     {"fecha": "9 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
     {"fecha": "6 de Octubre", "desc": "¡Empieza el espectáculo! 🐍"},
