@@ -308,13 +308,13 @@ PATROCINADORES = {
 
 NOTICIAS = [
     {
-        "titulo": "¡Ya puedes comprar tu entradas!",
-        "fecha": "2023-05-05",
-        "contenido": "¡Porfín ha llegado el día, ya están aquí las entradas del evento mas esperado del año de la comunidad de Python en España",
+        "titulo": "¡Ya puedes comprar tus entradas!",
+        "fecha": "5/5/2023",
+        "contenido": "¡Por fin ha llegado el día! Ya están aquí las entradas del evento más esperado del año de la comunidad Python en España",
     },
     {
         "titulo": "¡Lanzamiento del sitio web!",
-        "fecha": "2023-04-12",
+        "fecha": "4/12/2023,
         "contenido": "Os damos la bienvenida a la PyConES, la conferencia de Python más importante de España. Un evento que reunirá a cientos de entusiastas del lenguaje de programación Python, con una agenda increíble en la mejor localización posible. Si quieres formar parte de nuestros patrocinadores para hacer esta conferencia aún mas impresionante puedes disponer de espacio propio dentro del evento.",
     },
 ]
