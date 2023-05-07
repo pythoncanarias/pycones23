@@ -894,3 +894,8 @@ a.boton-reserva {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+.fecha {
+    font-size: 90%;
+    color: #edd3c5;
+}
