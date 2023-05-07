@@ -22,7 +22,10 @@
 
 {% for noticia in NOTICIAS %}
 <div class="news-box">
-   <div class="news-title">{{ noticia.titulo }} <span>{{ noticia.fecha }}</span></div>
+   <div class="news-title">{{ noticia.titulo }}
+       <br><small><span class="fecha">
+            {{ noticia.fecha.strftime('%d/%b/%Y') }}
+           </span></small></div>
    <div class="news-content">
       {{ noticia.contenido }}
    </div>
