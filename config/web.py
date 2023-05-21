@@ -1,5 +1,6 @@
 import random
 
+
 AUTHOR = 'Python España'
 SITENAME = 'PyConES23'
 
@@ -37,13 +38,7 @@ THEME = "theme/pycones23"
 
 TEMPLATE_PAGES = {
     'CNAME': 'CNAME',
-    'c4p.html': 'c4p/index.html',
-    'ciudad.html': 'ciudad/index.html',
-    'codigo_conducta.html': 'codigo_conducta/index.html',
     'ediciones_anteriores.html': 'ediciones_anteriores/index.html',
-    'organizacion.html': 'organizacion/index.html',
-    'patrocinios.html': 'patrocinios/index.html',
-    'viaje.html': 'viaje/index.html',
 }
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
