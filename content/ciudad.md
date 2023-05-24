@@ -11,7 +11,7 @@ Destino turístico por excelencia, Tenerife es un lugar seguro y tranquilo que
 dispone de un clima agradable durante todo el año.
 
 
-La isla de [Tenerife](https://www.holaislascanarias.com/tenerife/") ofrece una
+La isla de [Tenerife](https://www.holaislascanarias.com/tenerife/) ofrece una
 gran variedad de opciones de alojamiento y ocio. Asimismo permite disfrutar de
 la naturaleza y la cultura local, además de las diferentes playas cercanas
 fomentando la interacción entre aquellas personas asistentes al evento.
