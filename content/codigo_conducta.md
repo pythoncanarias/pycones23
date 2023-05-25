@@ -122,4 +122,4 @@ Este código de conducta extiende el ya existente con aportaciones de otros
 códigos:
 
 * La [versión en español del Contributor Covenant 2.0](https://www.contributor-covenant.org/es/version/2/0/code_of_conduct/).
-* El [código de conducta de DjangoCon Europe 2020](https://2020.djangocon.eu/conduct/code_of_conduct/").
+* El [código de conducta de DjangoCon Europe 2020](https://2020.djangocon.eu/conduct/code_of_conduct/).
