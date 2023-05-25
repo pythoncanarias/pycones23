@@ -20,21 +20,21 @@ fomentando la interacción entre aquellas personas asistentes al evento.
 <div class="center">
   <div class="item">
     <div class="polaroid">
-      <img src="/theme/assets/images/ciudad/naturaleza.jpg" />
+      <img src="../theme/assets/images/ciudad/naturaleza.jpg" />
       <div class="caption">Naturaleza</div>
     </div>
   </div>
 
   <div class="item">
     <div class="polaroid">
-      <img src="/theme/assets/images/ciudad/playas.jpg" />
+      <img src="../theme/assets/images/ciudad/playas.jpg" />
       <div class="caption">Playas</div>
     </div>
   </div>
 
   <div class="item">
     <div class="polaroid">
-      <img src="/theme/assets/images/ciudad/tecnologia.jpg" />
+      <img src="../theme/assets/images/ciudad/tecnologia.jpg" />
       <div class="caption">Tecnología</div>
     </div>
   </div>
@@ -60,7 +60,7 @@ escenario de la PyConES23.
 <div class="center">
   <div class="item">
     <div class="polaroid">
-      <img src="/theme/assets/images/ciudad/ull.jpg" />
+      <img src="../theme/assets/images/ciudad/ull.jpg" />
       <div class="caption">ULL</div>
     </div>
   </div>
@@ -84,7 +84,7 @@ y económico- entre Europa y Latinoamérica.
 <div class="center">
   <div class="item">
     <div class="polaroid">
-      <img src="/theme/assets/images/ciudad/lalaguna.jpg" />
+      <img src="../theme/assets/images/ciudad/lalaguna.jpg" />
       <div class="caption">La Laguna</div>
     </div>
   </div>
