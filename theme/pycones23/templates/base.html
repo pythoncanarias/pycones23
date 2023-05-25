@@ -45,6 +45,22 @@
       {% include "navbar.html" %}
     </header>
 
+    <div class="languages">
+
+      <ul>
+      {% if lang_siteurls %}
+          {% for lang, url in lang_siteurls.items() %}
+            {% set _url = extra_siteurls.get(lang, SITEURL) + "/" + output_file %}
+            {% if '/en/en/' in _url | string %}
+              {% set _url = _url | replace ('/en/en/', '/en/') %}
+            {% endif %}
+          <li{% if lang == DEFAULT_LANG %} class="lang-active"{% endif %}><a href="{{ _url }}">{{ lang | lookup_lang_name }}</a></li>
+          {% endfor %}
+      {% endif %}
+      </ul>
+      <!-- SNIP -->
+    </div>
+
     <div class="content-wrapper background_1">
       <main class="content">{% block content %} {% endblock content %}</main>
     </div>

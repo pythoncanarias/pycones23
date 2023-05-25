@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ page.title|striptags|e }} {% if page.subtitle %} - {{ page.subtitle|striptags|e }} {% endif %} - {{ super() }}
+<section class="section">
+    <div class="container">
+        <article class="message is-info">
+            <div class="message-header">
+                {{ page.title }}
+            </div>
+            <div class="message-body has-text-dark markdown">
+                {{ page.content }}
+            </div>
+        </article>
+    </div>
+</section>
+{% endblock content %}
