@@ -1,6 +1,7 @@
 Title: Tenerife
 Date: 2023-04-01 10:00
 Slug: ciudad
+save_as: ciudad/index.html
 
 
 # La Ciudad

@@ -1,6 +1,7 @@
 Title: Viaje
 Date: 2023-04-01 10:00
 Slug: viaje
+save_as: viaje/index.html
 
 # Viaje a Tenerife
 

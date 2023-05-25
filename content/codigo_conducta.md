@@ -1,6 +1,7 @@
 Title: Código de Conducta
 Date: 2023-04-01 10:00
 Slug: codigo_conducta
+save_as: codigo_conducta/index.html
 
 # Código de Conducta
 

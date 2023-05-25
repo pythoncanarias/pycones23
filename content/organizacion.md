@@ -1,6 +1,7 @@
 Title: Organización
 Date: 2023-04-01 10:00
 Slug: organizacion
+save_as: organizacion/index.html
 
 
 # Equipo Organizador
