@@ -12,7 +12,7 @@ aprovechar para disfrutar de unos días más en Canarias.
 ##  Luz Agencia de Viajes
 
 <img class="logo-agencia-viajes"
-  src="/theme/assets/images/viaje/luz-agencia-viajes.png" />
+  src="../theme/assets/images/viaje/luz-agencia-viajes.png" />
 
 Por ello hemos contactado con una agencia de viajes para que puedas hacer
 tus reservas y aprovechar los mejores precios, disfrutando de un
