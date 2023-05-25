@@ -1,6 +1,7 @@
 Title: Call for Papers
 Date: 2023-04-01 10:00
 Slug: c4p
+save_as: c4p/index.html
 
 # Llamada a ponentes (CFP)
 

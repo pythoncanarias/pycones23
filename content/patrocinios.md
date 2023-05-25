@@ -1,6 +1,7 @@
 Title: Patrocinios
 Date: 2023-04-01 10:00
 Slug: patrocinios
+save_as: patrocinios/index.html
 
 <h1 id="patrocinios">Patrocinios</h1>
 
