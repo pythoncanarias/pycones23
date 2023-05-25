@@ -28,6 +28,11 @@ h4 {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+.link {
+  text-decoration: none;
   color: var(--purple-color);
   font-weight: bold;
 }
@@ -85,8 +90,6 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
-  font-weight: normal;
 }
 
 .header .menu .menu-link:hover {
@@ -275,7 +278,7 @@ body {
   max-width: 70rem;
 }
 
-.content-wrapper .content h1 {
+.content-wrapper .content .main-title {
   font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -417,10 +420,6 @@ body {
   .card {
     width: 100%;
   }
-}
-
-.text-white {
-  color: white;
 }
 
 /*

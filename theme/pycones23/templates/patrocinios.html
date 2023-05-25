@@ -1,33 +1,51 @@
+{% extends 'base.html' %} {% block content %}
 
-<div class="center-buttons">
-  <a class="button brochure" href="{{ SPONSORS_DOSSIER_SUM_ES }}" download>
-    Descargar dosier para patrocinadores veteranos (ES)
-  </a>
-  <a
-    class="button brochure"
-    href="{{ SITEURL }}{{ SPONSORS_DOSSIER_SUM_EN }}"
-    download
-  >
-    Download brochure for senior sponsors (EN)
-  </a>
-</div>
-<br />
-<div class="center-buttons">
-  <a
-    class="button brochure"
-    href="{{ SITEURL }}{{ SPONSORS_DOSSIER_ES }}"
-    download
-  >
-    Descargar dosier para patrocinadores nuevos (ES)
-  </a>
-  <a
-    class="button brochure"
-    href="{{ SITEURL }}{{ SPONSORS_DOSSIER_EN }}"
-    download
-  >
-    Download brochure for new sponsors (EN)
-  </a>
-</div>
+<h1 id="patrocinios" class="main-title">Patrocinios</h1>
+
+<section class="hero is-info">
+  <div class="hero-body">
+    <p>
+      ¿Te gustaría patrocinar la próxima edición del evento mas importante sobre
+      desarrollo software con Python? No lo dudes y ponte ya mismo en contacto
+      con la organización escribiendo al correo
+      <a class="link" href="mailto:sponsors@2023.es.pycon.org"
+        >sponsors@2023.es.pycon.org</a
+      >
+      Para conocer todas las ventajas que te ofrecen nuestros distintos niveles
+      de patrocinio puedes descargar el folleto informativo:
+    </p>
+    <br />
+    <div class="center-buttons">
+      <a class="button brochure" href="{{ SPONSORS_DOSSIER_SUM_ES }}" download>
+        Descargar dosier para patrocinadores veteranos (ES)
+      </a>
+      <a
+        class="button brochure"
+        href="{{ SITEURL }}{{ SPONSORS_DOSSIER_SUM_EN }}"
+        download
+      >
+        Download brochure for senior sponsors (EN)
+      </a>
+    </div>
+    <br />
+    <div class="center-buttons">
+      <a
+        class="button brochure"
+        href="{{ SITEURL }}{{ SPONSORS_DOSSIER_ES }}"
+        download
+      >
+        Descargar dosier para patrocinadores nuevos (ES)
+      </a>
+      <a
+        class="button brochure"
+        href="{{ SITEURL }}{{ SPONSORS_DOSSIER_EN }}"
+        download
+      >
+        Download brochure for new sponsors (EN)
+      </a>
+    </div>
+  </div>
+</section>
 
 <div class="plans-table-scroller">
   <table class="plans-table">
@@ -125,3 +143,5 @@
     alguna duda
   </h3>
 </div>
+
+{% endblock content %}
