@@ -50,7 +50,7 @@
       <ul>
       {% if lang_siteurls %}
           {% for lang, url in lang_siteurls.items() %}
-            {% set _url = extra_siteurls.get(lang, SITEURL) + "/" + output_file %}
+            {% set _url = extra_siteurls.get(lang, SITEURL) + "/" + output_file | replace("index.html", "") %}
             {% if '/en/en/' in _url | string %}
               {% set _url = _url | replace ('/en/en/', '/en/') %}
             {% endif %}
