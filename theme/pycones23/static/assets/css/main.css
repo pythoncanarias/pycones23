@@ -4,6 +4,7 @@
   --text-color: #2b2b2b;
   --purple-color: #8800c4;
   --purple-light-color: #f991a1;
+  --orange-color: #f96f09;
   --purple-gradient: linear-gradient(45deg, var(--purple-color), #9c06de);
 }
 
@@ -895,3 +896,23 @@ a.boton-reserva {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+.languages {
+  font-size: 1.1rem;
+}
+
+.languages ul > li {
+  display: inline;
+  float: right;
+  margin-right: 20px;
+}
+
+.languages ul > li > a {
+  color: gray;
+}
+
+
+.languages ul > li.lang-active > a {
+  color: var(--orange-color);
+}
+

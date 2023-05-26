@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1e6758f1b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="{{ SITEURL }}/theme/assets/css/bulma-list.css"
+    />
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/assets/css/fonts.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/assets/css/main.css" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="{{ SITEURL }}/theme/assets/logo/favicon.jpg"
+    />
+    <title>PyConEs Canarias 2023</title>
+    <style>
+      .content-wrapper {
+        background-image: url({{ SITEURL }}/theme/assets/images/linea_landing.png),
+          url({{ SITEURL }}/theme/assets/images/linea7_landing.png);
+        background-position: center, center;
+        background-repeat: no-repeat, no-repeat;
+        min-height: 100px;
+        background-size: cover, cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="{{ SITEURL }}" class="logo-wrapper">
+        <img
+          class="logo"
+          src="{{ SITEURL }}/theme/assets/logo/logo-white.svg"
+          alt="Logo de PyConES Canarias 2023"
+        />
+      </a>
+
+      {% include "navbar.html" %}
+    </header>
+
+    <div class="languages">
+
+      <ul>
+      {% if lang_siteurls %}
+          {% for lang, url in lang_siteurls.items() %}
+            {% set _url = extra_siteurls.get(lang, SITEURL) + "/" + output_file | replace("index.html", "") %}
+            {% if '/en/en/' in _url | string %}
+              {% set _url = _url | replace ('/en/en/', '/en/') %}
+            {% endif %}
+          <li{% if lang == DEFAULT_LANG %} class="lang-active"{% endif %}><a href="{{ _url }}">{{ lang | lookup_lang_name }}</a></li>
+          {% endfor %}
+      {% endif %}
+      </ul>
+      <!-- SNIP -->
+    </div>
+
+    <div class="content-wrapper background_1">
+      <main class="content">{% block content %} {% endblock content %}</main>
+    </div>
+
+    <footer class="footer">
+      {% include "footer-links.html" %} {% include "social-media.html" %}
+    </footer>
+  </body>
+</html>
