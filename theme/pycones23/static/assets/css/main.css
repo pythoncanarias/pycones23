@@ -916,3 +916,61 @@ a.boton-reserva {
   color: var(--orange-color);
 }
 
+
+/* For the FAQ section */
+details[open] summary ~ * {
+  animation: open 0.2s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--purple-color);
+  position: relative;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 300;
+  list-style: none;
+}
+
+details summary:after {
+  content: "+";
+  color: black;
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 300;
+  transform-origin: center;
+  transition: 200ms linear;
+  color: var(--purple-color);
+}
+
+details[open] summary:after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+
+details summary {
+  outline: 0;
+  font-weight: 400;
+}
+
+details p {
+  font-size: 1rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+}
