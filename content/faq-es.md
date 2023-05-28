@@ -71,3 +71,15 @@ para actividades específicas.
 Ten en cuenta, se necesita elegir un plan de patrocinio antes de elegir los
 *Add-ons*, desde el más simple (Timanfaya) hasta el más completo (Teide).
 </details>
+
+<details markdown="1">
+<summary markdown="1">Soy patrocinante ¿Cómo y Cuántas entradas consigo?</summary>
+Se reservan **4 entradas** para patrocinantes con un descuento asociado al nivel de
+Patrocinio.
+
+Las empresas o instituciones patrocinantes recibirán un enlace especial para
+adquirir las entradas con su respectivo descuento.
+
+Si una empresa tiene interés en traer a más personas, se debera poner atención
+a las **tandas generales** de venta de tickets.
+</details>

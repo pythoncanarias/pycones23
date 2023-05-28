@@ -72,3 +72,15 @@ specific activities.
 Keep in mind, you need to choose a sponsorship plan before choosing the
 Add-ons, from the simplest (Timanfaya) to the most complete (Teide).
 </details>
+
+<details markdown="1">
+<summary markdown="1">I am a sponsor. How and how many tickets do I get?</summary>
+**4 tickets** are reserved for sponsors with a discount associated with the
+level of Sponsorship.
+
+Sponsoring companies or institutions will receive a special link to purchase
+tickets with their respective discount.
+
+If a company is interested in bringing more people, attention should be paid to
+the **general batch** of ticket sales.
+</details>
