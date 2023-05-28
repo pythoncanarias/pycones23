@@ -54,6 +54,14 @@
           >
             <span class="icon is-small"><i class="fab fa-linkedin"></i></span>
           </a>
+          {% endif %} {% if persona["instagram_username"] %}
+          <a
+            href="https://www.instagram.com/{{ persona['instagram_username'] }}"
+            target="_blank"
+            class="social-button"
+          >
+            <span class="icon is-small"><i class="fab fa-instagram"></i></span>
+          </a>
           {% endif %}
         </div>
       </div>

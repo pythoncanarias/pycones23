@@ -409,6 +409,7 @@ ORG = [
         "twitter_username": "SamarinAlex",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": "Andrés Orcajo",
@@ -420,6 +421,7 @@ ORG = [
         "twitter_username": "",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": "Cristián Maureira-Fredes",
@@ -431,6 +433,7 @@ ORG = [
         "twitter_username": "cmaureir",
         "mastodon_url": "https://mastodon.social/@cmaureir",
         "linkedin_url": "https://www.linkedin.com/in/cmaureir/",
+        "instagram_username": "",
     },
     {
         "name": "Christian Prada Osuna",
@@ -442,6 +445,7 @@ ORG = [
         "twitter_username": "dev_morphheus",
         "mastodon_url": "",
         "linkedin_url": "https://es.linkedin.com/in/christian-prada-osuna-0741217b",
+        "instagram_username": "",
     },
     {
         "name": "Esther",
@@ -453,6 +457,7 @@ ORG = [
         "twitter_username": "estherxjp",
         "mastodon_url": "",
         "linkedin_url": "https://es.linkedin.com/in/esther-jorge-paramio-275567198",
+        "instagram_username": "",
     },
     {
         "name": "Fran Escobar González",
@@ -464,6 +469,7 @@ ORG = [
         "twitter_username": "sheikLoves",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": "Javier Alonso Silva",
@@ -475,6 +481,7 @@ ORG = [
         "twitter_username": "Javinator9889",
         "mastodon_url": "",
         "linkedin_url": "https://linkedin.com/in/javinator9889",
+        "instagram_username": "",
     },
     {
         "name": "Jesús Torres Jorge",
@@ -486,6 +493,7 @@ ORG = [
         "twitter_username": "jesustorresdev",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/jesusmtorres/",
+        "instagram_username": "",
     },
     {
         "name": "Jimena E. Bermúdez",
@@ -497,6 +505,7 @@ ORG = [
         "twitter_username": "jimena_y_yo",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/jimena-eb/",
+        "instagram_username": "",
     },
     {
         "name": "Johanna Sanchez",
@@ -508,6 +517,7 @@ ORG = [
         "twitter_username": "EllaQuimica",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/johanna-sanchez-vallejo/",
+        "instagram_username": "",
     },
     {
         "name": "Juan Ignacio Rodríguez de León",
@@ -519,6 +529,7 @@ ORG = [
         "twitter_username": "",
         "mastodon_url": "https://tkz.one/@euribates",
         "linkedin_url": "https://linkedin.com/in/jileon",
+        "instagram_username": "",
     },
     {
         "name": "Lucía Cabrera Garabote",
@@ -530,6 +541,7 @@ ORG = [
         "twitter_username": "lucdevmind03",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "luciasoy_yoo",
     },
     {
         "name": "Nazaret Miranda López",
@@ -541,6 +553,7 @@ ORG = [
         "twitter_username": "",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/zaretmir/",
+        "instagram_username": "",
     },
     {
         "name": "Pablo Benavides",
@@ -552,6 +565,7 @@ ORG = [
         "twitter_username": "",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": "Jose Alberto Torres Aguera",
@@ -563,6 +577,7 @@ ORG = [
         "twitter_username": "Jata1984",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": "Samuel López Santamaría",
@@ -574,6 +589,7 @@ ORG = [
         "twitter_username": "",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/slopezsantamaria/",
+        "instagram_username": "",
     },
     {
         "name": "Sara Medrano Sánchez",
@@ -593,6 +609,7 @@ ORG = [
         "twitter_username": "SrtSanz_",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": "Sergio Delgado Quintero",
@@ -604,6 +621,7 @@ ORG = [
         "twitter_username": "sdelquin",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/sdelquin",
+        "instagram_username": "",
     },
     {
         "name": "Silvia García Hernández",
@@ -615,6 +633,7 @@ ORG = [
         "twitter_username": "",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": " Victor Vicente-Palacios",
@@ -626,6 +645,7 @@ ORG = [
         "twitter_username": "victorvicpal",
         "mastodon_url": "https://dair-community.social/@victorvicpal",
         "linkedin_url": "https://www.linkedin.com/in/victorvicpal/",
+        "instagram_username": "",
     },
     {
         "name": "Yodra López Herrera",
@@ -637,6 +657,7 @@ ORG = [
         "twitter_username": "yodralopez",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/yodralopez",
+        "instagram_username": "",
     },
 ]
 
