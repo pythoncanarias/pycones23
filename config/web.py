@@ -364,13 +364,17 @@ NOTICIAS = [
             "titulo": "¡Ya puedes comprar tus entradas!",
             "fecha": "5/5/2023",
             "contenido": ("¡Por fin ha llegado el día! Ya están aquí las entradas del evento más "
-                          "esperado del año de la comunidad Python en España"),
+                          "esperado del año de la comunidad Python en España. "
+                          "Luego de las Early Bird, atención a nuestras redes para las siguientes "
+                          "tandas de entradas"),
         },
         'en': {
             "titulo": "You can buy your tickets now!",
             "fecha": "5/5/2023",
             "contenido": ("Finally the day has come! The tickets for the most anticipated event "
-                          "of the year for the Python community in Spain are here"),
+                          "of the year for the Python community in Spain are here. "
+                          "After the Early Bird, keep an eye in our social media for the next "
+                          "ticket rounds."),
         },
     },
     {
