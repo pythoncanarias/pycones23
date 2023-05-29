@@ -27,6 +27,7 @@ Reservations/purchases can be made directly with the agency via phone or email.
 🌐 [www.luzagenciadeviajes.com](https://www.luzagenciadeviajes.com/)
 
 📞 [655400365](tel:655400365) *(Mondays to Fridays 08:00h-18:00h, and Saturday 08:00h-13:00h)*
+([Canary Time](https://time.is/Canary_Islands))
 
 📬 [info@luzagenciadeviajes.com](mailto:info@luzagenciadeviajes.com)
 
