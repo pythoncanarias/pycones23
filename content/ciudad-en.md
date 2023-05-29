@@ -22,7 +22,7 @@ promoting interaction among those attending the event.
   <div class="item">
     <div class="polaroid">
       <img src="../theme/assets/images/ciudad/naturaleza.jpg"
-      alt="Teide y roque cinchado desde el mirador de Boca Tauce"/>
+      alt="Teide and roque cinchado from the Boca Tauce viewpoint"/>
       <div class="caption">Nature</div>
     </div>
   </div>
@@ -30,7 +30,7 @@ promoting interaction among those attending the event.
   <div class="item">
     <div class="polaroid">
       <img src="../theme/assets/images/ciudad/playas.jpg"
-      alt="Vista aerea de la playa de San Andrés en Tenerife" />
+      alt="Aerial view of the beach of San Andrés in Tenerife" />
       <div class="caption">Beaches</div>
     </div>
   </div>
@@ -38,7 +38,8 @@ promoting interaction among those attending the event.
   <div class="item">
     <div class="polaroid">
       <img src="../theme/assets/images/ciudad/tecnologia.jpg"
-      alt="Operador manejando la Estación Óptica Terrestre en el Observatorio del Teide" />
+      alt="Operator managing the Ground Optical Station at the Teide
+      Observatory" />
       <div class="caption">Technology</div>
     </div>
   </div>
@@ -64,7 +65,7 @@ the scenario of the PyConES23.
   <div class="item">
     <div class="polaroid">
       <img src="../theme/assets/images/ciudad/ull.jpg"
-      alt="Fachada de la Universidad de la Laguna en el campus de Guajara" />
+      alt="Facade of the University of La Laguna on the Guajara campus"/>
       <div class="caption">ULL</div>
     </div>
   </div>
@@ -88,8 +89,7 @@ and economic- between Europe and Latin America.
   <div class="item">
     <div class="polaroid">
       <img src="../theme/assets/images/ciudad/lalaguna.jpg"
-      alt="Calle adoquinada en la ciudad vieja de San Cristobal de la Laguna"
-      />
+      alt="Cobbled street in the old city of San Cristobal de la Laguna" />
       <div class="caption">La Laguna</div>
     </div>
   </div>
