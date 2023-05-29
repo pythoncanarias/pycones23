@@ -32,7 +32,7 @@ pip install -r requirements.txt
 Genera el contenido, y comienza el servidor en localhost
 
 ```bash
-PYCONES_BUILD_TARGET=WEB pelican -l content -s pelicanconf.py -r --bind 0.0.0.0
+pelican -l content -s pelicanconf.py -r --bind 0.0.0.0
 ```
 
 visita `http://0.0.0.0:8000` para visualizar el sitio web.

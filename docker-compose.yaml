@@ -8,6 +8,4 @@ services:
       - "8000:8000"
     volumes:
       - .:/project-root
-    environment:
-      - PYCONES_BUILD_TARGET=${PYCONES_BUILD_TARGET:-WEB}
     command: pelican -l content -s pelicanconf.py -r --bind 0.0.0.0
