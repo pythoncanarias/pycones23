@@ -24,7 +24,7 @@ NAV_VALUES = [
     {"slug": "viaje", "text": "Viaje"},
     {"slug": "patrocinios", "text": "Patrocinios"},
     {"slug": "c4p", "text": "Llamado de Propuestas"},
-    {"slug": "organizacion", "text": "Organización"},
+    {"slug": "faq", "text": "Preguntas frecuentes"},
 ]
 
 # i18n
@@ -44,7 +44,7 @@ I18N_SUBSITES = {
                 {"slug": "viaje", "text": "Trip"},
                 {"slug": "patrocinios", "text": "Sponsors"},
                 {"slug": "c4p", "text": "Call for Proposals"},
-                {"slug": "organizacion", "text": "Organization"},
+                {"slug": "faq", "text": "FAQ"},
             ],
             'CRONOGRAMA':  [
                 {"fecha": "February", "desc": "We present the PyConES in Canary Islands!"},
