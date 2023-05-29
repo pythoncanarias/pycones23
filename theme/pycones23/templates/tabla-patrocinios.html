@@ -1,0 +1,110 @@
+
+<div class="center-buttons">
+  <a class="button brochure" href="{{ SPONSORS_DOSSIER_SUM_ES }}" download>
+    Descargar dosier para patrocinadores veteranos (ES)
+  </a>
+  <a
+    class="button brochure"
+    href="{{ SITEURL }}{{ SPONSORS_DOSSIER_ES }}"
+    download
+  >
+    Descargar dosier para patrocinadores nuevos (ES)
+  </a>
+</div>
+
+<div class="plans-table-scroller">
+  <table class="plans-table">
+    <thead>
+      <tr>
+        <th></th>
+        {% for plan in PLANES %}
+        <th>
+          <img
+            src="{{ SITEURL }}{{ plan.image }}"
+            class="plan-image"
+            alt="{{ plan.titulo }} {{ plan.altura }}"
+          />
+          <span class="plan-title">{{ plan.titulo }}</span>
+        </th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {% for beneficio in BENEFICIOS %}
+
+        <td class="benefit-title">{{ beneficio.titulo['es'] }}</td>
+
+        {% for plan in PLANES %} {% if beneficio[plan.key] == True %}
+        <td class="has-benefit">
+          <i class="fa-solid fa-check"></i>
+        </td>
+        {% elif beneficio[plan.key] == False %}
+        <td>
+          <i class="fa-solid fa-xmark"></i>
+        </td>
+        {% else %}
+        <td class="discount">{{ beneficio[plan.key] }}</td>
+        {% endif %} {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<p></p>
+<div class="box-addons">
+  <h2>Este año, ¡personaliza tu patrocinio añadiendo add-ons!</h2>
+
+  <div class="box-content">
+    <div class="card">
+      <div class="card_image">
+        <img
+          src="{{ SITEURL }}/theme/assets/images/patrocinios/entrevistas.PNG"
+        />
+      </div>
+
+      <div class="container">
+        <h3><b>Entrevistas</b></h3>
+        <p>
+          Se sabe que en la PyConES hay mucho talento. ¿Necesitas una sala para
+          poder hacer entrevistas? ¡Nosotros te la damos! (3h por día)
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card_image">
+        <img
+          src="{{ SITEURL }}/theme/assets/images/patrocinios/lactancia.PNG"
+        />
+      </div>
+
+      <div class="container">
+        <h3><b>Sala de Lactancia</b></h3>
+        <p>
+          Roll-up en la entrada y ¡decórala por dentro, aporta botellas de agua
+          y elementos de confort para que quienes la utilicen se sientan cómodos
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card_image">
+        <img src="{{ SITEURL }}/theme/assets/images/patrocinios/ludoteca.PNG" />
+      </div>
+      <div class="container">
+        <h3><b>Ludoteca</b></h3>
+        <p>
+          Roll-up en la entrada de la sala. ¡Puedes aportar juegos, juguetes y
+          más! Destácate como una empresa que apuesta por la familia
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <h2>... y muchos mas!!</h2>
+  <br />
+  <h3 class="center">
+    ¿Quieres saber más? Échale un vistazo a los
+    <a class="link" href="#patrocinios">dossiers</a> y contáctanos si tienes
+    alguna duda
+  </h3>
+</div>

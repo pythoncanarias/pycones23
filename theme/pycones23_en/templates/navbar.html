@@ -1,0 +1,14 @@
+
+<nav class="menu">
+  {% for item in NAV_VALUES %}
+  <a href="{{ SITEURL }}/{{ item['slug'] }}/"
+     class="menu-link {% if output_file == '{{ item[\'slug\'] }}/index.html' %}menu-link-active{% endif %}">
+    {{ item['text'] }}
+  </a>
+  {% endfor %}
+  <a
+  href="https://www.eventbrite.es/e/entradas-pycones-2023-tenerife-599317373397"
+  class="menu-link menu-link-tickets">
+  Tickets
+  </a>
+</nav>
