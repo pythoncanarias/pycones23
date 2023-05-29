@@ -13,7 +13,8 @@ the opportunity to enjoy a few more days in the Canary Islands.
 ##  Travel Agency "Luz"
 
 <img class="logo-agencia-viajes"
-  src="../theme/assets/images/viaje/luz-agencia-viajes.png" />
+  src="../theme/assets/images/viaje/luz-agencia-viajes.png"
+  alt="Luz agencia travel agency logo" />
 
 For this reason, we have contacted a travel agency so that you can make your
 reservations and take advantage of the best prices, enjoying a **10% discount on

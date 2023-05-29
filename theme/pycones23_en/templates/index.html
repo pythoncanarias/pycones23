@@ -3,40 +3,49 @@
 {% block content %}
 
 <div class="box-intro">
-   <div>
-      <img src="{{ SITEURL }}/theme/assets/logo/logo-white.svg" >
-   </div>
-   <div>
+   <h1>
+      <img src="{{ SITEURL }}/theme/assets/logo/logo-white.svg"
+      alt="PyConES Canarias 2023" >
+   </h1>
+   <div cass="intro">
+      <p>
       Welcome to PyConES, the most important Python conference in Spain.
-      An event that will bring together hundreds of enthusiasts of the Python programming language, with an incredible agenda in the best possible location.
-      <br>
-      <br>
-      If you want to be part of our sponsors to make this conference even more impressive, you can have your own space within the event.
-      <br>
-      <h1>
+      An event that will bring together hundreds of enthusiasts of the Python
+      programming language, with an incredible agenda in the best possible
+      location.
+      </p>
+      <p>
+      If you want to be part of our sponsors to make this conference even more
+      impressive, you can have your own space within the event.
+      </p>
+      <span class="big-text">
          October 6th, 7th and 8th
-      </h1>
+      </span>
    </div>
 </div>
 
-<h1>News</h1>
+<h2 class="subtitle">News</h2>
 
 {% for noticia in NOTICIAS %}
 <div class="news-box">
-   <div class="news-title">{{ noticia['en'].titulo }} <span>{{ noticia['en'].fecha }}</span></div>
-   <div class="news-content">
+   <h3 class="news-title">{{ noticia['en'].titulo }} <span>{{ noticia['en'].fecha }}</span></h3>
+   <p class="news-content">
       {{ noticia['en'].contenido }}
-   </div>
+   </p>
 </div>
 {% endfor %}
 
 
-<h1>Event schedule</h1>
-<p>Below you will see some of the most important milestones of the conference. In case the exact date is not available, it will be confirmed as soon as we can.</p>
+<h2 class="subtitle">Event schedule</h2>
+<p>
+   Below you will see some of the most important milestones of the conference.
+   In case the exact date is not available, it will be confirmed as soon as we
+   can.
+</p>
 <div class="linea-tiempo center">
   {% for item in CRONOGRAMA %}
   <div class="momento">
-     <h4>{{ item['fecha'] }}</h4>
+     <h3 class="momento-date">{{ item['fecha'] }}</h3>
     <div class="descripcion">
        {{ item['desc'] }}
     </div>
