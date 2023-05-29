@@ -1,33 +1,15 @@
+
 <nav class="menu">
-  <a
-    href="{{ SITEURL }}/ciudad/"
-    class="menu-link {% if output_file == 'ciudad/index.html' %}menu-link-active{% endif %}"
-  >
-    Ciudad
+  {% for item in NAV_VALUES %}
+  <a href="{{ SITEURL }}/{{ item['slug'] }}/"
+     class="menu-link {% if output_file == '{{ item[\'slug\'] }}/index.html' %}menu-link-active{% endif %}">
+    {{ item['text'] }}
   </a>
+  {% endfor %}
   <a
-    href="{{ SITEURL }}/viaje/"
-    class="menu-link {% if output_file == 'viaje/index.html' %}menu-link-active{% endif %}"
-  >
-    Viaje
-  </a>
-  <a
-    href="{{ SITEURL }}/patrocinios/"
-    class="menu-link {% if output_file == 'patrocinios/index.html' %}menu-link-active{% endif %}"
-  >
-    Patrocinios
-  </a>
-  <a
-    href="{{ SITEURL }}/c4p/"
-    class="menu-link {% if output_file == 'c4p/index.html' %}menu-link-active{% endif %}"
-  >
-    Call for Papers
-  </a>
-  <a
-    href="{{ SITEURL }}/organizacion/"
-    class="menu-link {% if output_file == 'organizacion/index.html' %}menu-link-active{% endif %}"
-  >
-    Organización
+  href="https://www.eventbrite.es/e/entradas-pycones-2023-tenerife-599317373397"
+  class="menu-link menu-link-tickets">
+  Entradas
   </a>
   <a
   href="{{ SITEURL }}"

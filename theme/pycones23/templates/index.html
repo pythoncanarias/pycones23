@@ -3,16 +3,21 @@
 {% block content %}
 
 <div class="box-intro">
-   <h1>      
+   <h1>
       <img src="{{ SITEURL }}/theme/assets/logo/logo-white.svg"
       alt="PyConES Canarias 2023" >
    </h1>
    <div class="intro">
       <p>
-         Os damos la bienvenida a la PyConES, la conferencia de Python más importante de España. Un evento que reunirá a cientos de entusiastas del lenguaje de programación Python, con una agenda increíble en la mejor localización posible. 
+         Os damos la bienvenida a la PyConES, la conferencia de Python más
+         importante de España. Un evento que reunirá a cientos de entusiastas
+         del lenguaje de programación Python, con una agenda increíble en la
+         mejor localización posible.
       </p>
       <p>
-         Si quieres formar parte de nuestros patrocinadores para hacer esta conferencia aún mas impresionante puedes disponer de espacio propio dentro del evento.
+         Si quieres formar parte de nuestros patrocinadores para hacer esta
+         conferencia aún mas impresionante puedes disponer de espacio propio
+         dentro del evento.
       </p>
        <span class="big-text">
          6, 7 y 8 de octubre
@@ -24,20 +29,24 @@
 
 {% for noticia in NOTICIAS %}
 <div class="news-box">
-   <h3 class="news-title">{{ noticia.titulo }} <span>{{ noticia.fecha }}</span></h3>
+   <h3 class="news-title">{{ noticia['es'].titulo }} <span>{{ noticia['es'].fecha }}</span></h3>
    <p class="news-content">
-      {{ noticia.contenido }}
+      {{ noticia['es'].contenido }}
    </p>
 </div>
 {% endfor %}
 
 
 <h2 class="subtitle">Cronograma del evento</h2>
-<p>A continuación podrás ver algunos de los hitos más importantes de la conferencia. En caso de que la fecha exacta no esté disponible, se confirmará desde que podamos.</p>
+<p>
+   A continuación podrás ver algunos de los hitos más importantes de la
+   conferencia. En caso de que la fecha exacta no esté disponible, se
+   confirmará desde que podamos.
+</p>
 <div class="linea-tiempo center">
   {% for item in CRONOGRAMA %}
   <div class="momento">
-     <h3 class="momento-date">{{ item['fecha'] }}</h4>
+     <h3 class="momento-date">{{ item['fecha'] }}</h3>
     <div class="descripcion">
        {{ item['desc'] }}
     </div>

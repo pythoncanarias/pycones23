@@ -1,0 +1,117 @@
+
+<div class="center-buttons">
+  <a
+    class="button brochure"
+    href="{{ SITEURL }}{{ SPONSORS_DOSSIER_SUM_EN }}"
+    download
+  >
+    Download brochure for senior sponsors (EN)
+  </a>
+  <a
+    class="button brochure"
+    href="{{ SITEURL }}{{ SPONSORS_DOSSIER_EN }}"
+    download
+  >
+    Download brochure for new sponsors (EN)
+  </a>
+</div>
+
+<div class="plans-table-scroller">
+  <table class="plans-table">
+    <thead>
+      <tr>
+        <th></th>
+        {% for plan in PLANES %}
+        <th>
+          <img
+            src="{{ SITEURL }}{{ plan.image }}"
+            class="plan-image"
+            alt="{{ plan.titulo }} {{ plan.altura }}"
+          />
+          <span class="plan-title">{{ plan.titulo }}</span>
+        </th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {% for beneficio in BENEFICIOS %}
+
+        <td class="benefit-title">{{ beneficio.titulo['en'] }}</td>
+
+        {% for plan in PLANES %} {% if beneficio[plan.key] == True %}
+        <td class="has-benefit">
+          <i class="fa-solid fa-check"></i>
+        </td>
+        {% elif beneficio[plan.key] == False %}
+        <td>
+          <i class="fa-solid fa-xmark"></i>
+        </td>
+        {% else %}
+        <td class="discount">{{ beneficio[plan.key] }}</td>
+        {% endif %} {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<p></p>
+<div class="box-addons">
+  <h2>This year, personalize your sponsorship by adding add-ons!</h2>
+
+  <div class="box-content">
+    <div class="card">
+      <div class="card_image">
+        <img
+          src="{{ SITEURL }}/theme/assets/images/patrocinios/entrevistas.PNG"
+          alt="Two women in an interview"
+        />
+      </div>
+
+      <div class="container">
+        <h3><b>Interviews</b></h3>
+        <p>
+          It is known that there is a lot of talent at PyConES. Do you need
+          a room to be able to do interviews? We give it to you! (3h per day)
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card_image">
+        <img
+          src="{{ SITEURL }}/theme/assets/images/patrocinios/lactancia.PNG"
+          alt="A woman breastfeeding her baby sitting in an armchair"
+        />
+      </div>
+
+      <div class="container">
+        <h3><b>Nursery room</b></h3>
+        <p>
+          Roll-up at the entrance and decorate it inside, bring bottles of
+          water and comfort elements so that those who use it feel comfortable
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card_image">
+        <img src="{{ SITEURL }}/theme/assets/images/patrocinios/ludoteca.PNG"
+        alt="Four puzzle pieces" />
+      </div>
+      <div class="container">
+        <h3><b>Toy Library</b></h3>
+        <p>
+          Roll-up at the entrance of the room. You can contribute games, toys
+          and more! Stand out as a company that is committed to the family
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <h2>... and many more!</h2>
+  <br />
+  <h3 class="center">
+    Wanna know more? Check out the
+    <a class="link" href="#patrocinios">brochures</a> and contact us if you
+    have any question
+  </h3>
+</div>

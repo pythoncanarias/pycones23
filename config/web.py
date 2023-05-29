@@ -1,13 +1,72 @@
 import random
 
+
 AUTHOR = 'Python España'
 SITENAME = 'PyConES23'
 
 PATH = 'content'
+OUTPUT_PATH = 'output'
+ARTICLE_SAVE_AS = '{slug}.html'
+ARTICLE_URL = '{slug}.html'
 
 TIMEZONE = 'Atlantic/Canary'
 
 DEFAULT_LANG = 'es'
+
+THEME = "theme/pycones23"
+
+PLUGINS =["i18n_subsites"]
+
+NAV_VALUES = [
+    {"slug": "ciudad", "text": "Ciudad"},
+    {"slug": "viaje", "text": "Viaje"},
+    {"slug": "patrocinios", "text": "Patrocinios"},
+    {"slug": "c4p", "text": "Llamado de Propuestas"},
+    {"slug": "faq", "text": "Preguntas frecuentes"},
+]
+
+# i18n
+# - We are using the simple option but more difficult to maintain
+#   approach which is using two templates, one for each language.
+# - We have two options to provide information for the subsite,
+#   we either override the variable like 'CRONOGRAMA' with English
+#   content, or we could provide structures with a simple 'en' and
+#   'es' sections, like NOTICIAS (further down)
+I18N_SUBSITES = {
+        'en': {
+            'SITENAME': 'PyConES23 - EN',
+            'OUTPUT_PATH': 'output/en',
+            'THEME': "theme/pycones23_en",
+            'NAV_VALUES':  [
+                {"slug": "ciudad", "text": "City"},
+                {"slug": "viaje", "text": "Trip"},
+                {"slug": "patrocinios", "text": "Sponsors"},
+                {"slug": "c4p", "text": "Call for Proposals"},
+                {"slug": "faq", "text": "FAQ"},
+            ],
+            'CRONOGRAMA':  [
+                {"fecha": "February", "desc": "We present the PyConES in Canary Islands!"},
+                {"fecha": "April", "desc": "Opening for submissiuon of proposals and tutorials 🗒️"},
+                {"fecha": "May", "desc": "Opening for ticket sales 🎟️"},
+                {"fecha": "May", "desc": "Opening for grants applications 🧞"},
+                {"fecha": "June 23th", "desc": "Closing call for proposals and tutorials ✋"},
+                {"fecha": "July 9th", "desc": "Announcement of accepted talks and tutorials 🏆"},
+                {"fecha": "October 6th", "desc": "The show starts! 🐍"},
+            ]
+        },
+}
+
+languages_lookup = {
+    'es': 'ES',
+    'en': 'EN',
+    }
+
+def lookup_lang_name(lang_code):
+    return languages_lookup[lang_code]
+
+JINJA_FILTERS = {
+    'lookup_lang_name': lookup_lang_name,
+    }
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -32,18 +91,11 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
-THEME = "theme/pycones23"
 
 
 TEMPLATE_PAGES = {
     'CNAME': 'CNAME',
-    'c4p.html': 'c4p/index.html',
-    'ciudad.html': 'ciudad/index.html',
-    'codigo_conducta.html': 'codigo_conducta/index.html',
     'ediciones_anteriores.html': 'ediciones_anteriores/index.html',
-    'organizacion.html': 'organizacion/index.html',
-    'patrocinios.html': 'patrocinios/index.html',
-    'viaje.html': 'viaje/index.html',
 }
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
@@ -149,126 +201,126 @@ PLANES = [
 
 BENEFICIOS = [
     {
-        "titulo": "Descuento entradas",
+        "titulo": {"es": "Descuento entradas", "en": "Tickets discount"},
         "teide": "20%",
         "tamadaba": "15%",
         "teneguia": "10%",
         "timanfaya": "5%",
     },
     {
-        "titulo": "Logo en la Web",
+        "titulo": {"es": "Logo en la Web", "en": "Logo in the Web"},
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": True,
     },
     {
-        "titulo": "Obsequio paquete bienvenida",
+        "titulo": {"es": "Obsequio paquete bienvenida", "en": "Gift inside the welcome pack"},
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": True,
     },
     {
-        "titulo": "Acceso Add-ons",
+        "titulo": {"es": "Acceso Add-ons", "en": "Access to Add-ons"},
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": True,
     },
     {
-        "titulo": "Publicaciones en RRSS",
+        "titulo": {"es": "Publicaciones en RRSS", "en": "Social Network publications"},
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": True,
     },
     {
-        "titulo": "Publicar ofertas de trabajo",
+        "titulo": {"es": "Publicar ofertas de trabajo", "en": "Publish Job Offers"},
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": True,
     },
     {
-        "titulo": "Folleto en paquete bienvenida",
+        "titulo": {"es": "Folleto en paquete bienvenida", "en": "Brochure in the welcome pack"},
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": False,
     },
     {
-        "titulo": "Logo cartelería",
+        "titulo": {"es": "Logo cartelería", "en": "Logo in posters"},
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": False,
     },
     {
-        "titulo": "Anuncio en programa",
+        "titulo": {"es": "Anuncio en programa", "en": "Announcement in the program"},
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": False,
     },
     {
-        "titulo": "Stand",
+        "titulo": {"es": "Stand", "en": "Booth"},
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": False,
     },
     {
-        "titulo": "Logo newsletter",
+        "titulo": {"es": "Logo newsletter", "en": "Logo in newsletter"},
         "teide": True,
         "tamadaba": True,
         "teneguia": True,
         "timanfaya": False,
     },
     {
-        "titulo": "Logo al proyectar en pausas",
+        "titulo": {"es": "Logo al proyectar en pausas", "en": "Logo in the break screens"},
         "teide": True,
         "tamadaba": True,
         "teneguia": False,
         "timanfaya": False,
     },
     {
-        "titulo": "Charla Patrocinada",
+        "titulo": {"es": "Charla Patrocinada", "en": "Sponsored talk"},
         "teide": True,
         "tamadaba": True,
         "teneguia": False,
         "timanfaya": False,
     },
     {
-        "titulo": "Agradecimiento en vivo",
+        "titulo": {"es": "Agradecimiento en vivo", "en": "Public thank you live"},
         "teide": True,
         "tamadaba": True,
         "teneguia": False,
         "timanfaya": False,
     },
     {
-        "titulo": "Notas de prensa",
+        "titulo": {"es": "Notas de prensa", "en": "Press releases"},
         "teide": True,
         "tamadaba": True,
         "teneguia": False,
         "timanfaya": False,
     },
     {
-        "titulo": "Miembro jurado",
+        "titulo": {"es": "Miembro jurado", "en": "Jury membership"},
         "teide": True,
         "tamadaba": False,
         "teneguia": False,
         "timanfaya": False,
     },
     {
-        "titulo": "Entrega premio",
+        "titulo": {"es": "Entrega premio", "en": "Prize delivery"},
         "teide": True,
         "tamadaba": False,
         "teneguia": False,
         "timanfaya": False,
     },
     {
-        "titulo": "PRECIO",
+        "titulo": {"es": "PRECIO", "en": "PRICE"},
         "teide": "+6000€",
         "tamadaba": "4500€",
         "teneguia": "3000€",
@@ -308,9 +360,45 @@ PATROCINADORES = {
 
 NOTICIAS = [
     {
-        "titulo": "¡Lanzamiento del sitio web!",
-        "fecha": "2023-04-12",
-        "contenido": "Os damos la bienvenida a la PyConES, la conferencia de Python más importante de España. Un evento que reunirá a cientos de entusiastas del lenguaje de programación Python, con una agenda increíble en la mejor localización posible. Si quieres formar parte de nuestros patrocinadores para hacer esta conferencia aún mas impresionante puedes disponer de espacio propio dentro del evento.",
+        'es': {
+            "titulo": "¡Ya puedes comprar tus entradas!",
+            "fecha": "5/5/2023",
+            "contenido": ("¡Por fin ha llegado el día! Ya están aquí las entradas del evento más "
+                          "esperado del año de la comunidad Python en España. "
+                          "Luego de las Early Bird, atención a nuestras redes para las siguientes "
+                          "tandas de entradas"),
+        },
+        'en': {
+            "titulo": "You can buy your tickets now!",
+            "fecha": "5/5/2023",
+            "contenido": ("Finally the day has come! The tickets for the most anticipated event "
+                          "of the year for the Python community in Spain are here. "
+                          "After the Early Bird, keep an eye in our social media for the next "
+                          "ticket rounds."),
+        },
+    },
+    {
+        'es': {
+            "titulo": "Website launch!",
+            "fecha": "4/12/2023",
+            "contenido": ("We welcome you to PyConES, the most important Python conference in "
+                          "Spain. An event that will bring together hundreds of enthusiasts of "
+                          "the Python programming language, with an incredible agenda in the best "
+                          "possible location. If you want to be part of our sponsors to make this "
+                          "conference even more impressive, you can have your own space within "
+                          "the event."),
+        },
+        'en': {
+            "titulo": "¡Lanzamiento del sitio web!",
+            "fecha": "4/12/2023",
+            "contenido": ("Os damos la bienvenida a la PyConES, la conferencia de Python más "
+                          "importante de España. Un evento que reunirá a cientos de entusiastas "
+                          "del lenguaje de programación Python, con una agenda increíble en la "
+                          "mejor localización posible. Si quieres formar parte de nuestros "
+                          "patrocinadores para hacer esta conferencia aún mas impresionante "
+                          "puedes disponer de espacio propio dentro del evento."),
+        },
+
     },
 ]
 
@@ -325,6 +413,7 @@ ORG = [
         "twitter_username": "SamarinAlex",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": "Andrés Orcajo",
@@ -336,6 +425,7 @@ ORG = [
         "twitter_username": "",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": "Cristián Maureira-Fredes",
@@ -347,17 +437,7 @@ ORG = [
         "twitter_username": "cmaureir",
         "mastodon_url": "https://mastodon.social/@cmaureir",
         "linkedin_url": "https://www.linkedin.com/in/cmaureir/",
-    },
-    {
-        "name": "Christian Prada Osuna",
-        "title": "Technical Lead Software Developer",
-        "img": "/theme/assets/images/org/christian.jpeg",
-        "community": "Python Granada",
-        "wg": ["Patrocinios"],
-        "github_username": "cprada87",
-        "twitter_username": "dev_morphheus",
-        "mastodon_url": "",
-        "linkedin_url": "https://es.linkedin.com/in/christian-prada-osuna-0741217b",
+        "instagram_username": "",
     },
     {
         "name": "Esther",
@@ -369,6 +449,7 @@ ORG = [
         "twitter_username": "estherxjp",
         "mastodon_url": "",
         "linkedin_url": "https://es.linkedin.com/in/esther-jorge-paramio-275567198",
+        "instagram_username": "",
     },
     {
         "name": "Fran Escobar González",
@@ -380,6 +461,7 @@ ORG = [
         "twitter_username": "sheikLoves",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": "Javier Alonso Silva",
@@ -391,6 +473,7 @@ ORG = [
         "twitter_username": "Javinator9889",
         "mastodon_url": "",
         "linkedin_url": "https://linkedin.com/in/javinator9889",
+        "instagram_username": "",
     },
     {
         "name": "Jesús Torres Jorge",
@@ -402,6 +485,7 @@ ORG = [
         "twitter_username": "jesustorresdev",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/jesusmtorres/",
+        "instagram_username": "",
     },
     {
         "name": "Jimena E. Bermúdez",
@@ -413,6 +497,7 @@ ORG = [
         "twitter_username": "jimena_y_yo",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/jimena-eb/",
+        "instagram_username": "",
     },
     {
         "name": "Johanna Sanchez",
@@ -424,6 +509,7 @@ ORG = [
         "twitter_username": "EllaQuimica",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/johanna-sanchez-vallejo/",
+        "instagram_username": "",
     },
     {
         "name": "Juan Ignacio Rodríguez de León",
@@ -435,6 +521,7 @@ ORG = [
         "twitter_username": "",
         "mastodon_url": "https://tkz.one/@euribates",
         "linkedin_url": "https://linkedin.com/in/jileon",
+        "instagram_username": "",
     },
     {
         "name": "Lucía Cabrera Garabote",
@@ -446,6 +533,7 @@ ORG = [
         "twitter_username": "lucdevmind03",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "luciasoy_yoo",
     },
     {
         "name": "Nazaret Miranda López",
@@ -457,6 +545,7 @@ ORG = [
         "twitter_username": "",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/zaretmir/",
+        "instagram_username": "",
     },
     {
         "name": "Pablo Benavides",
@@ -468,6 +557,7 @@ ORG = [
         "twitter_username": "",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": "Jose Alberto Torres Aguera",
@@ -479,6 +569,7 @@ ORG = [
         "twitter_username": "Jata1984",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": "Samuel López Santamaría",
@@ -490,25 +581,7 @@ ORG = [
         "twitter_username": "",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/slopezsantamaria/",
-    },
-    {
-        "name": "Sara Medrano Sánchez",
-        "title": "Comercial Sector Energético",
-        "img": "/theme/assets/images/org/sara.jpeg",
-        "community": "Python Granada",
-        "wg": [
-            "Programa",
-            "Diversidad",
-            "Infraestructura",
-            "Redes Sociales",
-            "Patrocinios",
-            "Web",
-            "Voluntariado",
-        ],
-        "github_username": "",
-        "twitter_username": "SrtSanz_",
-        "mastodon_url": "",
-        "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": "Sergio Delgado Quintero",
@@ -520,6 +593,7 @@ ORG = [
         "twitter_username": "sdelquin",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/sdelquin",
+        "instagram_username": "",
     },
     {
         "name": "Silvia García Hernández",
@@ -531,6 +605,7 @@ ORG = [
         "twitter_username": "",
         "mastodon_url": "",
         "linkedin_url": "",
+        "instagram_username": "",
     },
     {
         "name": " Victor Vicente-Palacios",
@@ -542,6 +617,7 @@ ORG = [
         "twitter_username": "victorvicpal",
         "mastodon_url": "https://dair-community.social/@victorvicpal",
         "linkedin_url": "https://www.linkedin.com/in/victorvicpal/",
+        "instagram_username": "",
     },
     {
         "name": "Yodra López Herrera",
@@ -553,6 +629,7 @@ ORG = [
         "twitter_username": "yodralopez",
         "mastodon_url": "",
         "linkedin_url": "https://www.linkedin.com/in/yodralopez",
+        "instagram_username": "",
     },
 ]
 
@@ -564,8 +641,8 @@ CRONOGRAMA = [
     {"fecha": "Febrero", "desc": "¡Presentamos la PyConES en Canarias!"},
     # TODO: Agregar la fecha cuando se lance el sitio
     {"fecha": "Abril", "desc": "Apertura para el envío de ponencias y talleres 🗒️"},
-    {"fecha": "Abril", "desc": "Apertura para la venta de entradas 🎟️"},
-    {"fecha": "Abril", "desc": "Apertura para la postulación de becas 🧞"},
+    {"fecha": "Mayo", "desc": "Apertura para la venta de entradas 🎟️"},
+    {"fecha": "Mayo", "desc": "Apertura para la postulación de becas 🧞"},
     {"fecha": "23 de Junio", "desc": "Cierre del llamado a ponencias y talleres ✋"},
     {"fecha": "9 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
     {"fecha": "6 de Octubre", "desc": "¡Empieza el espectáculo! 🐍"},

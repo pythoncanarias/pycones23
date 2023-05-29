@@ -63,6 +63,7 @@
     var(--blue) 0%,
     var(--pink) 100%
   );
+  --orange-color: #f96f09;
 }
 
 *,
@@ -85,11 +86,6 @@ h4 {
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.link {
   text-decoration: none;
   color: var(--purple-color);
   font-weight: bold;
@@ -144,6 +140,8 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: white;
+  font-weight: normal;
 }
 
 .header .menu .menu-link:hover {
@@ -244,7 +242,7 @@ body {
   max-width: 70rem;
 }
 
-.content-wrapper .content .main-title {
+.content-wrapper .content h1 {
   font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -496,6 +494,10 @@ Código de conducta
 .examples {
   font-size: 16px;
   color: var(--warning);
+}
+
+.text-white {
+  color: white;
 }
 
 /*
@@ -970,4 +972,82 @@ img.logo-agencia-viajes {
 a.boton-reserva {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.languages {
+  font-size: 1.1rem;
+}
+
+.languages ul > li {
+  display: inline;
+  float: right;
+  margin-right: 20px;
+}
+
+.languages ul > li > a {
+  color: gray;
+}
+
+
+.languages ul > li.lang-active > a {
+  color: var(--orange-color);
+}
+
+
+/* For the FAQ section */
+details[open] summary ~ * {
+  animation: open 0.2s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--purple-color);
+  position: relative;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 300;
+  list-style: none;
+}
+
+details summary:after {
+  content: "+";
+  color: black;
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 300;
+  transform-origin: center;
+  transition: 200ms linear;
+  color: var(--purple-color);
+}
+
+details[open] summary:after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+
+details summary {
+  outline: 0;
+  font-weight: 400;
+}
+
+details p {
+  font-size: 1rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
 }
