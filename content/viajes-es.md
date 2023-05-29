@@ -28,6 +28,7 @@ o correo electrónico.
 🌐 [www.luzagenciadeviajes.com](https://www.luzagenciadeviajes.com/)
 
 📞 [655400365](tel:655400365) *(De lunes a viernes en horario de 8:00h a 18:00h y sábados de 8:00h a 13:00h)*
+([Hora Canarias](https://time.is/Canary_Islands))
 
 📬 [info@luzagenciadeviajes.com](mailto:info@luzagenciadeviajes.com)
 
