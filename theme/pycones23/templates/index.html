@@ -53,4 +53,34 @@
   </div>
   {% endfor %}
 </div>
+
+<div class="sponsors">
+  <h1 class="subtitle">Patrocinios</h1>
+  <p>
+  Gracias a las empresas que colaboran con la PyConES podemos ofrecer el mejor
+  evento y experiencia posible.  Somos una conferencia con un bajo coste de
+  entrada capaz de ofrecer una experiencia de 3 días incluyendo regalos,
+  almuerzos, comidas y meriendas.
+  Con la ayuda de estas empresas conseguimos hacer un evento diverso
+  e inclusivo enfocado en cuidar la comunidad de Python.
+  </p>
+  {% for level, sponsors in SPONSORS.items() %}
+  {% if sponsors %}
+  <div class="title-badge">
+     <img src="/theme/assets/badges/{{ level }}.png"> Nivel {{ level }}
+  </div>
+  <div class="{{ level }}-grid">
+  {%   for name, values in sponsors.items() %}
+  <div class="card">
+     <a href={{ values['url'] }}>
+        <figure class="{{ level }}-figure">
+           <img src="{{ values['logo'] }}" alt="Logo {{ name }}" />
+        </figure>
+     </a>
+  </div>
+  {%   endfor %}
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
 {% endblock content %}

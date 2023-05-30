@@ -647,3 +647,18 @@ CRONOGRAMA = [
     {"fecha": "9 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
     {"fecha": "6 de Octubre", "desc": "¡Empieza el espectáculo! 🐍"},
 ]
+
+SPONSORS = {
+    "teide": {
+    },
+    "tamadaba": {
+    },
+    "teneguia": {
+    },
+    "timanfaya": {
+        "GISCE-TI, S.L.": {
+            "logo": "/theme/assets/images/sponsors/logo_gisce.svg",
+            "url": "https://gisce.net",
+        },
+    },
+}
