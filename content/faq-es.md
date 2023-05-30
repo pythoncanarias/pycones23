@@ -83,3 +83,16 @@ adquirir las entradas con su respectivo descuento.
 Si una empresa tiene interés en traer a más personas, se debera poner atención
 a las **tandas generales** de venta de tickets.
 </details>
+
+<details markdown="1">
+<summary markdown="1">He comprado mi entrada y necesito una factura ¿Cómo la consigo?</summary>
+
+Si en tu caso necesitas una factura para presentarla a la entidad que está
+cubriendo tu asistencia al evento, generaremos tu factura cuando se realice el
+evento o hasta cuando se cierre el plazo para cambiar los detalles de los
+tickets de la conferencia. Principalmente, por la complejidad de cancelar
+dichos documentos en nuestra infraestructura.
+
+Recuerda que el comprobante de eventbrite puede servir como recibo de tu compra
+para efectos financieros de tu empresa.
+</details>

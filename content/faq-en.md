@@ -84,3 +84,17 @@ tickets with their respective discount.
 If a company is interested in bringing more people, attention should be paid to
 the **general batch** of ticket sales.
 </details>
+
+
+<details markdown="1">
+<summary markdown="1">I bought my ticket but I need an invoice, how do I get it?</summary>
+
+If in your case you need an invoice to present it to the entity that is
+covering your attendance at the event, we will generate your invoice when the
+event takes place or until the deadline to change the details of the conference
+tickets. Mainly, due to the complexity of canceling said documents in our
+infrastructure.
+
+Remember that the eventbrite bill can serve as a receipt of your purchase
+for financial purposes of your company.
+</details>
