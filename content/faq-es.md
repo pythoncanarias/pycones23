@@ -93,6 +93,7 @@ evento o hasta cuando se cierre el plazo para cambiar los detalles de los
 tickets de la conferencia. Principalmente, por la complejidad de cancelar
 dichos documentos en nuestra infraestructura.
 
-Recuerda que el comprobante de eventbrite puede servir como recibo de tu compra
+Recuerda que el comprobante de Eventbrite puede servir como recibo de tu compra
+
 para efectos financieros de tu empresa.
 </details>
