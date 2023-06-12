@@ -1092,6 +1092,15 @@ details p {
   grid-gap: 20px;
 }
 
+@media (max-width: 600px) {
+  .timanfaya-grid { grid-template-columns: repeat(2, 1fr); }
+  .teneguia-grid { grid-template-columns: repeat(2, 1fr); }
+  .tamadaba-grid { grid-template-columns: repeat(1, 1fr); }
+  .teide-grid { grid-template-columns: repeat(1, 1fr); }
+}
+
+
+
 .title-badge {
   display: inline-block;
   font-size: 1.5rem;
