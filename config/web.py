@@ -366,7 +366,8 @@ NOTICIAS = [
             "contenido": ("Después del éxito de las entradas Early bird, y la "
                           "primera tanda, agradecemos mucho su confianza en la "
                           "PyConES23. Tenemos una próxima tanda de entradas "
-                          "el Viernes 7 de Julio. No te olvides de "
+                          "disponibles el Viernes 7 de Julio. No te olvides de "
+
                           "seguirnos en nuestras redes sociales para estar al "
                           "tanto.")
         },
