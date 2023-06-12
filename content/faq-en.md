@@ -95,7 +95,7 @@ event takes place or until the deadline to change the details of the conference
 tickets. Mainly, due to the complexity of canceling said documents in our
 infrastructure.
 
-Remember that the Eventbrite bill can serve as a receipt of your purchase
+Remember that the Eventbrite bill can serve as a receipt of your purchase.
 
 for financial purposes of your company.
 </details>
