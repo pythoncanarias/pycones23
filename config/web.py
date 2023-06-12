@@ -48,7 +48,7 @@ I18N_SUBSITES = {
                 {"fecha": "February", "desc": "We present the PyConES in Canary Islands!"},
                 {"fecha": "April", "desc": "Opening for submissiuon of proposals and tutorials 🗒️"},
                 {"fecha": "May", "desc": "Opening for ticket sales 🎟️"},
-                {"fecha": "May", "desc": "Opening for grants applications 🧞"},
+                {"fecha": "June", "desc": "Opening for grants applications 🧞"},
                 {"fecha": "June 23th", "desc": "Closing call for proposals and tutorials ✋"},
                 {"fecha": "July 9th", "desc": "Announcement of accepted talks and tutorials 🏆"},
                 {"fecha": "October 6th", "desc": "The show starts! 🐍"},
@@ -663,8 +663,35 @@ CRONOGRAMA = [
     # TODO: Agregar la fecha cuando se lance el sitio
     {"fecha": "Abril", "desc": "Apertura para el envío de ponencias y talleres 🗒️"},
     {"fecha": "Mayo", "desc": "Apertura para la venta de entradas 🎟️"},
-    {"fecha": "Mayo", "desc": "Apertura para la postulación de becas 🧞"},
+    {"fecha": "Junio", "desc": "Apertura para la postulación de becas 🧞"},
     {"fecha": "23 de Junio", "desc": "Cierre del llamado a ponencias y talleres ✋"},
     {"fecha": "9 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
     {"fecha": "6 de Octubre", "desc": "¡Empieza el espectáculo! 🐍"},
 ]
+
+SPONSORS = {
+    "teide": {
+    },
+    "tamadaba": {
+        "Skydance Studios": {
+            "logo": "/theme/assets/images/sponsors/logo_skydance.png",
+            "url": "https://skydance.com/",
+        },
+        "Octopus Energy": {
+            "logo": "/theme/assets/images/sponsors/logo_octopusenergy.png",
+            "url": "https://octopus.energy/",
+        },
+    },
+    "teneguia": {
+    },
+    "timanfaya": {
+        "GISCE-TI, S.L.": {
+            "logo": "/theme/assets/images/sponsors/logo_gisce.png",
+            "url": "https://gisce.net",
+        },
+        "Kaleidos": {
+            "logo": "/theme/assets/images/sponsors/logo_kaleidos.png",
+            "url": "https://kaleidos.net",
+        },
+    },
+}
