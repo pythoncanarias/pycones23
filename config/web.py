@@ -361,6 +361,27 @@ PATROCINADORES = {
 NOTICIAS = [
     {
         'es': {
+            "titulo": "¡Prepárate para la segunda tanda de entradas!",
+            "fecha": "9/6/2023",
+            "contenido": ("Después del éxito de las entradas Early bird, y la "
+                          "primera tanda, agradecemos mucho su confianza en la "
+                          "PyConES23. Tenemos una próxima tanda de entradas "
+                          "disponibles el Viernes 7 de Julio. No te olvides de "
+                          "seguirnos en nuestras redes sociales para estar al "
+                          "tanto.")
+        },
+        'en': {
+            "titulo": "Prepare yourself for the second batch of tickets!",
+            "fecha": "9/6/2023",
+            "contenido": ("After the success of the Early bird entries, and the "
+                          "first batch, we really appreciate your trust in "
+                          "PyConES23. We have a next batch of tickets to be "
+                          "available on Friday 7th, July. Don't forget to follow us in "
+                          "social media to stay up to date"),
+        },
+    },
+    {
+        'es': {
             "titulo": "¡Ya puedes comprar tus entradas!",
             "fecha": "5/5/2023",
             "contenido": ("¡Por fin ha llegado el día! Ya están aquí las entradas del evento más "
