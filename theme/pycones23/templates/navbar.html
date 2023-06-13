@@ -1,5 +1,8 @@
 
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
 <nav class="menu">
+
   {% for item in NAV_VALUES %}
   <a href="{{ SITEURL }}/{{ item['slug'] }}/"
      class="menu-link {% if output_file == '{{ item[\'slug\'] }}/index.html' %}menu-link-active{% endif %}">
@@ -11,4 +14,5 @@
   class="menu-link menu-link-tickets">
   Entradas
   </a>
+
 </nav>
