@@ -65,14 +65,14 @@
   {% for level, sponsors in SPONSORS.items() %}
   {% if sponsors %}
   <div class="title-badge">
-     <img src="/theme/assets/badges/{{ level }}.png"> Nivel {{ level }}
+     <img src="{{ SITEURL }}/theme/assets/badges/{{ level }}.png"> Nivel {{ level }}
   </div>
   <div class="{{ level }}-grid">
   {%   for name, values in sponsors.items() %}
   <div class="card">
      <a href={{ values['url'] }}>
         <figure class="sponsor-figure">
-           <img src="{{ values['logo'] }}" alt="Logo {{ name }}" />
+           <img src="{{ SITEURL }}{{ values['logo'] }}" alt="Logo {{ name }}" />
         </figure>
      </a>
   </div>
