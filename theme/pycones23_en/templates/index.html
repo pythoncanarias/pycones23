@@ -24,6 +24,31 @@
    </div>
 </div>
 
+
+<h2 class="subtitle">Keynoters</h2>
+
+
+
+{% for item in KEYNOTERS %}
+
+<div class="keynoter">
+   <div class="keynoter__img">
+     
+     <img src="{{ SITEURL }}{{ item['image'] }}" alt="">
+   </div>
+   <div class="keynoter__content">
+     <h2>{{item['name']}}</h2>
+     <p>{{item['description']['en']}}</p>
+     <div class="social"><a href="{{ item.twitter }}" target="_blank" class="fa fa-twitter"></a></div>
+   </div>
+
+
+<div class="keynoter__pagination"></div>
+</div>
+{% endfor %}
+
+
+
 <h2 class="subtitle">News</h2>
 
 {% for noticia in NOTICIAS %}
