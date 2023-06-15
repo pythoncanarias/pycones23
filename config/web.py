@@ -695,3 +695,16 @@ SPONSORS = {
         },
     },
 }
+
+KEYNOTERS=[
+    {
+        "name":"Gema Parreño",
+        "description":{
+            "es":"Gema Parreño es Data Scientist en IZERTIS con pasión y compromiso con el Open Source y el Machine Learning. Ha contribuido en proyectos para OpenNASA, PySC2, API desarrollada por DeepMind y Blizzard para StarCraft II y DVC, entre otros. Le gusta viajar, bucear y un buen reporte de errores.",
+            "en":"Gema Parreño is a Data Scientist at IZERTIS with passion and commitment to Open Source and Machine Learning. She has contributed to projects for OpenNASA, PySC2, API developed by DeepMind and Blizzard for StarCraft II and DVC, among others. She likes traveling, snorkeling, and good bug reporting."
+        },
+        "image":"/theme/assets/images/ponentes/gema.jpg",
+        "twitter":"https://twitter.com/SoyGema"
+    },
+  
+]
