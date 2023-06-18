@@ -1153,6 +1153,9 @@ details p {
   grid-gap: 20px;
 }
 
+
+
+
 @media (max-width: 600px) {
   .venue-grid { grid-template-columns: repeat(2, 1fr); }
   .timanfaya-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1178,6 +1181,7 @@ details p {
 .venue {
   margin: 0;
 }
+
 
 
 /*keynotter*/
@@ -1305,4 +1309,8 @@ details p {
     margin-top: 20%;
 
   }
+}
+
+.agotado {
+  background-color: gray !important;
 }

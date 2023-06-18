@@ -1310,3 +1310,7 @@ details p {
 
   }
 }
+
+.agotado {
+  background-color: gray !important;
+}
