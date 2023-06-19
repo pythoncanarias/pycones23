@@ -36,7 +36,7 @@
         <td class="benefit-title">{{ beneficio.titulo['es'] }}</td>
 
         {% for plan in PLANES %} {% if beneficio[plan.key] == True %}
-        <td class="has-benefit">
+        <td class="has-benefit {% if plan.key in AGOTADOS %} agotado {% endif %}">
           <i class="fa-solid fa-check"></i>
         </td>
         {% elif beneficio[plan.key] == False %}
@@ -44,7 +44,7 @@
           <i class="fa-solid fa-xmark"></i>
         </td>
         {% else %}
-        <td class="discount">{{ beneficio[plan.key] }}</td>
+        <td class="discount {% if plan.key in AGOTADOS %} agotado {% endif %}">{{ beneficio[plan.key] }}</td>
         {% endif %} {% endfor %}
       </tr>
       {% endfor %}

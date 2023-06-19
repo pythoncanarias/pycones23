@@ -199,6 +199,8 @@ PLANES = [
     },
 ]
 
+AGOTADOS = ["tamadaba"]
+
 BENEFICIOS = [
     {
         "titulo": {"es": "Descuento entradas", "en": "Tickets discount"},
@@ -322,7 +324,7 @@ BENEFICIOS = [
     {
         "titulo": {"es": "PRECIO", "en": "PRICE"},
         "teide": "+6000€",
-        "tamadaba": "4500€",
+        "tamadaba": "<span style='text-decoration:line-through;'>4500€</span><br>Agotado",
         "teneguia": "3000€",
         "timanfaya": "1000€",
     },
@@ -706,5 +708,5 @@ KEYNOTERS=[
         "image":"/theme/assets/images/ponentes/gema.jpg",
         "twitter":"https://twitter.com/SoyGema"
     },
-  
+
 ]
