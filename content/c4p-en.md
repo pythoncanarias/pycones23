@@ -14,7 +14,7 @@ We are looking for people of all levels, fields and experience.
 **Cheer up, we're looking forward to learning from you.**
 
 <div class="center important-title">
-  <h3><i class="fa-solid fa-bell"></i> Deadline: June 23rd</h3>
+  <h3><i class="fa-solid fa-bell"></i> Deadline: June <strike style="color: red;">23rd</strike> 30th</h3>
 </div>
 <div class="center-buttons">
   <a href="https://charlas.2023.es.pycon.org" class="button">Send my talk</a>

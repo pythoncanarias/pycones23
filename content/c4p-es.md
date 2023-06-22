@@ -13,7 +13,7 @@ Buscamos personas de todos los niveles, campos y experiencia.
 **Anímate, estamos deseando aprender de ti.**
 
 <div class="center important-title">
-  <h3><i class="fa-solid fa-bell"></i> Fecha límite: 23 de Junio</h3>
+  <h3><i class="fa-solid fa-bell"></i> Fecha límite: <strike style="color: red">23</strike> 30 de Junio</h3>
 </div>
 <div class="center-buttons">
   <a href="https://charlas.2023.es.pycon.org" class="button">Enviar mi ponencia</a>
