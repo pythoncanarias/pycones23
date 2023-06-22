@@ -363,6 +363,25 @@ PATROCINADORES = {
 NOTICIAS = [
     {
         'es': {
+            "titulo": "7 días más para presentar tu propuesta.",
+            "fecha": "22/6/2023",
+            "contenido": ("Recibimos varias peticiones para dar tiempo extra "
+                          "para el llamado de propuesta, con lo que el equipo "
+                          "encargado del programa aceptó aumentar el plazo hasta "
+                          "el Viernes 30 de Junio. ¡No te quedes sin enviar tu "
+                          "idea!"),
+        },
+        'en': {
+            "titulo": "7 more days to submit your proposal.",
+            "fecha": "22/6/2023",
+            "contenido": ("We got many requests to extend our cfp, so the team "
+                          "in charge of the program agreed to move the CfP "
+                          "deadline until Friday June 30th. Don't forget to "
+                          "submit your proposal!"),
+        },
+    },
+    {
+        'es': {
             "titulo": "¡Prepárate para la segunda tanda de entradas!",
             "fecha": "9/6/2023",
             "contenido": ("Después del éxito de las entradas Early bird, y la "
