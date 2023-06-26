@@ -99,3 +99,17 @@ Remember that the Eventbrite bill can serve as a receipt of your purchase.
 
 for financial purposes of your company.
 </details>
+
+<details markdown="1">
+<summary markdown="1">I'm a Speaker, ¿Do I need to buy a ticket?</summary>
+
+Every speaker haveave their participation in the conference guaranteed, so the dont need a ticket to assist.
+If you are planning to present yourself self as a speaker,regardless of whether your proposal is accepted or not, <b>we recommend purchasing a ticket</b>
+If your proposal is finally selected, you have several options:
+<ul>
+    <li>You can reassign your ticket to another person who wishes to attend</li>
+    <li>You can request a refund</li>
+    <li>You can use your ticket and we will use your speaker ticket for another round of tickets (general, scholarships, etc).</li>
+</ul>
+
+</details>
