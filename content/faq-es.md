@@ -97,3 +97,17 @@ Recuerda que el comprobante de Eventbrite puede servir como recibo de tu compra.
 
 para efectos financieros de tu empresa.
 </details>
+
+<details markdown="1">
+<summary markdown="1">Soy Ponente, ¿tengo que comprar la entrada?</summary>
+
+Todas las personas que sean ponentes, tienen asegurada su participación en la conferencia, es decir no necesitan una entrada.
+En caso de que tengas pensado presentarte como ponente, independiente de si tu propuesta es aceptada o no, <b>te recomendamos adquirir una entrada</b>.
+Si finalmente tu ponencia es seleccionada, tienes varias opciones:
+<ul>
+    <li>Puedes reasignar tu ticket a otra persona que desee asistir</li>
+    <li>Puedes solicitar un reembolso</li>
+    <li>Puedes utilizar tu entrada y usaremos tu entrada de speaker para otra tanda (general, becas, etc).</li>
+</ul>
+
+</details>
