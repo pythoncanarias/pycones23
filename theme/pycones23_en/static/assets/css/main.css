@@ -328,6 +328,14 @@ display: none;
   gap: 1rem;
 }
 
+section.center {
+  width: 100vw;
+}
+
+section > iframe {
+  width: 100vw;
+}
+
 .important-title {
   background-color: #f6e7ae;
   margin-top: 10px;
