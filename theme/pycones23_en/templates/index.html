@@ -106,9 +106,11 @@
   {% endif %}
   {% endfor %}
   <div class="title-badge">
-     <span style="font-size: 1.5em;">🏫</span> Special sponsor (Venue)
+     <span style="font-size: 1.5em;">🏫</span> Special sponsor
   </div>
-  <div class="venue-grid">
+  <div class="special-grid">
+
+  <!-- ULL -->
   <div class="card">
      <a href="https://www.ull.es/en/">
         <figure class="sponsor-figure venue">
@@ -116,6 +118,16 @@
         </figure>
      </a>
   </div>
+
+  <!-- Eventbrite -->
+  <div class="card">
+     <a href="https://www.eventbrite.es">
+        <figure class="sponsor-figure special">
+           <img src="{{ SITEURL }}/theme/assets/images/sponsors/logo_eventbrite.png" alt="Logo Eventbrite" />
+        </figure>
+     </a>
+  </div>
+
   </div>
 </div>
 {% endblock content %}

@@ -1126,8 +1126,8 @@ details p {
   height: 100%;
 }
 
-/* venue */
-.venue-grid {
+/* sponsor special */
+.special-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 10%));
   grid-gap: 20px;
@@ -1165,7 +1165,7 @@ details p {
 
 
 @media (max-width: 600px) {
-  .venue-grid { grid-template-columns: repeat(2, 1fr); }
+  .special-grid { grid-template-columns: repeat(2, 1fr); }
   .timanfaya-grid { grid-template-columns: repeat(2, 1fr); }
   .teneguia-grid { grid-template-columns: repeat(2, 1fr); }
   .tamadaba-grid { grid-template-columns: repeat(1, 1fr); }
@@ -1186,7 +1186,7 @@ details p {
 .sponsor-figure {
 }
 
-.venue {
+.special {
   margin: 0;
 }
 
