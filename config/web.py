@@ -694,6 +694,10 @@ CRONOGRAMA = [
 
 SPONSORS = {
     "teide": {
+        "Europython Society": {
+            "logo": "/theme/assets/images/sponsors/logo_europython.png",
+            "url": "https://www.europython-society.org/",
+        },
         "APSL": {
             "logo": "/theme/assets/images/sponsors/logo_apsl.png",
             "url": "https://apsl.tech/",
