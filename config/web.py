@@ -694,6 +694,10 @@ CRONOGRAMA = [
 
 SPONSORS = {
     "teide": {
+        "APSL": {
+            "logo": "/theme/assets/images/sponsors/logo_apsl.png",
+            "url": "https://apsl.tech/",
+        },
     },
     "tamadaba": {
         "Skydance Studios": {
