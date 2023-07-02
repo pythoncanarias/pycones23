@@ -7,6 +7,9 @@
 {% elif article.slug == "patrocinios" %}
 {{ article.content }}
 {% include 'tabla-patrocinios.html' %}
+{% elif article.slug == "ofertas" %}
+{{ article.content }}
+{% include 'lista-ofertas.html' %}
 {% else %}
 {{ article.content }}
 {% endif %}
