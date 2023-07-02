@@ -112,7 +112,7 @@ and economic- between Europe and Latin America.
 To move comfortably around Tenerife, the transport system in
 ["guagua"](https://etimologias.dechile.net/?guagua#:~:text=De%20ah%C3%AD%20surgi%C3%B3%20la%20frase,guagua%22%20identificando%20as%C3 %AD%20to%20transport.)
 (bus) next to the
-[tram](https://mettenerife.com/recorridos-y-horarios-3/),
+[tram](https://metrotenerife.com/recorridos-y-horarios-3/),
 are the most convenient and cheapest options. Network
 of buses on the island cover a wide area, connecting the main
 cities, towns and tourist attractions. Here are some things that should
