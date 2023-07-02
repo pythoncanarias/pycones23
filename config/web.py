@@ -26,6 +26,20 @@ NAV_VALUES = [
     {"slug": "faq", "text": "Preguntas frecuentes"},
 ]
 
+# TOC
+
+MARKDOWN = {
+  'extension_configs': {
+    'markdown.extensions.toc': {
+      'title': ''
+    },
+    'markdown.extensions.codehilite': {'css_class': 'highlight'},
+    'markdown.extensions.extra': {},
+    'markdown.extensions.meta': {},
+  },
+  'output_format': 'html5',
+}
+
 # i18n
 # - We are using the simple option but more difficult to maintain
 #   approach which is using two templates, one for each language.
