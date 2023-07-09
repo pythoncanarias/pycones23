@@ -738,6 +738,10 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_kaleidos.png",
             "url": "https://kaleidos.net",
         },
+        "Arte Consultores": {
+            "logo": "/theme/assets/images/sponsors/logo_arteconsultores.png",
+            "url": "https://arte.dev/",
+        },
     },
 }
 
