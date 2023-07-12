@@ -753,3 +753,36 @@ KEYNOTERS=[
     },
 
 ]
+
+ADDONS=[]
+
+
+"""
+Ejemplo de addons para cuando se pueda dar de alta
+
+
+ADDONS=[
+    {
+        "title":{
+            "en":"Breakfast",
+            "es":"Desayuno"
+        },
+        "image":"/theme/assets/images/sponsors/addons-images/coffe.svg",
+        "description":
+        {
+            "en":"The breakfast it's the most important meal of the day!, charge your batteries, this space is sponsored by:",
+            "es":"El desayuno es la comida mas importante del día!, Carga tus baterías, este espacio está patrocinado por:"
+        },
+        "sponsors":[
+            {
+            "logo": "/theme/assets/images/sponsors/logo_kaleidos.png",
+            "url": "https://kaleidos.net",
+            }
+            
+        ]
+
+
+    }
+
+]
+"""

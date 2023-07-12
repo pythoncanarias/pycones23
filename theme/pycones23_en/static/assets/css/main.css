@@ -1247,6 +1247,59 @@ details p {
   font-size: large;
 }
 
+
+.agotado {
+  background-color: gray !important;
+}
+
+
+/*ADDONS*/
+
+.addon-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.addon-sponsors .card{
+  width: 100px;
+}
+
+.addon-image img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.addons-content{
+  border: 1px var(--purple-dark) solid;
+  width: 33%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+
+}
+
+.addons-title{
+  border: 1px var(--purple-dark) solid;
+  background-color: var(--purple-dark);
+  color:white;
+  margin-left: 1em; 
+  padding: 0.2em 0.8em 
+}
+
+.addon-text{
+  padding-top: 20px;
+}
+
+.addon-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
 @media(max-width: 1200px) {
 
   .keynoter {
@@ -1291,7 +1344,11 @@ details p {
   .social>a {
     font-size: large;
   }
+  .addons-content{
 
+    width: 50%;
+  
+  }
 }
 
 
@@ -1317,8 +1374,10 @@ details p {
     margin-top: 20%;
 
   }
+  .addons-content{
+
+    width: 100%;
+  
+  }
 }
 
-.agotado {
-  background-color: gray !important;
-}
