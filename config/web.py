@@ -66,7 +66,7 @@ I18N_SUBSITES = {
                 {"fecha": "May", "desc": "Opening for ticket sales 🎟️"},
                 {"fecha": "June", "desc": "Opening for grants applications 🧞"},
                 {"fecha": "June 23th", "desc": "Closing call for proposals and tutorials ✋"},
-                {"fecha": "July 9th", "desc": "Announcement of accepted talks and tutorials 🏆"},
+                {"fecha": "July 31st", "desc": "Announcement of accepted talks and tutorials 🏆"},
                 {"fecha": "October 6th", "desc": "The show starts! 🐍"},
             ]
         },
@@ -702,7 +702,7 @@ CRONOGRAMA = [
     {"fecha": "Mayo", "desc": "Apertura para la venta de entradas 🎟️"},
     {"fecha": "Junio", "desc": "Apertura para la postulación de becas 🧞"},
     {"fecha": "23 de Junio", "desc": "Cierre del llamado a ponencias y talleres ✋"},
-    {"fecha": "9 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
+    {"fecha": "31 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
     {"fecha": "6 de Octubre", "desc": "¡Empieza el espectáculo! 🐍"},
 ]
 
