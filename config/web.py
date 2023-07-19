@@ -716,6 +716,10 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_apsl.png",
             "url": "https://apsl.tech/",
         },
+        "Bluetab": {
+            "logo": "/theme/assets/images/sponsors/logo_bluetab.png",
+            "url": "https://www.bluetab.net/",
+        },
     },
     "tamadaba": {
         "Skydance Studios": {
