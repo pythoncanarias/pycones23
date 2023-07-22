@@ -129,5 +129,41 @@
   </div>
 
   </div>
+
+
+</div>
+{% if ADDONS|length > 0 %}
+<h1>Addons</h1>
+<div class="addon-wrapper">
+ {% for items in ADDONS %}
+ <fieldset class="addons-content">
+    <legend class="addons-title">{{items.title.en}}</legend>
+    <div class="addon-image">
+       <img src="{{ SITEURL }}{{items.image}}"
+       alt="coffee" width="50" height="50">
+    </div>
+    <div class="addon-text">
+       {{items.description.en}}
+    </div>
+    {% for sponsors in items.sponsors %}
+    <div class="addon-sponsors">
+       <div class="card">
+          <a href="{{sponsors.url}}">
+             <figure class="sponsor-figure special">
+                <img src="{{ SITEURL }}{{sponsors.logo}}" alt="Logo Eventbrite" />
+             </figure>
+          </a>
+       </div>
+
+    </div>
+    {% endfor %}
+  </fieldset>
+  {% endfor %}
+  
+
+</div>
+{% endif %}
+
+
 </div>
 {% endblock content %}
