@@ -21,7 +21,7 @@ NAV_VALUES = [
     {"slug": "ciudad", "text": "Ciudad"},
     {"slug": "viaje", "text": "Viaje"},
     {"slug": "patrocinios", "text": "Patrocinios"},
-    {"slug": "becas", "text": "Becas"},
+    {"slug": "diversidad-becas", "text": "Diversidad y Becas"},
     {"slug": "c4p", "text": "Llamado de Propuestas"},
     {"slug": "faq", "text": "Preguntas frecuentes"},
 ]
@@ -56,7 +56,7 @@ I18N_SUBSITES = {
                 {"slug": "ciudad", "text": "City"},
                 {"slug": "viaje", "text": "Trip"},
                 {"slug": "patrocinios", "text": "Sponsors"},
-                {"slug": "becas", "text": "Grants"},
+                {"slug": "diversidad-becas", "text": "Diversity & Grants"},
                 {"slug": "c4p", "text": "Call for Proposals"},
                 {"slug": "faq", "text": "FAQ"},
             ],
