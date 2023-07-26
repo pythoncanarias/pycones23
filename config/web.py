@@ -746,6 +746,10 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_arteconsultores.png",
             "url": "https://arte.dev/",
         },
+        "Som Energía": {
+            "logo": "/theme/assets/images/sponsors/logo_somenergia.jpg",
+            "url": "https://www.somenergia.coop/",
+        },
     },
 }
 
