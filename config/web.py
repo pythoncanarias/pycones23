@@ -720,6 +720,10 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_bluetab.png",
             "url": "https://www.bluetab.net/",
         },
+        "Shapelets": {
+            "logo": "/theme/assets/images/sponsors/logo_shapelets.png",
+            "url": "https://shapelets.io/",
+        },
     },
     "tamadaba": {
         "Skydance Studios": {
