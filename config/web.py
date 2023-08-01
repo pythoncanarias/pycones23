@@ -759,6 +759,16 @@ SPONSORS = {
 
 KEYNOTERS=[
     {
+        "name":"Carlos Blé",
+        "description":{
+            "es":"Developer, empresario, CEO de Lean Mind, autor de varios libros de programación en castellano, conferenciante, podcaster. Miembro y cofundador de varias comunidades profesionales. Su misión es empoderar a personas y empresas para que consigan sus objetivos.",
+            "en":"Developer, entrepreneur, CEO of Lean Mind, author of several programming books in Spanish, speaker, podcaster. Member and co-founder of several professional communities. His mission is to empower people and companies to achieve their goals.",
+        },
+        "image":"/theme/assets/images/ponentes/carlos.jpg",
+        "twitter":"https://twitter.com/carlosble",
+        "linkedin":"https://www.linkedin.com/in/carlosble",
+    },
+    {
         "name":"Gema Parreño",
         "description":{
             "es":"Gema Parreño es Data Scientist en IZERTIS con pasión y compromiso con el Open Source y el Machine Learning. Ha contribuido en proyectos para OpenNASA, PySC2, API desarrollada por DeepMind y Blizzard para StarCraft II y DVC, entre otros. Le gusta viajar, bucear y un buen reporte de errores.",
