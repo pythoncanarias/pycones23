@@ -39,7 +39,14 @@
    <div class="keynoter__content">
      <h2>{{item['name']}}</h2>
      <p>{{item['description']['es']}}</p>
-     <div class="social"><a href="{{ item.twitter }}" target="_blank" class="fa fa-twitter"></a></div>
+     <div class="social">
+     {% if item.twitter %}
+       <a href="{{ item.twitter }}" target="_blank" class="fa fa-twitter"></a>
+     {% endif %}
+     {% if item.linkedin %}
+     <a href="{{ item.linkedin }}" target="_blank" class="fa fa-linkedin"></a>
+     {% endif %}
+     </div>
    </div>
 
 
