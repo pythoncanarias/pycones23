@@ -777,5 +777,16 @@ KEYNOTERS=[
         "image":"/theme/assets/images/ponentes/gema.jpg",
         "twitter":"https://twitter.com/SoyGema"
     },
+        {
+        "name":"Nerea Luis",
+        "description":{
+            "es":"Nerea Luis es la directora de Datos e Inteligencia Artificial en SNGULAR. De formación Doctora en Ciencias de la Computación, ahora lidera proyectos relacionados con Procesamiento del Lenguaje Natural y Visión Artificial, entre otros. Conocida divulgadora en el campo de la Inteligencia Artificial, este año colabora con el programa de TV Órbita Laika en la nueva sección de tecnología. ",
+            "en":"Nerea Luis is Data and Artificial Intelligence Manager at SNGULAR. With a PhD in Computer Science, she now leads projects related to Natural Language Processing and Artificial Vision, among others. A well-known disseminator in the field of Artificial Intelligence, this year she is collaborating with the TV Show Órbita Laika in the new technology section."
+        },
+        "image":"/theme/assets/images/ponentes/nerea_luis_cropped.jpg",
+        "twitter":"https://twitter.com/sailormerqury"
+    },
 
 ]
+# Shuffle KEYNOTERS
+random.shuffle(KEYNOTERS)
