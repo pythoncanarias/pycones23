@@ -1,0 +1,22 @@
+Timestamp,Company - Empresa,Role /Job name - Rol/puesto,Job offer description - Texto de la oferta,"Place and type (Remote, Hybrid, In office) -  Localidad y modalidad (Remota, híbrida, presencial)",Technologies/Skills - Tecnologías/habilidades, Salary Range - Rango salarial, Link to extended information -  Enlace info extendida,Contact email (optional) - Email de contacto (opcional)
+7/19/2023 12:44:13,Octopus Energy,Principal Recruiter,"We are growing our tech teams across Europe within and beyond our established hubs in Paris, Milan, Valencia, Munich and Berlin. We’re looking for people with a strong interest in technology and problem-solving; someone diligent, thoughtful and ready for a lot of change.
+",Remote in Spain and Hybrid in Valencia,"Python, Django (or equiv. web framework), Domain modelling, HTTP and REST APIs, Celery, Postgres",40000-60000,https://jobs.lever.co/octoenergy/d40c5e37-dde5-4d06-908a-51322368bc8a,jaqueline.moreno@octoenergy.com
+7/20/2023 9:29:01,Skydance,Technical Director,"As a Technical Director, you will have a deep involvement in designing and developing innovative tools to overcome specific challenges related to the department’s developments for our next animated feature film.",Hybrid,,Depends on the experience,https://skydance.com/job/?id=f6f4716a-3b97-4bf8-bc63-083dd2168847,
+7/20/2023 16:10:43,Skydance,Python Developer,The python developer designs and develops innovative tools to overcome specific challenges related to the department’s developments for our next animated feature film.,Hybrid,,Depends on the experience,https://skydance.com/job/?id=b31e48c1-3dbb-4208-8a45-83f684ffea7d,
+7/27/2023 11:20:31,"Bluetab, an IBM Company",PySpark Data Engineer,"Dominio y soltura con PySpark.
+Comprensión de cómo se comporta un sistema distribuido.
+Comprensión de la base de Hadoop: HDFS + YARN + MapReduce.
+Diseño y construcción de modelos de datos tanto small data (SQL Server) como Big Data",Híbrida,"PySpark, sistema distribuido, Hadoop, HDFS, YARN, MapReduce, SQL, Big Data",35000 - 60000,https://www.linkedin.com/jobs/view/3420950691,talent_esp@bluetab.net 
+7/27/2023 11:22:53,"Bluetab, an IBM Company",Big Data Engineer (Scala/Spark),"Comprensión de cómo se comporta un sistema distribuido.
+Comprensión de la base de Hadoop: HDFS + YARN + MapReduce.
+Soltura en programación y experiencia con Scala/Spark.
+Valorable experiencia en entornos 100% Cloud, preferiblemente en AWS y/o Azure.",Híbrida,"Scala, Spark, AWS, Azure, Hadoop, HDFS, YARN, MapReduce",30000 - 55000,https://www.linkedin.com/jobs/view/3673689431,talent_esp@bluetab.net 
+7/27/2023 11:26:49,"Bluetab, an IBM Company",AWS Data Engineer,"AWS, Kubernetes, Docker
+AWS Serverless (Lambda, Glue, ECS).
+Python y/o Scala.
+Despliegues CI/CD de servicios de infraestructura (IaC) con Terraform, Cloud Formation.
+Arquitecturas Big Data AWS EMR con Spark y capas de persistencia horizontalmente escalables en sistema Cloud S3.",Híbrida,"AWS, Kubernetes, Docker, Python, Scala, CI/CD, IaC, Terraform, Cloud Formation, AWS EMR, Spark, Cloud S3",35000 - 60000,https://www.linkedin.com/jobs/view/3673690360,talent_esp@bluetab.net 
+7/27/2023 11:30:49,"Bluetab, an IBM Company",Azure Data Engineer,"Diseño y desarrollo de procesos de integración de datos: Python en Kubernetes o Databricks (Spark). DataFactory.
+(SQL Server), Big Data (Databricks).
+Pruebas de despliegues en diferentes entornos.
+Despliegues CI/CD de servicios de infraestructura (IaC) con Terraform y/o ARM.",Híbrida,"Python, Kubernetes, Databricks, Spark, DataFactory, SQL, CI/CD, IaC, Terraform",35000 - 60000,https://www.linkedin.com/jobs/view/3673692011,talent_esp@bluetab.net 

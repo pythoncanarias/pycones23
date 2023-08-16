@@ -23,6 +23,7 @@ NAV_VALUES = [
     {"slug": "patrocinios", "text": "Patrocinios"},
     {"slug": "diversidad-becas", "text": "Diversidad y Becas"},
     {"slug": "c4p", "text": "Llamado de Propuestas"},
+    {"slug": "ofertas", "text": "Ofertas de Trabajo"},
     {"slug": "faq", "text": "Preguntas frecuentes"},
 ]
 
@@ -58,6 +59,7 @@ I18N_SUBSITES = {
                 {"slug": "patrocinios", "text": "Sponsors"},
                 {"slug": "diversidad-becas", "text": "Diversity & Grants"},
                 {"slug": "c4p", "text": "Call for Proposals"},
+                {"slug": "ofertas", "text": "Job Offers"},
                 {"slug": "faq", "text": "FAQ"},
             ],
             'CRONOGRAMA':  [

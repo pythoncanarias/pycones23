@@ -5,11 +5,13 @@
         <div class="list-item-title is-size-4">{{ oferta["company"] }}</div>
         <div class="list-item-description">
           <strong style="color: var(--python-tag)">{{ oferta["role"] }}</strong>
-          <p style="color: black; margin-top: 10px; line-height: 0.9">{{ oferta["description"] }}</p>
+          <p style="color: black; margin-top: 10px; line-height: 1.2">{{ oferta["description"] }}</p>
           <div style="margin-top: 10px; margin-bottom: 15px">
             {% set tech_list = oferta["tech"].split(',') %}
             {% for item in tech_list %}
+            {% if item.strip() %}
             <span class="tag job-is-info">{{ item }}</span>
+            {% endif %}
             {% endfor %}
           </div>
           <div style="margin-top: 10px; margin-bottom: 20px">
