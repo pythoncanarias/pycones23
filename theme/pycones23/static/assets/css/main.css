@@ -328,6 +328,23 @@ display: none;
   gap: 1rem;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-becas {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #9524dc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 section.center {
   width: 100vw;
 }

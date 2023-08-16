@@ -21,7 +21,7 @@ NAV_VALUES = [
     {"slug": "ciudad", "text": "Ciudad"},
     {"slug": "viaje", "text": "Viaje"},
     {"slug": "patrocinios", "text": "Patrocinios"},
-    {"slug": "becas", "text": "Becas"},
+    {"slug": "diversidad-becas", "text": "Diversidad y Becas"},
     {"slug": "c4p", "text": "Llamado de Propuestas"},
     {"slug": "faq", "text": "Preguntas frecuentes"},
 ]
@@ -56,7 +56,7 @@ I18N_SUBSITES = {
                 {"slug": "ciudad", "text": "City"},
                 {"slug": "viaje", "text": "Trip"},
                 {"slug": "patrocinios", "text": "Sponsors"},
-                {"slug": "becas", "text": "Grants"},
+                {"slug": "diversidad-becas", "text": "Diversity & Grants"},
                 {"slug": "c4p", "text": "Call for Proposals"},
                 {"slug": "faq", "text": "FAQ"},
             ],
@@ -66,7 +66,7 @@ I18N_SUBSITES = {
                 {"fecha": "May", "desc": "Opening for ticket sales 🎟️"},
                 {"fecha": "June", "desc": "Opening for grants applications 🧞"},
                 {"fecha": "June 23th", "desc": "Closing call for proposals and tutorials ✋"},
-                {"fecha": "July 9th", "desc": "Announcement of accepted talks and tutorials 🏆"},
+                {"fecha": "July 31st", "desc": "Announcement of accepted talks and tutorials 🏆"},
                 {"fecha": "October 6th", "desc": "The show starts! 🐍"},
             ]
         },
@@ -702,7 +702,7 @@ CRONOGRAMA = [
     {"fecha": "Mayo", "desc": "Apertura para la venta de entradas 🎟️"},
     {"fecha": "Junio", "desc": "Apertura para la postulación de becas 🧞"},
     {"fecha": "23 de Junio", "desc": "Cierre del llamado a ponencias y talleres ✋"},
-    {"fecha": "9 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
+    {"fecha": "31 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
     {"fecha": "6 de Octubre", "desc": "¡Empieza el espectáculo! 🐍"},
 ]
 
@@ -715,6 +715,14 @@ SPONSORS = {
         "APSL": {
             "logo": "/theme/assets/images/sponsors/logo_apsl.png",
             "url": "https://apsl.tech/",
+        },
+        "Bluetab": {
+            "logo": "/theme/assets/images/sponsors/logo_bluetab.png",
+            "url": "https://www.bluetab.net/",
+        },
+        "Shapelets": {
+            "logo": "/theme/assets/images/sponsors/logo_shapelets.png",
+            "url": "https://shapelets.io/",
         },
     },
     "tamadaba": {
@@ -738,10 +746,28 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_kaleidos.png",
             "url": "https://kaleidos.net",
         },
+        "Arte Consultores": {
+            "logo": "/theme/assets/images/sponsors/logo_arteconsultores.png",
+            "url": "https://arte.dev/",
+        },
+        "Som Energía": {
+            "logo": "/theme/assets/images/sponsors/logo_somenergia.jpg",
+            "url": "https://www.somenergia.coop/",
+        },
     },
 }
 
 KEYNOTERS=[
+    {
+        "name":"Carlos Blé",
+        "description":{
+            "es":"Developer, empresario, CEO de Lean Mind, autor de varios libros de programación en castellano, conferenciante, podcaster. Miembro y cofundador de varias comunidades profesionales. Su misión es empoderar a personas y empresas para que consigan sus objetivos.",
+            "en":"Developer, entrepreneur, CEO of Lean Mind, author of several programming books in Spanish, speaker, podcaster. Member and co-founder of several professional communities. His mission is to empower people and companies to achieve their goals.",
+        },
+        "image":"/theme/assets/images/ponentes/carlos.jpg",
+        "twitter":"https://twitter.com/carlosble",
+        "linkedin":"https://www.linkedin.com/in/carlosble",
+    },
     {
         "name":"Gema Parreño",
         "description":{
@@ -750,6 +776,15 @@ KEYNOTERS=[
         },
         "image":"/theme/assets/images/ponentes/gema.jpg",
         "twitter":"https://twitter.com/SoyGema"
+    },
+        {
+        "name":"Nerea Luis",
+        "description":{
+            "es":"Nerea Luis es la directora de Datos e Inteligencia Artificial en SNGULAR. De formación Doctora en Ciencias de la Computación, ahora lidera proyectos relacionados con Procesamiento del Lenguaje Natural y Visión Artificial, entre otros. Conocida divulgadora en el campo de la Inteligencia Artificial, este año colabora con el programa de TV Órbita Laika en la nueva sección de tecnología. ",
+            "en":"Nerea Luis is Data and Artificial Intelligence Manager at SNGULAR. With a PhD in Computer Science, she now leads projects related to Natural Language Processing and Artificial Vision, among others. A well-known disseminator in the field of Artificial Intelligence, this year she is collaborating with the TV Show Órbita Laika in the new technology section."
+        },
+        "image":"/theme/assets/images/ponentes/nerea_luis_cropped.jpg",
+        "twitter":"https://twitter.com/sailormerqury"
     },
 
 ]
@@ -768,3 +803,7 @@ if job_file.is_file():
     JOB_OFFERS =  offers.to_dict('records')
 else:
     JOB_OFFERS = []
+
+# Shuffle KEYNOTERS
+random.shuffle(KEYNOTERS)
+
