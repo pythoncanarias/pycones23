@@ -67,6 +67,8 @@ I18N_SUBSITES = {
                 {"fecha": "June", "desc": "Opening for grants applications 🧞"},
                 {"fecha": "June 23th", "desc": "Closing call for proposals and tutorials ✋"},
                 {"fecha": "July 31st", "desc": "Announcement of accepted talks and tutorials 🏆"},
+                {"fecha": "July 31st", "desc": "Closing for the grant proposals"},
+                {"fecha": "August 15th", "desc": "Closing for the diversity grant proposals."},
                 {"fecha": "October 6th", "desc": "The show starts! 🐍"},
             ]
         },
@@ -703,6 +705,8 @@ CRONOGRAMA = [
     {"fecha": "Junio", "desc": "Apertura para la postulación de becas 🧞"},
     {"fecha": "23 de Junio", "desc": "Cierre del llamado a ponencias y talleres ✋"},
     {"fecha": "31 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
+    {"fecha": "31 de Julio", "desc": "Cierre solicitud de becas"},
+    {"fecha": "15 de Agosto", "desc": "Cierre solicitud de becas diversidad"},
     {"fecha": "6 de Octubre", "desc": "¡Empieza el espectáculo! 🐍"},
 ]
 
