@@ -1,3 +1,5 @@
 pelican==4.8.0
 markdown==3.4.3
 pelican-i18n-subsites==0.9.0
+# for the job offers
+pandas

@@ -22,6 +22,7 @@ NAV_VALUES = [
     {"slug": "viaje", "text": "Viaje"},
     {"slug": "patrocinios", "text": "Patrocinios"},
     {"slug": "diversidad-becas", "text": "Diversidad y Becas"},
+    {"slug": "ofertas", "text": "Ofertas de Trabajo"}, 
     {"slug": "faq", "text": "Preguntas frecuentes"},
 ]
 
@@ -56,6 +57,7 @@ I18N_SUBSITES = {
                 {"slug": "viaje", "text": "Trip"},
                 {"slug": "patrocinios", "text": "Sponsors"},
                 {"slug": "diversidad-becas", "text": "Diversity & Grants"},
+                {"slug": "ofertas", "text": "Job Offers"},
                 {"slug": "faq", "text": "FAQ"},
             ],
             'CRONOGRAMA':  [
@@ -786,5 +788,21 @@ KEYNOTERS=[
     },
 
 ]
+
+# Job offers
+import pandas as pd
+from pathlib import Path
+
+job_file = Path("job_offers.csv")
+if job_file.is_file():
+    offers = pd.read_csv(job_file)
+    # Assuming the order of columns to avoid parsing each column name.
+    _columns = ["timestamp", "company", "role", "description", "place", "tech", "salary","extra_info","email"]
+    offers = offers.rename(columns={offers.columns[i]: _columns[i] for i in range(len(offers.columns))})
+    offers = offers.sample(frac=1).fillna('')
+    JOB_OFFERS =  offers.to_dict('records')
+else:
+    JOB_OFFERS = []
+
 # Shuffle KEYNOTERS
 random.shuffle(KEYNOTERS)
