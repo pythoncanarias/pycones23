@@ -734,6 +734,10 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_octopusenergy.png",
             "url": "https://octopus.energy/",
         },
+        "Ebury": {
+            "logo": "/theme/assets/images/sponsors/logo_ebury.png",
+            "url": "https://www.ebury.es/",
+        },
     },
     "teneguia": {
     },
