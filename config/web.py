@@ -22,7 +22,7 @@ NAV_VALUES = [
     {"slug": "viaje", "text": "Viaje"},
     {"slug": "patrocinios", "text": "Patrocinios"},
     {"slug": "diversidad-becas", "text": "Diversidad y Becas"},
-    {"slug": "ofertas", "text": "Ofertas de Trabajo"}, 
+    {"slug": "ofertas", "text": "Ofertas de Trabajo"},
     {"slug": "faq", "text": "Preguntas frecuentes"},
 ]
 
@@ -737,6 +737,10 @@ SPONSORS = {
         "Ebury": {
             "logo": "/theme/assets/images/sponsors/logo_ebury.png",
             "url": "https://www.ebury.es/",
+        },
+        "Cepsa": {
+            "logo": "/theme/assets/images/sponsors/logo_cepsa.png",
+            "url": "https://www.cepsa.com/es/",
         },
     },
     "teneguia": {
