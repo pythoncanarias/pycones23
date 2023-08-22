@@ -743,7 +743,11 @@ SPONSORS = {
             "url": "https://www.cepsa.com/es/",
         },
     },
-    "teneguia": {
+    "teneguia":{
+        "Inditex": {
+            "logo": "/theme/assets/images/sponsors/logo_inditex.png",
+            "url": "https://www.zaratalent.com/es/tech/",
+        },
     },
     "timanfaya": {
         "GISCE-TI, S.L.": {
