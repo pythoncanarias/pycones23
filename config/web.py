@@ -738,6 +738,10 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_ebury.png",
             "url": "https://www.ebury.es/",
         },
+        "Cepsa": {
+            "logo": "/theme/assets/images/sponsors/logo_cepsa.png",
+            "url": "https://www.cepsa.com/es/",
+        },
     },
     "teneguia":{
         "Inditex": {
