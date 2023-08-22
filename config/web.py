@@ -22,7 +22,7 @@ NAV_VALUES = [
     {"slug": "viaje", "text": "Viaje"},
     {"slug": "patrocinios", "text": "Patrocinios"},
     {"slug": "diversidad-becas", "text": "Diversidad y Becas"},
-    {"slug": "ofertas", "text": "Ofertas de Trabajo"}, 
+    {"slug": "ofertas", "text": "Ofertas de Trabajo"},
     {"slug": "faq", "text": "Preguntas frecuentes"},
 ]
 
@@ -739,7 +739,11 @@ SPONSORS = {
             "url": "https://www.ebury.es/",
         },
     },
-    "teneguia": {
+    "teneguia":{
+        "Inditex": {
+            "logo": "/theme/assets/images/sponsors/logo_inditex.png",
+            "url": "https://www.zaratalent.com/es/tech/",
+        },
     },
     "timanfaya": {
         "GISCE-TI, S.L.": {
