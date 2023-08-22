@@ -328,14 +328,6 @@ display: none;
   gap: 1rem;
 }
 
-section.center {
-  width: 100vw;
-}
-
-section > iframe {
-  width: 100vw;
-}
-
 .button-container {
   display: flex;
   justify-content: center;
@@ -353,6 +345,13 @@ section > iframe {
   cursor: pointer;
 }
 
+section.center {
+  width: 100vw;
+}
+
+section > iframe {
+  width: 100vw;
+}
 
 .important-title {
   background-color: #f6e7ae;
@@ -1215,13 +1214,12 @@ details p {
 }
 
 .sponsor-figure {
+  margin: 5px;
 }
 
 .special {
   margin: 0;
 }
-
-
 
 /*keynotter*/
 

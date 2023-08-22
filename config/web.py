@@ -763,7 +763,7 @@ SPONSORS = {
             "url": "https://arte.dev/",
         },
         "Som Energía": {
-            "logo": "/theme/assets/images/sponsors/logo_somenergia.jpg",
+            "logo": "/theme/assets/images/sponsors/logo_somenergia.png",
             "url": "https://www.somenergia.coop/",
         },
     },
