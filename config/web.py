@@ -696,13 +696,14 @@ random.shuffle(ORG)
 
 
 CRONOGRAMA = [
-    {"fecha": "Febrero", "desc": "¡Presentamos la PyConES en Canarias!"},
+    #{"fecha": "Febrero", "desc": "¡Presentamos la PyConES en Canarias!"},
     # TODO: Agregar la fecha cuando se lance el sitio
-    {"fecha": "Abril", "desc": "Apertura para el envío de ponencias y talleres 🗒️"},
-    {"fecha": "Mayo", "desc": "Apertura para la venta de entradas 🎟️"},
-    {"fecha": "Junio", "desc": "Apertura para la postulación de becas 🧞"},
+    #{"fecha": "Abril", "desc": "Apertura para el envío de ponencias y talleres 🗒️"},
+    #{"fecha": "Mayo", "desc": "Apertura para la venta de entradas 🎟️"},
+    #{"fecha": "Junio", "desc": "Apertura para la postulación de becas 🧞"},
     {"fecha": "23 de Junio", "desc": "Cierre del llamado a ponencias y talleres ✋"},
-    {"fecha": "31 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
+    #{"fecha": "31 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
+    {"fecha": "26 de Agosto", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
     {"fecha": "6 de Octubre", "desc": "¡Empieza el espectáculo! 🐍"},
 ]
 
