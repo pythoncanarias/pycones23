@@ -1,3 +1,16 @@
+<div class="special-grid">
+
+  {% for partner in PARTNERS %}
+  <div class="card">
+     <a href="{{partner.url}}">
+        <figure class="organizer-figure special">
+           <img src="{{ SITEURL }}/theme/assets/images/organization/{{partner.image}}" alt="{{partner.name}}" />
+        </figure>
+     </a>
+  </div>
+  {% endfor %}
+</div>
+  
   <div class="list has-visible-pointer-controls has-hoverable-list-items">
     {% for persona in ORG %}
     <div class="list-item">

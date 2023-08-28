@@ -1217,6 +1217,10 @@ details p {
   margin: 5px;
 }
 
+.organizer-figure {
+  width:400px;
+}
+
 .special {
   margin: 0;
 }

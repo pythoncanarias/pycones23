@@ -120,6 +120,31 @@ TEMPLATE_PAGES = {
 TITLE = "PyConES 2023"
 
 
+# PARTNERS
+PARTNERS=[
+    {
+        "name":"AdaLovers",
+        "url":"https://adalovedev.es/",
+        "image":"adalovers.png",
+    },
+        {
+        "name":"Python España",
+        "url":"https://es.python.org/",
+        "image":"pythonesp.png",
+    },
+        {
+        "name":"Python Canarias",
+        "url":"https://pythoncanarias.es/",
+        "image":"pythoncanarias.png",
+    },
+        {
+        "name":"PyLadies",
+        "url":"https://twitter.com/PyLadiesES",
+        "image":"pyladies.png",
+    }
+]
+
+
 # EDICIONES PASADAS
 PAST_EDITIONS = [
     {
