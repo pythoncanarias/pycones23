@@ -734,10 +734,6 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_octopusenergy.png",
             "url": "https://octopus.energy/",
         },
-        "Ebury": {
-            "logo": "/theme/assets/images/sponsors/logo_ebury.png",
-            "url": "https://www.ebury.es/",
-        },
         "Cepsa": {
             "logo": "/theme/assets/images/sponsors/logo_cepsa.png",
             "url": "https://www.cepsa.com/es/",
@@ -747,6 +743,10 @@ SPONSORS = {
         "Inditex": {
             "logo": "/theme/assets/images/sponsors/logo_inditex.png",
             "url": "https://www.zaratalent.com/es/tech/",
+        },
+        "Ebury": {
+            "logo": "/theme/assets/images/sponsors/logo_ebury.png",
+            "url": "https://www.ebury.es/",
         },
     },
     "timanfaya": {
