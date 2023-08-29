@@ -215,7 +215,7 @@ PLANES = [
     },
 ]
 
-AGOTADOS = ["tamadaba"]
+AGOTADOS = ["teide", "tamadaba"]
 
 BENEFICIOS = [
     {
@@ -339,7 +339,7 @@ BENEFICIOS = [
     },
     {
         "titulo": {"es": "PRECIO", "en": "PRICE"},
-        "teide": "+6000€",
+        "teide": "<span style='text-decoration:line-through;'>+6000€</span><br>Agotado",
         "tamadaba": "<span style='text-decoration:line-through;'>4500€</span><br>Agotado",
         "teneguia": "3000€",
         "timanfaya": "1000€",
