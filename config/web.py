@@ -795,6 +795,10 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_kavehome.png",
             "url": "https://www.kavehome.com/",
         },
+        "Sngular": {
+            "logo": "/theme/assets/images/sponsors/logo_sngular.png",
+            "url": "https://www.sngular.com/",
+        },
     },
 }
 
