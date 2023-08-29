@@ -1218,7 +1218,9 @@ details p {
 }
 
 .organizer-figure {
-  width:400px;
+  width:155px;
+  margin: 5px;
+  height:100px;
 }
 
 .special {

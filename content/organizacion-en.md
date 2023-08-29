@@ -10,5 +10,5 @@ save_as: organizacion/index.html
 
 The 2023 edition of PyConES will be possible thanks to many volunteers who come
 from technological communities such as
-[Python Canarias](https://pythoncanarias.es/) or
-[Python España](https://es.python.org/), among others:
+[Python Canarias](https://pythoncanarias.es/),
+[Python España](https://es.python.org/), [Ada Lovers](https://adalovedev.es/), [PyLadies España](https://twitter.com/PyLadiesES) among others:
