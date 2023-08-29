@@ -766,6 +766,10 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_somenergia.png",
             "url": "https://www.somenergia.coop/",
         },
+        "Kave Home": {
+            "logo": "/theme/assets/images/sponsors/logo_kavehome.png",
+            "url": "https://www.kavehome.com/",
+        },
     },
 }
 
