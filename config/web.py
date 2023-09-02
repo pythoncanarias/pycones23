@@ -66,7 +66,9 @@ I18N_SUBSITES = {
                 {"fecha": "May", "desc": "Opening for ticket sales 🎟️"},
                 {"fecha": "June", "desc": "Opening for grants applications 🧞"},
                 {"fecha": "June 23th", "desc": "Closing call for proposals and tutorials ✋"},
-                {"fecha": "July 31st", "desc": "Announcement of accepted talks and tutorials 🏆"},
+                {"fecha": "July 12th", "desc": "The review process starts 🖊️"},
+                {"fecha": "August 20th", "desc": "Start to notify accepted talks and workshops 🏆"},
+                {"fecha": "September 5th", "desc": "First schedule version 🚀"},
                 {"fecha": "October 6th", "desc": "The show starts! 🐍"},
             ]
         },
@@ -726,8 +728,10 @@ CRONOGRAMA = [
     {"fecha": "Abril", "desc": "Apertura para el envío de ponencias y talleres 🗒️"},
     {"fecha": "Mayo", "desc": "Apertura para la venta de entradas 🎟️"},
     {"fecha": "Junio", "desc": "Apertura para la postulación de becas 🧞"},
-    {"fecha": "23 de Junio", "desc": "Cierre del llamado a ponencias y talleres ✋"},
-    {"fecha": "31 de Julio", "desc": "Anuncio de ponencias y talleres aceptados 🏆"},
+    {"fecha": "30 de Junio", "desc": "Cierre del llamado a ponencias y talleres ✋"},
+    {"fecha": "12 de Julio", "desc": "Comienzan las revisiones 🖊️"},
+    {"fecha": "20 de Agosto", "desc": "Comienza notificación de charlas y talleres aceptados 🏆"},
+    {"fecha": "5 de septiembre", "desc": "Anuncio de la primera versión del programa 🚀"},
     {"fecha": "6 de Octubre", "desc": "¡Empieza el espectáculo! 🐍"},
 ]
 
