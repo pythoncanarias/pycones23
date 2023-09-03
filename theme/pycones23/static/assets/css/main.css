@@ -1233,18 +1233,38 @@ details p {
 .keynoter {
   display: flex;
   flex-direction: row;
-  background-color: var(--purple-dark);
   color: var(--white);
+  word-spacing: 1px;
   margin-bottom: 2rem;
   padding: 2rem;
   gap: 2rem;
   border-radius: 10px;
+  background-color: #561bc8;
+  background-repeat: no-repeat;
+  background-image:
+    url("../images/linea1_landing.png"),
+    url("../images/linea8_landing.png"),
+    url("../images/burbuja2_landing_opacity.png"),
+    url("../images/estrella_landing.png"),
+    radial-gradient(circle, rgba(102,35,214,1) 0%, rgba(86,27,200,1) 60%);
+  background-position:
+    0 calc(100% - 130px),
+    -30px calc(100% + 150px),
+    calc(100% + 30px) calc(100% + 50px),
+    23% calc(100% + 70px),
+    0 0;
+  background-size:
+    100%,
+    calc(105% + 30px),
+    180px,
+    200px,
+    100%;
 }
 
 .keynoter__img {
-  height: 200px;
-  width: 200px;
-  flex: 0 0 200px;
+  height: 180px;
+  width: 180px;
+  flex: 0 0 180px;
   border-radius: 50%;
 }
 
@@ -1252,8 +1272,7 @@ details p {
   max-width: 100%;
   max-height: 100%;
   border-radius: 50%;
-  border: 4px solid #0fbdc9;
-  box-shadow: 0 2px 18px rgb(8 12 120 / 68%);
+  border: 4px solid #1dbbc0;
 }
 
 .keynoter__content>h2 {
@@ -1267,16 +1286,42 @@ details p {
   color: var(--white);
 }
 
-@media(max-width: 600px) {
+@media(max-width: 850px) {
   .keynoter {
-    flex-direction: column;
-    gap: 1.5rem;
+    background-position:
+      0 calc(100% - 250px),
+      -30px calc(100% + 30px),
+      calc(100% + 30px) calc(100% + 50px),
+      35% calc(100% + 10px),
+      0 0;
   }
 
   .keynoter__img {
-    height: 150px;
-    width: 150px;
-    flex: 0 0 150px;
+    height: 140px;
+    width: 140px;
+    flex: 0 0 140px; 
+  }
+}
+
+@media(max-width: 650px) {
+  .keynoter {
+    flex-direction: column;
+    gap: 0.6rem;
+    background-position:
+      50% -70px,
+      -70px 80%,
+      calc(100% + 30px) calc(100% + 50px),
+      20px 50%,
+      0 0;
+    background-size: 
+      700px,
+      800px,
+      180px,
+      200px,
+      100%;
+  }
+
+  .keynoter__img {
     align-self: center;
   }
 
