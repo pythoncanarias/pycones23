@@ -1233,11 +1233,12 @@ details p {
 .keynoter {
   display: flex;
   flex-direction: row;
-  margin-bottom: 2.5rem;
-  background-color: lightgray;
-  border-radius: 10px;
+  background-color: var(--purple-dark);
+  color: var(--white);
+  margin-bottom: 2rem;
   padding: 2rem;
   gap: 2rem;
+  border-radius: 10px;
 }
 
 .keynoter__img {
@@ -1251,29 +1252,36 @@ details p {
   max-width: 100%;
   max-height: 100%;
   border-radius: 50%;
-  border: 6px solid rebeccapurple;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  border: 4px solid #0fbdc9;
+  box-shadow: 0 2px 18px rgb(8 12 120 / 68%);
 }
 
 .keynoter__content>h2 {
-  text-align: center;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--white);
 }
 
 .social>a {
   font-size: large;
+  color: var(--white);
 }
 
 @media(max-width: 600px) {
   .keynoter {
     flex-direction: column;
+    gap: 1.5rem;
   }
 
   .keynoter__img {
-    height: 180px;
-    width: 180px;
-    flex: 0 0 180px;
+    height: 150px;
+    width: 150px;
+    flex: 0 0 150px;
     align-self: center;
+  }
+
+  .keynoter__content > h2 {
+    text-align: center;
   }
 }
 
