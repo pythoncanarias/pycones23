@@ -767,6 +767,10 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_cepsa.png",
             "url": "https://www.cepsa.com/es/",
         },
+        "PwC": {
+            "logo": "/theme/assets/images/sponsors/logo_pwc.png",
+            "url": "https://www.pwc.es",
+        },
     },
     "teneguia":{
         "Inditex": {
