@@ -18,6 +18,7 @@ THEME = "theme/pycones23"
 PLUGINS =["i18n_subsites"]
 
 NAV_VALUES = [
+    {"slug": "programa", "text": "Programa"},
     {"slug": "ciudad", "text": "Ciudad"},
     {"slug": "viaje", "text": "Viaje"},
     {"slug": "patrocinios", "text": "Patrocinios"},
@@ -53,6 +54,7 @@ I18N_SUBSITES = {
             'OUTPUT_PATH': 'output/en',
             'THEME': "theme/pycones23_en",
             'NAV_VALUES':  [
+                {"slug": "programa", "text": "Schedule"},
                 {"slug": "ciudad", "text": "City"},
                 {"slug": "viaje", "text": "Trip"},
                 {"slug": "patrocinios", "text": "Sponsors"},
