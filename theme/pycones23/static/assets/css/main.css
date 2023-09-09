@@ -168,7 +168,7 @@ body {
   .header .logo-wrapper {
     margin: 0;
     padding-left: 0.75rem;
-    padding-right: 1.1rem;
+    padding-right: 1.2rem;
   }
 
   .header .logo-wrapper:hover {
@@ -253,20 +253,17 @@ display: none;
 .news-box {
   background: var(--orange-gradient);
   color: var(--light-text-color);
-  padding: 30px;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 2rem;
+  margin-bottom: 1.8rem;
   border-radius: 10px;
 }
 .news-title {
   font-weight: bold;
-  padding-bottom: 20px;
+  margin-bottom: 1.1rem;
 }
 
-.news-box .news-content p {
-  color: var(--light-text-color);
+.news-box .news-content {
+  margin-bottom: 0;
 }
 
 /* General card */
@@ -318,6 +315,11 @@ display: none;
 .content-wrapper .content h1 {
   font-size: 1.8rem;
   font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.content-wrapper p {
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -382,11 +384,6 @@ section > iframe {
   width: 80%;
 }
 
-.content-wrapper .content p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  /* color: var(--text-color); */
-}
 .box-intro {
   color: var(--light-text-color);
   font-weight: bold;
