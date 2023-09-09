@@ -206,7 +206,9 @@ display: none;
 /* MAIN */
 .subtitle {
   color: var(--dark-text-color);
+  margin-bottom: 1rem;
 }
+
 .news-box {
   background: var(--orange-gradient);
   color: var(--light-text-color);
@@ -528,6 +530,7 @@ section > iframe {
 
 .footer .social .social-link {
   padding: 0 0.5rem;
+  color: var(--white)
 }
 
 .social-link:hover {
@@ -1227,130 +1230,125 @@ details p {
   margin: 0;
 }
 
-/*keynotter*/
-
+/* Keynoter */
 .keynoter {
-  position: relative;
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  color: var(--white);
+  word-spacing: 1px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 10px;
+  background-color: #561bc8;
+  background-repeat: no-repeat;
+  background-image:
+    url("../images/linea1_landing.png"),
+    url("../images/linea8_landing.png"),
+    url("../images/burbuja2_landing_opacity.png"),
+    url("../images/estrella_landing.png"),
+    radial-gradient(circle, rgba(102,35,214,1) 0%, rgba(86,27,200,1) 60%);
+  background-position:
+    0 calc(100% - 130px),
+    -30px calc(100% + 150px),
+    calc(100% + 30px) calc(100% + 80px),
+    23% calc(100% + 70px),
+    0 0;
+  background-size:
+    100%,
+    calc(105% + 30px),
+    180px,
+    200px,
+    100%;
 }
-
 
 .keynoter__img {
-
-  border-radius: 25px;
-  height: 250px;
-  width: 250px;
-  right: 78%;
-  top: 10%;
-  position: absolute;
+  height: 170px;
+  width: 170px;
+  flex: 0 0 170px;
   border-radius: 50%;
 }
-
 
 .keynoter__img>img {
   max-width: 100%;
   max-height: 100%;
-
   border-radius: 50%;
-  border: 10px solid rebeccapurple;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-}
-
-.keynoter__content {
-  padding-left: 25%;
-  width: 95%;
-  max-width: 800px;
-  margin: auto;
-  background: #fff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding-top: 5%;
-  padding-left: 15%;
-  padding-right: 5%;
-  border-radius: 25px;
-  height: 300px;
-  background-image: url("../images/burbuja_landing.png");
-  background-repeat: no-repeat;
-  background-position: left;
+  border: 4px solid #1dbbc0;
 }
 
 .keynoter__content>h2 {
-  text-align: center;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--white);
 }
 
-.social>a {
-  font-size: large;
+.keynoter .keynoter__content>p {
+  margin-top: 0.6rem;
 }
 
-@media(max-width: 1200px) {
+.keynoter .social {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.2rem;
+}
 
+.keynoter .social>a {
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
+@media(max-width: 850px) {
   .keynoter {
-    margin-bottom: 100px;
+    background-position:
+      0 calc(100% - 250px),
+      -30px calc(100% + 30px),
+      calc(100% + 30px) calc(100% + 80px),
+      35% calc(100% + 10px),
+      0 0;
   }
 
   .keynoter__img {
-    border-radius: 25px;
-    height: 250px;
-    width: 250px;
-    position: absolute;
-    border-radius: 50%;
-    display: flex;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 140px;
+    width: 140px;
+    flex: 0 0 140px; 
+  }
+}
+
+@media(max-width: 650px) {
+  .keynoter {
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 2.5rem 2rem;
+    background-position:
+      50% -70px,
+      -70px 80%,
+      calc(100% + 30px) calc(100% + 80px),
+      20px 50%,
+      0 0;
+    background-size: 
+      700px,
+      800px,
+      180px,
+      200px,
+      100%;
   }
 
-
-
-
-  .keynoter__content {
-    max-width: 800px;
-    margin-top: 20%;
-    background: #fff;
-    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-    padding-top: 130px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    height: auto;
-    border-radius: 25px;
-    background-image: url("../images/burbuja_landing.png");
-    background-repeat: no-repeat;
-    background-position: left;
+  .keynoter__img {
+    align-self: center;
   }
 
-  .keynoter__content>h2 {
+  .keynoter .keynoter__content>p {
+    margin-top: 1rem;
     text-align: center;
   }
 
-  .social>a {
-    font-size: large;
+  .keynoter__content > h2 {
+    text-align: center;
   }
 
-}
-
-
-@media(max-width: 600px) {
-  .keynoter {
-    margin-bottom: 90px;
-  }
-
-  .keynoter__img {
-
-    height: 200px;
-    width: 200px;
-
-  }
-
-  .keynoter__img>img {
-
-    margin: 10%;
-  }
-
-  .keynoter__content {
-    padding-top: 18%;
-    margin-top: 20%;
-
+  .keynoter .social {
+    justify-content: center;
+    gap: 1.4rem;
   }
 }
 
