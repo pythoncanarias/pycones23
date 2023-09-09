@@ -158,7 +158,7 @@ body {
   }
 }
 
-@media (min-width: 63rem) {
+@media (min-width: 70rem) {
   .header {
     flex-direction: row;
     background: var(--blue-pink-gradient);
@@ -182,11 +182,17 @@ body {
 
   .header .menu .menu-link {
     flex: none;
-    padding: 1rem 1.75rem;
+    padding: 1rem 1.4rem;
   }
 
   .header .menu .menu-link-tickets {
     border-left: 1px solid var(--shadow-color);
+  }
+}
+
+@media (min-width: 76rem) {
+  .header .menu .menu-link {
+    padding: 1rem 1.75rem;
   }
 }
 
