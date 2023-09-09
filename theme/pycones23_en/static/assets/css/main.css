@@ -299,6 +299,12 @@ display: none;
   line-height: 2em;
 }
 
+@media (min-width: 22.5rem) {
+  .caption {
+    font-size: 0.8rem;
+  }
+}
+
 /* CONTENT */
 .content-wrapper {
   display: flex;
@@ -312,7 +318,13 @@ display: none;
   max-width: 70rem;
 }
 
-.content-wrapper .content h1 {
+@media (min-width: 40rem) {
+  .content-wrapper .content {
+    padding: 1.5rem 2rem 2.3rem 2rem;
+  }
+}
+
+.content-wrapper h1 {
   font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -385,15 +397,15 @@ section > iframe {
 }
 
 .box-intro {
-  color: var(--light-text-color);
-  font-weight: bold;
-  padding: 50px;
-  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 2rem 2rem 3rem 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3.5rem;
+  color: var(--light-text-color);
+  font-weight: 600;
   border-radius: 10px;
-  opacity: 1.2;
   background-color: var(--fallback-background-color);
   background-image: url("../images/fondo_expo.png");
   background-repeat: no-repeat;
@@ -401,42 +413,40 @@ section > iframe {
   background-size: cover;
 }
 
-.box-intro > .intro > p {
-  color: var(--light-text-color);
+.box-intro > h1 {
+  margin-bottom: 0;
 }
 
 .box-intro > h1 > img {
-  width: 200px;
+  width: 12.5rem;
 }
+
 .box-intro > .intro > .big-text {
-  color: var(--light-text-color);
-  font-size: 30px;
+  font-size: 1.8rem;
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
-@media (min-width: 22.5rem) {
+@media (min-width: 55rem) {
   .box-intro {
+    padding: 4rem 3rem;
+    gap: 1.6rem;
     flex-direction: row;
-    display: block;
-    padding: 50px;
-  }
-  .caption {
-    font-size: 0.8rem;
-  }
-}
-
-@media (min-width: 40rem) {
-  .content-wrapper .content {
-    padding: 1.5rem 2rem 2.3rem 2rem;
-  }
-}
-
-@media (min-width: 63rem) {
-  .box-intro {
-    display: flex;
   }
 
   .box-intro > h1 > img {
-    width: 400px;
+    width: 17rem;
+  }
+
+  .box-intro > .intro > .big-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 70rem) {
+  .box-intro > h1 > img {
+    width: 19rem;
   }
 }
 
@@ -500,9 +510,6 @@ section > iframe {
     display: flex;
     align-items: flex-end;
     justify-content: right;
-    font-size: 0.8rem;
-  }
-  .caption {
     font-size: 0.8rem;
   }
 }
