@@ -24,7 +24,7 @@ NAV_VALUES = [
     {"slug": "patrocinios", "text": "Patrocinios"},
     {"slug": "diversidad-becas", "text": "Diversidad y Becas"},
     {"slug": "ofertas", "text": "Ofertas de Trabajo"},
-    {"slug": "faq", "text": "Preguntas frecuentes"},
+    {"slug": "faq", "text": "FAQ"},
 ]
 
 # TOC

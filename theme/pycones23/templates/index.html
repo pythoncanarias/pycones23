@@ -79,7 +79,7 @@
 </div>
 
 <div class="sponsors">
-  <h1 class="subtitle">Patrocinios</h1>
+  <h2 class="subtitle">Patrocinios</h1>
   <p>
   Gracias a las empresas que colaboran con la PyConES podemos ofrecer el mejor
   evento y experiencia posible.  Somos una conferencia con un bajo coste de
@@ -93,7 +93,7 @@
   <div class="title-badge">
      <img src="{{ SITEURL }}/theme/assets/badges/{{ level }}.png"> Nivel {{ level | title }}
   </div>
-  <div class="{{ level }}-grid">
+  <div class="{{ level }}-grid sponsors-grid">
   {%   for name, values in sponsors.items() %}
   <div class="card">
      <a href={{ values['url'] }}>
@@ -109,7 +109,7 @@
   <div class="title-badge">
      <span style="font-size: 1.5em;">🏫</span> Patrocinio Especial
   </div>
-  <div class="special-grid">
+  <div class="special-grid sponsors-grid">
 
   <!-- ULL -->
   <div class="card">
