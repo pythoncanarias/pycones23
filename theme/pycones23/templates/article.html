@@ -10,6 +10,9 @@
 {% elif article.slug == "ofertas" %}
 {{ article.content }}
 {% include 'lista-ofertas.html' %}
+{% elif article.slug == "programa" %}
+{{ article.content }}
+{% include 'programa.html' %}
 {% else %}
 {{ article.content }}
 {% endif %}
