@@ -530,6 +530,7 @@ section > iframe {
 
 .footer .social .social-link {
   padding: 0 0.5rem;
+  color: var(--white)
 }
 
 .social-link:hover {
@@ -1262,9 +1263,9 @@ details p {
 }
 
 .keynoter__img {
-  height: 180px;
-  width: 180px;
-  flex: 0 0 180px;
+  height: 170px;
+  width: 170px;
+  flex: 0 0 170px;
   border-radius: 50%;
 }
 
@@ -1281,8 +1282,18 @@ details p {
   color: var(--white);
 }
 
-.social>a {
-  font-size: large;
+.keynoter .keynoter__content>p {
+  margin-top: 0.6rem;
+}
+
+.keynoter .social {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.keynoter .social>a {
+  font-size: 1.3rem;
   color: var(--white);
 }
 
@@ -1307,6 +1318,7 @@ details p {
   .keynoter {
     flex-direction: column;
     gap: 0.6rem;
+    padding: 2.5rem 2rem;
     background-position:
       50% -70px,
       -70px 80%,
@@ -1325,8 +1337,18 @@ details p {
     align-self: center;
   }
 
+  .keynoter .keynoter__content>p {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
   .keynoter__content > h2 {
     text-align: center;
+  }
+
+  .keynoter .social {
+    justify-content: center;
+    gap: 1.4rem;
   }
 }
 
