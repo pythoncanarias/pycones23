@@ -246,6 +246,7 @@ display: none;
 /* MAIN */
 .subtitle {
   color: var(--dark-text-color);
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -253,8 +254,7 @@ display: none;
   background: var(--orange-gradient);
   color: var(--light-text-color);
   padding: 30px;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -411,8 +411,7 @@ section > iframe {
   color: var(--light-text-color);
   font-weight: bold;
   padding: 50px;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
