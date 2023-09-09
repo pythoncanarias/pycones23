@@ -269,28 +269,9 @@ display: none;
   color: var(--light-text-color);
 }
 
-.box-addons {
-  border-radius: 10px;
-  background-color: var(--background-color);
-}
 
-.box-addons > h2 {
-  justify-content: center;
-  text-align: center;
-  padding-top: 3%;
-}
 
-.box-content {
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 10px;
-  background-color: var(--background-color);
-}
-.box-content > div > img {
-  width: 200px;
-}
+
 
 .card {
   display: block;
@@ -298,14 +279,10 @@ display: none;
   transition: 0.3s;
   width: 40%;
   padding: 10px;
-  margin: 10px;
 }
+
 .card > div > img {
   width: 200px;
-}
-.card_image {
-  height: 50%;
-  margin-top: 40px;
 }
 
 .card:hover {
@@ -436,22 +413,21 @@ section > iframe {
   font-size: 30px;
 }
 
-@media (min-width: 17rem) {
+@media (min-width: 22.5rem) {
+  .box-intro {
+    flex-direction: row;
+    display: block;
+    padding: 50px;
+  }
+  .caption {
+    font-size: 0.8rem;
+  }
   .card {
     width: 100%;
   }
 }
 
-@media (min-width: 22.5rem) {
-  .box-intro {
-    flex-direction: row;
-  }
-  .box-content {
-    flex-direction: row;
-  }
-  .caption {
-    font-size: 0.8rem;
-  }
+@media (min-width: 30rem) {
   .card {
     width: 100%;
   }
@@ -466,26 +442,6 @@ section > iframe {
   }
 }
 
-@media (min-width: 22.5rem) {
-  .box-intro {
-    display: block;
-    padding: 50px;
-  }
-  .box-content {
-    display: block;
-    padding: 10px;
-  }
-  .card {
-    width: 100%;
-  }
-}
-
-@media (min-width: 30rem) {
-  .card {
-    width: 100%;
-  }
-}
-
 @media (min-width: 63rem) {
   .box-intro {
     display: flex;
@@ -493,14 +449,6 @@ section > iframe {
 
   .box-intro > h1 > img {
     width: 400px;
-  }
-
-  .box-content {
-    display: flex;
-  }
-
-  .box-content > div > img {
-    width: 150px;
   }
 }
 
@@ -952,6 +900,46 @@ Sección de fotos polaroid
   }
   .card {
     width: 100%;
+  }
+}
+
+/* Patrocinios - add-ons */
+.box-addons {
+  border-radius: 10px;
+  background-color: var(--background-color);
+}
+
+.box-addons > h2 {
+  justify-content: center;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.3rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background-color: var(--background-color);
+}
+
+.box-content .addon-image {
+  margin-top: 1.5rem;
+}
+
+.box-content .addon-image img {
+  width: 12.5rem;
+}
+
+@media (min-width: 63rem) {
+  .box-content {
+    flex-direction: row;
+  }
+
+  .box-content .addon-image img {
+    width: 9.3rem;
   }
 }
 
