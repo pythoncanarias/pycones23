@@ -1251,7 +1251,7 @@ details p {
   background-position:
     0 calc(100% - 130px),
     -30px calc(100% + 150px),
-    calc(100% + 30px) calc(100% + 50px),
+    calc(100% + 30px) calc(100% + 80px),
     23% calc(100% + 70px),
     0 0;
   background-size:
@@ -1302,7 +1302,7 @@ details p {
     background-position:
       0 calc(100% - 250px),
       -30px calc(100% + 30px),
-      calc(100% + 30px) calc(100% + 50px),
+      calc(100% + 30px) calc(100% + 80px),
       35% calc(100% + 10px),
       0 0;
   }
@@ -1322,7 +1322,7 @@ details p {
     background-position:
       50% -70px,
       -70px 80%,
-      calc(100% + 30px) calc(100% + 50px),
+      calc(100% + 30px) calc(100% + 80px),
       20px 50%,
       0 0;
     background-size: 
