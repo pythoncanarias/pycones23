@@ -168,7 +168,7 @@ body {
   .header .logo-wrapper {
     margin: 0;
     padding-left: 0.75rem;
-    padding-right: 6rem;
+    padding-right: 1.1rem;
   }
 
   .header .logo-wrapper:hover {
@@ -269,25 +269,28 @@ display: none;
   color: var(--light-text-color);
 }
 
-
-
-
-
+/* General card */
 .card {
-  display: block;
-  box-shadow: 0 4px 8px 0 var(--shadow-color);
-  transition: 0.3s;
-  width: 40%;
   padding: 10px;
-}
-
-.card > div > img {
-  width: 200px;
+  border: 1px solid var(--gray-3);
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  display: grid;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: var(--background-color);
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 var(--shadow-color);
 }
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 
 .container {
   padding: 2px 16px;
@@ -422,23 +425,11 @@ section > iframe {
   .caption {
     font-size: 0.8rem;
   }
-  .card {
-    width: 100%;
-  }
-}
-
-@media (min-width: 30rem) {
-  .card {
-    width: 100%;
-  }
 }
 
 @media (min-width: 40rem) {
   .content-wrapper .content {
     padding: 1.5rem 2rem 2.3rem 2rem;
-  }
-  .card {
-    width: 100%;
   }
 }
 
@@ -517,9 +508,6 @@ section > iframe {
   .caption {
     font-size: 0.8rem;
   }
-  .card {
-    width: 100%;
-  }
 }
 /*
 Código de conducta
@@ -536,19 +524,10 @@ Código de conducta
 /*
 Ediciones Anteriores
 */
-
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-}
-
-.card {
-  border: 1px solid var(--gray-3);
-  overflow: hidden;
-  text-align: center;
-  transition: all 0.2s ease-in-out;
-  background-color: var(--background-color);
 }
 
 .card__image-container {
@@ -876,9 +855,6 @@ Sección de fotos polaroid
   .plans-table {
     font-size: 0.9rem;
   }
-  .card {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 50rem) {
@@ -897,9 +873,6 @@ Sección de fotos polaroid
   }
   .plans-table thead tr th .plan-title {
     display: none;
-  }
-  .card {
-    width: 100%;
   }
 }
 
@@ -944,6 +917,19 @@ Sección de fotos polaroid
 }
 
 /* Organización*/
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 190px);
+  grid-gap: 1rem;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.partners-grid .organizer-figure {
+  margin: 5px;
+  height: 100px;
+}
+
 .list-item {
   flex-wrap: nowrap !important;
   padding: 1.5rem !important;
@@ -1139,57 +1125,55 @@ details p {
 
 
 
-
 /* Sponsor cards */
-.card {
-  display: grid;
-  /*grid-template-rows: max-content 100px;*/
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.card img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
 
 /* sponsor special */
 .special-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 10%));
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
+  margin: 1rem 0;
 }
 
 /* Timanfaya */
 .timanfaya-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 10%));
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
+  margin: 1rem 0;
 }
 
 /* Teneguía */
 .teneguia-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 20%));
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
+  margin: 1rem 0;
 }
 
 /* Tamadaba */
 .tamadaba-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(245px, 30%));
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+  margin: 1rem 0;
 }
 
 /* Teide */
 .teide-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 40%));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  margin: 1rem 0;
 }
 
-
-
+@media (max-width: 910px) {
+  .special-grid { grid-template-columns: repeat(5, 1fr); }
+  .timanfaya-grid { grid-template-columns: repeat(5, 1fr); }
+  .teneguia-grid { grid-template-columns: repeat(4, 1fr); }
+  .tamadaba-grid { grid-template-columns: repeat(3, 1fr); }
+  .teide-grid { grid-template-columns: repeat(2, 1fr); }
+}
 
 @media (max-width: 600px) {
   .special-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1200,24 +1184,17 @@ details p {
 }
 
 .title-badge {
-  display: inline-block;
   font-size: 1.5rem;
-  margin-top: 2%;
+  margin-top: 2rem;
 }
 
 .title-badge img {
   vertical-align: middle;
-  width: 20%;
+  width: 5.5rem;
 }
 
 .sponsor-figure {
   margin: 5px;
-}
-
-.organizer-figure {
-  width:155px;
-  margin: 5px;
-  height:100px;
 }
 
 .special {
