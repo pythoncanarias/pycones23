@@ -27,13 +27,9 @@
 
 <h2 class="subtitle">Keynoters</h2>
 
-
-
 {% for item in KEYNOTERS %}
-
 <div class="keynoter">
    <div class="keynoter__img">
-
      <img src="{{ SITEURL }}{{ item['image'] }}" alt="">
    </div>
    <div class="keynoter__content">
@@ -44,16 +40,12 @@
        <a href="{{ item.twitter }}" target="_blank" class="fa fa-twitter"></a>
      {% endif %}
      {% if item.linkedin %}
-     <a href="{{ item.linkedin }}" target="_blank" class="fa fa-linkedin"></a>
+       <a href="{{ item.linkedin }}" target="_blank" class="fa fa-linkedin"></a>
      {% endif %}
      </div>
    </div>
-
-
-<div class="keynoter__pagination"></div>
 </div>
 {% endfor %}
-
 
 
 <h2 class="subtitle">News</h2>
