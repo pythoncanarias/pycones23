@@ -152,6 +152,43 @@ body {
   background-color: var(--selected-opacity);
 }
 
+@media (min-width: 30rem) {
+  .header .menu .menu-link {
+    flex: 1 1 33.333%;
+  }
+}
+
+@media (min-width: 63rem) {
+  .header {
+    flex-direction: row;
+    background: var(--blue-pink-gradient);
+    color: var(--light-text-color);
+  }
+
+  .header .logo-wrapper {
+    margin: 0;
+    padding-left: 0.75rem;
+    padding-right: 6rem;
+  }
+
+  .header .logo-wrapper:hover {
+    background-color: var(--hover-opacity);
+  }
+
+  .header .menu {
+    justify-content: right;
+    flex-wrap: nowrap;
+  }
+
+  .header .menu .menu-link {
+    flex: none;
+    padding: 1rem 1.75rem;
+  }
+
+  .header .menu .menu-link-tickets {
+    border-left: 1px solid var(--shadow-color);
+  }
+}
 
 /* Estilos del menú burger */
 .menu-icon {
@@ -198,9 +235,6 @@ display: none;
     padding: 10px 20px;
   }
 }
-
-
-
 
 
 /* MAIN */
@@ -442,45 +476,12 @@ section > iframe {
 }
 
 @media (min-width: 30rem) {
-  .header .menu .menu-link {
-    flex: 1 1 33.333%;
-  }
   .card {
     width: 100%;
   }
 }
 
 @media (min-width: 63rem) {
-  .header {
-    flex-direction: row;
-    background: var(--blue-pink-gradient);
-    color: var(--light-text-color);
-  }
-
-  .header .logo-wrapper {
-    margin: 0;
-    padding-left: 0.75rem;
-    padding-right: 6rem;
-  }
-
-  .header .logo-wrapper:hover {
-    background-color: var(--hover-opacity);
-  }
-
-  .header .menu {
-    justify-content: right;
-    flex-wrap: nowrap;
-  }
-
-  .header .menu .menu-link {
-    flex: none;
-    padding: 1rem 1.75rem;
-  }
-
-  .header .menu .menu-link-tickets {
-    border-left: 1px solid var(--shadow-color);
-  }
-
   .box-intro {
     display: flex;
   }
