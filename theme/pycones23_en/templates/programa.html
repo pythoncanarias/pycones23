@@ -17,3 +17,14 @@
     <a download target="_blank" class="button is-medium button is-primary" href="https://charlas.2023.es.pycon.org/pycones-2023/schedule/export/schedule.ics">Download ICal</a>
     <a download target="_blank" class="button is-medium button is-link" href="https://charlas.2023.es.pycon.org/pycones-2023/schedule/export/schedule.xcal">Download XCal</a>
 </div>
+
+<script>
+    // Because pretalx uses a shadow dom element, we need to inject the style tag programmatically
+    const style = document.createElement('style');
+    style.innerHTML = ".pretalx-schedule .settings { margin-left: 0; width: auto; }";
+    style.innerHTML += ".pretalx-schedule .settings .filter-tracks { margin-right: 20px; }";
+    
+    const pretalxWrapper = document.querySelector('pretalx-schedule');
+    const pretalxRoot = pretalxWrapper.shadowRoot;
+    pretalxRoot.appendChild(style);
+</script>
