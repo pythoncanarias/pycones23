@@ -160,9 +160,16 @@ body {
 
 @media (min-width: 70rem) {
   .header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
     flex-direction: row;
     background: var(--blue-pink-gradient);
     color: var(--light-text-color);
+  }
+
+  body:has(pretalx-schedule) .header {
+    position: relative;
   }
 
   .header .logo-wrapper {
