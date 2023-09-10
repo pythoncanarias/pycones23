@@ -145,7 +145,14 @@ PARTNERS=[
         "name":"PyLadies",
         "url":"https://twitter.com/PyLadiesES",
         "image":"pyladies.png",
+    },
+            {
+        "name":"PyLadies",
+        "url":"https://mastodon.social/@pyladiesespanol",
+        "image":"pyladies_esp.png",
     }
+
+    
 ]
 
 
@@ -406,6 +413,30 @@ PATROCINADORES = {
 # NOTICIAS
 
 NOTICIAS = [
+    {
+        'es': {
+            "titulo": "Talleres Django Girls!!",
+            "fecha": "8/9/2023",
+            "contenido": ("Ya puedes registrarte como asistente al taller gratuito de Django Girls en Santa Cruz de Tenerife, inscripciones abiertas hasta el 23 de septiembre mas info en https://djangogirls.org/en/santacruz/"),
+        },
+        'en': {
+            "titulo": "Django Girls Wrkshops!!",
+            "fecha": "7/9/2023",
+            "contenido": ("You can now register as an assistant to the free Django Girls workshop in Santa Cruz de Tenerife, registration open until September 23, more info at https://djangogirls.org/en/santacruz/"),
+        },
+    },
+        {
+        'es': {
+            "titulo": "Presentamos el programa!",
+            "fecha": "7/9/2023",
+            "contenido": ("¡Echa un vistazo al programa de la PyconES en https://2023.es.pycon.org/programa/ y selecciona las charlas que más te interesen! ¡Nos vemos del 6 al 8 de octubre en Tenerife!"),
+        },
+        'en': {
+            "titulo": "Here is the schedule!",
+            "fecha": "7/9/2023",
+            "contenido": ("Take a look at the PyconES program at https://2023.es.pycon.org/en/programa/ and select the talks that interest you the most! See you from October 6 to 8 in Tenerife!"),
+        },
+    },
     {
         'es': {
             "titulo": "7 días más para presentar tu propuesta.",
@@ -811,6 +842,41 @@ SPONSORS = {
         },
     },
 }
+
+"""
+TODO: Add in case we have de OK from jesus
+        {
+            "name": "PCTT",
+            "logo": "/theme/assets/images/sponsors/logo_pctt.png",
+            "url": "https://pctt.es/",
+        },
+        {
+            "name": "Tenerife Innova",
+            "logo": "/theme/assets/images/sponsors/logo_tenerifeinnova.png",
+            "url": "https://innova.tenerife.es/",
+        },
+        {
+            "name": "Cabildo Tenerife",
+            "logo": "/theme/assets/images/sponsors/logo_cabildo.png",
+            "url": "https://www.tenerife.es/portalcabtfe/es/",
+        }
+
+"""
+
+CONTRIBUTORS = [
+
+        {
+            "name": "Tenerifecb",
+            "logo": "/theme/assets/images/sponsors/logo_tcb.png",
+            "url": "https://www.webtenerife.com/tenerifecb/",
+        },
+        {
+            "name": "Github",
+            "logo": "/theme/assets/images/sponsors/logo_github.png",
+            "url": "https://www.github.com/",
+        }
+]
+    
 
 KEYNOTERS=[
     {
