@@ -54,7 +54,7 @@
 <div class="news-box">
    <h3 class="news-title">{{ noticia['en'].titulo }} <span>{{ noticia['en'].fecha }}</span></h3>
    <p class="news-content">
-      {{ noticia['en'].contenido }}
+      {{ noticia['en'].contenido | urlize }}
    </p>
 </div>
 {% endfor %}
@@ -127,15 +127,21 @@
      </a>
   </div>
 
-      <!-- Github -->
-      <div class="card">
-         <a href="https://github.com/">
-            <figure class="sponsor-figure special">
-               <img src="{{ SITEURL }}/theme/assets/images/sponsors/logo_github.png" alt="Logo github" />
-            </figure>
-         </a>
-      </div>
-
   </div>
+
+  <div class="title-badge">
+   <span style="font-size: 1.5em;">🤝</span>Colaboradores
+</div>
+<div class="special-grid sponsors-grid">
+
+{% for contributor in CONTRIBUTORS %}
+<div class="card">
+   <a href={{ contributor.url }}>
+      <figure class="sponsor-figure">
+         <img src="{{ SITEURL }}{{ contributor.logo }}" alt="Logo {{ contributor.name }}" />
+      </figure>
+   </a>
+</div>
+{% endfor %}
 </div>
 {% endblock content %}
