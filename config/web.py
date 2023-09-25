@@ -874,7 +874,12 @@ CONTRIBUTORS = [
             "name": "Github",
             "logo": "/theme/assets/images/sponsors/logo_github.png",
             "url": "https://www.github.com/",
-        }
+        },
+        {
+            "name": "Jugueterías Lifer",
+            "logo": "/theme/assets/images/sponsors/logo_lifer.svg",
+            "url": "https://www.lifer.es/",
+        },
 ]
     
 
