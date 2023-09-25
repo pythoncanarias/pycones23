@@ -843,12 +843,10 @@ SPONSORS = {
         "IAC": {
             "logo": "/theme/assets/images/sponsors/logo_iac.svg",
             "url": "https://iac.es/",
-
         },
         "QT Group": {
             "logo": "/theme/assets/images/sponsors/logo_qt.svg",
             "url": "https://www.qt.io/",
-
         },
     },
 }
