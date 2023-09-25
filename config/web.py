@@ -840,6 +840,11 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_sngular.png",
             "url": "https://www.sngular.com/",
         },
+        "IAC": {
+            "logo": "/theme/assets/images/sponsors/logo_iac.svg",
+            "url": "https://iac.es/",
+
+        },
     },
 }
 
