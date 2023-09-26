@@ -417,12 +417,12 @@ NOTICIAS = [
         'es': {
             "titulo": "Talleres!!",
             "fecha": "26/9/2023",
-            "contenido": ("Ya puedes registrarte como asistente a los talleres de la Pycones"),
+            "contenido": ("Ya puedes registrarte como asistente a los talleres de la Pycones como HumbleData https://forms.gle/Zb1HKZMxcnd7Sj9x9 o DjangoGirls https://forms.gle/Pq8iWqriMbnUUVWz8"),
         },
         'en': {
             "titulo": "Workshops!!",
             "fecha": "26/9/2023",
-            "contenido": ("You can now register as an assistant to all the workshops at the Pycones"),
+            "contenido": ("You can now register as an assistant to all the workshops at the Pycones like HumbleData https://forms.gle/Zb1HKZMxcnd7Sj9x9 or Django Girls https://forms.gle/Pq8iWqriMbnUUVWz8"),
         },
     },
     {
