@@ -415,12 +415,24 @@ PATROCINADORES = {
 NOTICIAS = [
     {
         'es': {
+            "titulo": "Talleres!!",
+            "fecha": "26/9/2023",
+            "contenido": ("Ya puedes registrarte como asistente a los talleres de la Pycones como HumbleData https://forms.gle/Zb1HKZMxcnd7Sj9x9 o DjangoGirls https://forms.gle/Pq8iWqriMbnUUVWz8"),
+        },
+        'en': {
+            "titulo": "Workshops!!",
+            "fecha": "26/9/2023",
+            "contenido": ("You can now register as an assistant to all the workshops at the Pycones like HumbleData https://forms.gle/Zb1HKZMxcnd7Sj9x9 or Django Girls https://forms.gle/Pq8iWqriMbnUUVWz8"),
+        },
+    },
+    {
+        'es': {
             "titulo": "Talleres Django Girls!!",
             "fecha": "8/9/2023",
             "contenido": ("Ya puedes registrarte como asistente al taller gratuito de Django Girls en Santa Cruz de Tenerife, inscripciones abiertas hasta el 23 de septiembre mas info en https://djangogirls.org/en/santacruz/"),
         },
         'en': {
-            "titulo": "Django Girls Wrkshops!!",
+            "titulo": "Django Girls Workshops!!",
             "fecha": "7/9/2023",
             "contenido": ("You can now register as an assistant to the free Django Girls workshop in Santa Cruz de Tenerife, registration open until September 23, more info at https://djangogirls.org/en/santacruz/"),
         },
@@ -853,6 +865,11 @@ SPONSORS = {
 
 """
 TODO: Add in case we have de OK from jesus
+
+
+"""
+
+CONTRIBUTORS = [
         {
             "name": "PCTT",
             "logo": "/theme/assets/images/sponsors/logo_pctt.png",
@@ -867,11 +884,12 @@ TODO: Add in case we have de OK from jesus
             "name": "Cabildo Tenerife",
             "logo": "/theme/assets/images/sponsors/logo_cabildo.png",
             "url": "https://www.tenerife.es/portalcabtfe/es/",
-        }
-
-"""
-
-CONTRIBUTORS = [
+        },        
+        {
+            "name": "FDCAN",
+            "logo": "/theme/assets/images/sponsors/logo_ecan.png",
+            "url": "https://www3.gobiernodecanarias.org/noticias/tag/fdcan/",
+        },
 
         {
             "name": "Tenerifecb",
@@ -888,6 +906,7 @@ CONTRIBUTORS = [
             "logo": "/theme/assets/images/sponsors/logo_lifer.svg",
             "url": "https://www.lifer.es/",
         },
+
 ]
     
 
