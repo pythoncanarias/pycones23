@@ -152,7 +152,7 @@ PARTNERS=[
         "image":"pyladies_esp.png",
     }
 
-    
+
 ]
 
 
@@ -826,6 +826,10 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_ebury.png",
             "url": "https://www.ebury.es/",
         },
+        "Bloomberg": {
+            "logo": "/theme/assets/images/sponsors/logo_bloomberg.png",
+            "url": "https://www.bloomberg.net/",
+        },
     },
     "timanfaya": {
         "GISCE-TI, S.L.": {
@@ -856,9 +860,17 @@ SPONSORS = {
             "logo": "/theme/assets/images/sponsors/logo_iac.svg",
             "url": "https://iac.es/",
         },
-        "QT Group": {
+        "Qt Group": {
             "logo": "/theme/assets/images/sponsors/logo_qt.svg",
             "url": "https://www.qt.io/",
+        },
+        "EdgeTier": {
+            "logo": "/theme/assets/images/sponsors/logo_edgetier.png",
+            "url": "https://www.edgetier.com/",
+        },
+        "Multiverse Computing": {
+            "logo": "/theme/assets/images/sponsors/logo_multiversecomputing.png",
+            "url": "https://www.multiversecomputing.com/",
         },
     },
 }
@@ -884,7 +896,7 @@ CONTRIBUTORS = [
             "name": "Cabildo Tenerife",
             "logo": "/theme/assets/images/sponsors/logo_cabildo.png",
             "url": "https://www.tenerife.es/portalcabtfe/es/",
-        },        
+        },
         {
             "name": "FDCAN",
             "logo": "/theme/assets/images/sponsors/logo_ecan.png",
@@ -908,7 +920,7 @@ CONTRIBUTORS = [
         },
 
 ]
-    
+
 
 KEYNOTERS=[
     {
