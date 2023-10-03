@@ -782,10 +782,7 @@ CRONOGRAMA = [
 
 SPONSORS = {
     "teide": {
-        "Europython Society": {
-            "logo": "/theme/assets/images/sponsors/logo_europython.png",
-            "url": "https://www.europython-society.org/",
-        },
+
         "APSL": {
             "logo": "/theme/assets/images/sponsors/logo_apsl.png",
             "url": "https://apsl.tech/",
@@ -881,22 +878,44 @@ TODO: Add in case we have de OK from jesus
 
 """
 
+
+SPECIALS_CONTRIBUTORS = [
+        {
+            "name": "Europython Society",
+            "logo": "/theme/assets/images/sponsors/logo_europython.png",
+            "url": "https://www.europython-society.org/",
+        },
+        {
+            "name": "PSF",
+            "logo": "/theme/assets/images/sponsors/logo_psf.png",
+            "url": "https://www.python.org/psf/",
+        },
+        {
+            "name": "Python España",
+            "logo": "/theme/assets/images/sponsors/logo_python_esp.png",
+            "url": "https://es.python.org/",
+        },
+]
+
+
+
 CONTRIBUTORS = [
         {
             "name": "PCTT",
             "logo": "/theme/assets/images/sponsors/logo_pctt.png",
             "url": "https://pctt.es/",
         },
+                {
+            "name": "Cabildo Tenerife",
+            "logo": "/theme/assets/images/sponsors/logo_cabildo.png",
+            "url": "https://www.tenerife.es/portalcabtfe/es/",
+        },
         {
             "name": "Tenerife Innova",
             "logo": "/theme/assets/images/sponsors/logo_tenerifeinnova.png",
             "url": "https://innova.tenerife.es/",
         },
-        {
-            "name": "Cabildo Tenerife",
-            "logo": "/theme/assets/images/sponsors/logo_cabildo.png",
-            "url": "https://www.tenerife.es/portalcabtfe/es/",
-        },
+
         {
             "name": "FDCAN",
             "logo": "/theme/assets/images/sponsors/logo_ecan.png",

@@ -88,6 +88,27 @@
   Con la ayuda de estas empresas conseguimos hacer un evento diverso
   e inclusivo enfocado en cuidar la comunidad de Python.
   </p>
+
+
+  <div class="title-badge">
+   <span style="font-size: 1.5em;">⭐</span>Comunidades Patrocinadoras
+</div>
+
+  <div class="special-grid sponsors-grid">
+
+   {% for contributor in SPECIALS_CONTRIBUTORS %}
+   <div class="card">
+      <a href={{ contributor.url }}>
+         <figure class="sponsor-figure">
+            <img src="{{ SITEURL }}{{ contributor.logo }}" alt="Logo {{ contributor.name }}" />
+         </figure>
+      </a>
+   </div>
+   {% endfor %}
+   
+   </div>
+
+
   {% for level, sponsors in SPONSORS.items() %}
   {% if sponsors %}
   <div class="title-badge">
@@ -131,15 +152,6 @@
      </a>
   </div>
 
-
-  <!-- PSF -->
-  <div class="card">
-   <a href="https://www.python.org/psf-landing/">
-      <figure class="sponsor-figure special">
-         <img src="{{ SITEURL }}/theme/assets/images/sponsors/logo_psf.svg" alt="Logo psf" />
-      </figure>
-   </a>
-</div>
 
   </div>
 
