@@ -8,6 +8,13 @@ save_as: faq/index.html
 # Frequently Asked Questions
 
 <details markdown="1">
+<summary>How do I access the streaming?</summary>
+The company in charge of the streaming will send an email to the people
+with an on-line ticket on Friday 6th, October, starting from 15:00h (local
+time).
+</details>
+
+<details markdown="1">
 <summary>Which days are the tutorials and talks?</summary>
 The tutorials will be held on *Friday 6th*, and the talks
 will be during the *Saturday 7th, and Sunday 8th* of October.

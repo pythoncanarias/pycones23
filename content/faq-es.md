@@ -7,6 +7,13 @@ save_as: faq/index.html
 # Preguntas Frecuentes
 
 <details markdown="1">
+<summary>¿Cómo accedo al streaming?</summary>
+La empresa encargada del streaming enviará un email a las personas con
+ticket on-line, el día Viernes 6 de octubre, a partir de las 15:00h (hora
+canarias).
+</details>
+
+<details markdown="1">
 <summary>¿Qué días son los tutoriales y charlas?</summary>
 Los tutoriales serán el día *Viernes 6*, y las charlas
 serán los días *Sábado 7 y Domingo 8* de Octubre.
